@@ -1,0 +1,14 @@
+.logo {
+    color: var(--blue-70,#0073b1)!important; 
+    height: 3.4rem!important;
+    width: 3.4rem!important;
+}
+.right{
+    display: inline !important;
+    flex-direction: row !important;
+
+}
+.Nav-Links{
+    text-align: center;
+    justify-content: center;
+}
