@@ -59,7 +59,10 @@
     font-size: 0.7rem;
 }
 .avatar{
-
+    height: 35px;
+    width: 35px !important;
+    border-radius: 50%;
+    overflow: hidden;
 }
 #avatar{
     height: 35px;
@@ -70,4 +73,11 @@
 }
 #img{
     border-right: 1px solid grey;
+}
+.premium{
+    font-size: 15px !important;
+    color: var(--color-brand-accent-1) !important;
+}
+.premium span::before{
+    content: "\A";
 }

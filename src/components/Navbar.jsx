@@ -7,8 +7,12 @@ import PeopleAltIcon from '@material-ui/icons/PeopleAlt';
 import WorkIcon from '@material-ui/icons/Work';
 import ChatIcon from '@material-ui/icons/Chat';
 import NotificationsIcon from '@material-ui/icons/Notifications';
+import Avatar from './img/avtar.png';
 
 function Navbar() {
+    const inline = {
+        "display":"flex"
+    }
     return (
         <div className="navbar">
             <div className="left">
@@ -45,8 +49,22 @@ function Navbar() {
                 </div>
                 <div className="Nav-Links" id="img">
                     <div id="avatar">
-                    <img className="avatar" src="./avatar.png" alt=""/>
+                    <img className="avatar" src={Avatar} alt=""/>
                     </div>
+                </div>
+                <div className="Nav-Links">
+                <SvgIcon xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 34 34" className="">
+                <path d="M10 10h4v4h-4v-4zm0 11h4v-4h-4v4zm-7-7h4v-4H3v4zm0 7h4v-4H3v4zM3 7h4V3H3v4zm14 7h4v-4h-4v4zm0-11v4h4V3h-4zm-7 4h4V3h-4v4zm7 14h4v-4h-4v4z"></path>
+                </SvgIcon>
+                <p style={inline}>Work
+                <SvgIcon xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 34 34" className="">
+                <path d="M8.8 10.66L14 5.12a.07.07 0 00-.07-.12H2.07a.07.07 0 00-.07.12l5.2 5.54a1.1 1.1 0 001.6 0z"></path>
+                </SvgIcon>
+                </p>
+                </div>
+                <div className="Nav-Links">
+                <p className="premium">Try Premium Free</p>
+                <p className="premium">for 1 month</p>
                 </div>
             </div>
         </div>

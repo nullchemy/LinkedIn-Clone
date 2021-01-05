@@ -38,21 +38,31 @@
     border-radius: 15px;
     padding-top: 20px;
 }
-.input-post{
-    outline: none;
-    border: none;
-    width: 90%;
-    background-color: transparent;
-    padding-top: 8px;
-    margin-left: 20px;
-}
-.form-post{
-    position: center center !important;
-    height: 40px;
+.post-div{
+    margin-left: 10%;
     width: 80%;
-    background-color: #eef3f8;
-    border-radius: 10px;
-    margin: 0% 10%;
+    margin-right: 10%;
+    border: 1px solid gray;
+    border-radius: 15px;
+}
+.post-button{
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    transition-duration: 167ms;
+    border: none;
+    border-radius: 2px;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 600;
+    display: inline-flex;
+    justify-content: left !important;
+    min-width: 6.4rem;
+    width: 100%;
+    overflow: hidden;
+    transition-property: background-color,box-shadow,color;
+    vertical-align: middle;
+    text-transform: lowercase !important;
+
 }
 .content{
     background-color: #ffffff;
