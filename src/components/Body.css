@@ -96,10 +96,12 @@
 }
 .bottom{
     width: 100%;
-    height: 200px;
+    height: auto;
     background-color: #ffffff;
     border-radius: 10px;
     margin-top: 10px;
+    border: 1px solid rgb(172, 172, 172);
+    margin-bottom: 100px;
 }
 .bottom > .title{
     display: flex;
@@ -108,19 +110,83 @@
 .bottom > .title > p{
     padding-top: 20px;
     margin-left: 10px;
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     line-height: 1.33333;
     font-weight: 400;
     color: rgba(0,0,0,.9);
 }
 .bottom > .title > p > svg{
     font-size: 12px;
-    margin-left: 90px;
+    margin-left: 110px;
+    margin-top: -10px;
     padding: 8px;
 }
 .bottom > .title > p > svg:hover{
     background-color: rgb(194, 194, 194);
     border-radius: 50%;
+}
+.recents{
+    display: flex;
+    flex-direction: row;
+}
+.recents:hover{
+    background-color: rgb(211, 211, 211);
+}
+.recents > p > svg{
+    padding-left: 5px;
+}
+.recents > p{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    font-size: 12px;
+    cursor: pointer;
+}
+.see > p{
+    font-size: 12px;
+    padding-left: 35px;
+}
+.see{
+    padding: 5px;
+}
+.see:hover{
+    background-color: rgb(220, 219, 219);
+}
+.bottom > .title-hashtag{
+    display: flex;
+    flex-direction: row;
+}
+.bottom > .title-hashtag > p{
+    padding-top: 5px;
+    margin-left: 10px;
+    font-size: 0.8rem;
+    line-height: 1.33333;
+    font-weight: 400;
+    color: rgba(0,0,0,.9);
+}
+.bottom > .title-hashtag > p > svg{
+    font-size: 12px;
+    margin-left: 47px;
+    margin-top: -10px;
+    padding: 8px;
+}
+.bottom > .title-hashtag > p > svg:hover{
+    background-color: rgb(194, 194, 194);
+    border-radius: 50%;
+}
+.discover{
+    border: 1px solid rgb(203, 203, 203);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.discover:hover{
+    background-color: rgb(215, 215, 215);
+}
+.discover > p{
+    font-size: 12px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 .middle{
     width: 45%;

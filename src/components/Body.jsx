@@ -38,6 +38,119 @@ function Body() {
                     <p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
                     <path d="M15 11L8 6.39 1 11V8.61L8 4l7 4.61z"></path>
                     </svg></p>
+                    </div> 
+                    <div className="recents">
+                        <p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
+                        <path d="M8.5 7h-1A1.5 1.5 0 006 8.5V14h4V8.5A1.5 1.5 0 008.5 7zM12.75 8h-.5A1.25 1.25 0 0011 9.25V14h3V9.25A1.25 1.25 0 0012.75 8z"></path>
+                        <circle cx="8" cy="4" r="2"></circle>
+                        <circle cx="12.5" cy="5.5" r="1.5"></circle>
+                        <path d="M3.75 8h-.5A1.25 1.25 0 002 9.25V14h3V9.25A1.25 1.25 0 003.75 8z"></path>
+                        <circle cx="3.5" cy="5.5" r="1.5"></circle>
+                        </svg>
+                        </p>
+                        <p>React Native Developers</p>
+                    </div>
+                    <div className="recents">
+                        <p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
+                        <path d="M8.5 7h-1A1.5 1.5 0 006 8.5V14h4V8.5A1.5 1.5 0 008.5 7zM12.75 8h-.5A1.25 1.25 0 0011 9.25V14h3V9.25A1.25 1.25 0 0012.75 8z"></path>
+                        <circle cx="8" cy="4" r="2"></circle>
+                        <circle cx="12.5" cy="5.5" r="1.5"></circle>
+                        <path d="M3.75 8h-.5A1.25 1.25 0 002 9.25V14h3V9.25A1.25 1.25 0 003.75 8z"></path>
+                        <circle cx="3.5" cy="5.5" r="1.5"></circle>
+                        </svg>
+                        </p>
+                        <p>React Native</p>
+                    </div>
+                    <div className="recents">
+                        <p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
+                        <path d="M6.65 11h2l-.33 3h2l.33-3H14V9h-3.13l.26-2H14V5h-2.65l.33-3h-2l-.33 3h-2l.33-3h-2l-.33 3H2v2h3.13l-.26 2H2v2h2.65l-.33 3h2zm.48-4h2l-.26 2h-2z"></path>
+                        </svg>
+                        </p>
+                        <p>Softwareengineering</p>
+                    </div>
+                    <div className="recents">
+                        <p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
+                        <path d="M6.65 11h2l-.33 3h2l.33-3H14V9h-3.13l.26-2H14V5h-2.65l.33-3h-2l-.33 3h-2l.33-3h-2l-.33 3H2v2h3.13l-.26 2H2v2h2.65l-.33 3h2zm.48-4h2l-.26 2h-2z"></path>
+                        </svg>
+                        </p>
+                        <p>Softwaredevelopment</p>
+                    </div>
+                    <div className="recents">
+                        <p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
+                        <path d="M6.65 11h2l-.33 3h2l.33-3H14V9h-3.13l.26-2H14V5h-2.65l.33-3h-2l-.33 3h-2l.33-3h-2l-.33 3H2v2h3.13l-.26 2H2v2h2.65l-.33 3h2zm.48-4h2l-.26 2h-2z"></path>
+                        </svg>
+                        </p>
+                        <p>Jobseekers</p>
+                    </div>
+                    <div className="title">
+                    <p>Groups</p>
+                    <p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
+                    <path d="M15 11L8 6.39 1 11V8.61L8 4l7 4.61z"></path>
+                    </svg></p>
+                    </div> 
+                    <div className="recents">
+                        <p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
+                        <path d="M8.5 7h-1A1.5 1.5 0 006 8.5V14h4V8.5A1.5 1.5 0 008.5 7zM12.75 8h-.5A1.25 1.25 0 0011 9.25V14h3V9.25A1.25 1.25 0 0012.75 8z"></path>
+                        <circle cx="8" cy="4" r="2"></circle>
+                        <circle cx="12.5" cy="5.5" r="1.5"></circle>
+                        <path d="M3.75 8h-.5A1.25 1.25 0 002 9.25V14h3V9.25A1.25 1.25 0 003.75 8z"></path>
+                        <circle cx="3.5" cy="5.5" r="1.5"></circle>
+                        </svg>
+                        </p>
+                        <p>React Native Developers</p>
+                    </div>
+                    <div className="recents">
+                        <p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
+                        <path d="M8.5 7h-1A1.5 1.5 0 006 8.5V14h4V8.5A1.5 1.5 0 008.5 7zM12.75 8h-.5A1.25 1.25 0 0011 9.25V14h3V9.25A1.25 1.25 0 0012.75 8z"></path>
+                        <circle cx="8" cy="4" r="2"></circle>
+                        <circle cx="12.5" cy="5.5" r="1.5"></circle>
+                        <path d="M3.75 8h-.5A1.25 1.25 0 002 9.25V14h3V9.25A1.25 1.25 0 003.75 8z"></path>
+                        <circle cx="3.5" cy="5.5" r="1.5"></circle>
+                        </svg>
+                        </p>
+                        <p>React Native</p>
+                    </div>
+                    <div className="see">
+                        <p>See all</p>
+                    </div>
+                    <div className="title">
+                    <p>Events</p>
+                    <p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
+                    <path d="M14 9H9v5H7V9H2V7h5V2h2v5h5z"></path>
+                    </svg></p>
+                    </div> 
+                    <div className="title-hashtag">
+                    <p>Followed Hashtags</p>
+                    <p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
+                    <path d="M14 9H9v5H7V9H2V7h5V2h2v5h5z"></path>
+                    </svg></p>
+                    </div>
+                    <div className="recents">
+                        <p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
+                        <path d="M6.65 11h2l-.33 3h2l.33-3H14V9h-3.13l.26-2H14V5h-2.65l.33-3h-2l-.33 3h-2l.33-3h-2l-.33 3H2v2h3.13l-.26 2H2v2h2.65l-.33 3h2zm.48-4h2l-.26 2h-2z"></path>
+                        </svg>
+                        </p>
+                        <p>Softwareengineering</p>
+                    </div>
+                    <div className="recents">
+                        <p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
+                        <path d="M6.65 11h2l-.33 3h2l.33-3H14V9h-3.13l.26-2H14V5h-2.65l.33-3h-2l-.33 3h-2l.33-3h-2l-.33 3H2v2h3.13l-.26 2H2v2h2.65l-.33 3h2zm.48-4h2l-.26 2h-2z"></path>
+                        </svg>
+                        </p>
+                        <p>Softwaredevelopment</p>
+                    </div>
+                    <div className="recents">
+                        <p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
+                        <path d="M6.65 11h2l-.33 3h2l.33-3H14V9h-3.13l.26-2H14V5h-2.65l.33-3h-2l-.33 3h-2l.33-3h-2l-.33 3H2v2h3.13l-.26 2H2v2h2.65l-.33 3h2zm.48-4h2l-.26 2h-2z"></path>
+                        </svg>
+                        </p>
+                        <p>Jobseekers</p>
+                    </div>
+                    <div className="see">
+                        <p>See all</p>
+                    </div>
+                    <div className="discover">
+                        <p>Discover More</p>
                     </div>
                 </div>
             </div>
