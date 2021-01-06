@@ -101,6 +101,27 @@
     border-radius: 10px;
     margin-top: 10px;
 }
+.bottom > .title{
+    display: flex;
+    flex-direction: row;
+}
+.bottom > .title > p{
+    padding-top: 20px;
+    margin-left: 10px;
+    font-size: 1.2rem;
+    line-height: 1.33333;
+    font-weight: 400;
+    color: rgba(0,0,0,.9);
+}
+.bottom > .title > p > svg{
+    font-size: 12px;
+    margin-left: 90px;
+    padding: 8px;
+}
+.bottom > .title > p > svg:hover{
+    background-color: rgb(194, 194, 194);
+    border-radius: 50%;
+}
 .middle{
     width: 45%;
     height: 30%;
