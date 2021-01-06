@@ -4,6 +4,9 @@
     justify-content: space-around;
     padding: 10px;
     border-bottom: 1px solid black;
+    position: fixed;
+    width: 100vw;
+    background-color: #fff;
 }
 .logo {
     color: var(--blue-70,#0073b1)!important; 
