@@ -2,5 +2,14 @@
     height: 80px;
     .navcontainer{
         margin: 0px 10%;
+        .navflex{
+            .navleft{
+                .navlogo{
+                    .logo{
+                        color: var(--color-brand);
+                    }
+                }
+            }
+        }
     }
 }

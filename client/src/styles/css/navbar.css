@@ -5,4 +5,8 @@
 .navbar .navcontainer {
   margin: 0px 10%;
 }
+
+.navbar .navcontainer .navflex .navleft .navlogo .logo {
+  color: var(--color-brand);
+}
 /*# sourceMappingURL=navbar.css.map */
