@@ -1,6 +1,6 @@
 import React from 'react'
 import '../styles/css/navbar.css'
-import NavLogo as ReactComponent from '../assets/svg/navlogo.svg'
+import {  ReactComponent as NavLogo } from '../assets/svg/navlogo.svg'
 
 const Navbar = () => {
   return (
