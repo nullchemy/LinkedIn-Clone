@@ -9,7 +9,7 @@ const Navbar = () => {
             <div className="navflex">
                 <div className="navleft">
                     <div className="navlogo">
-                        <NavLogo />
+                        <NavLogo className="logo"/>
                     </div>
                 </div>
                 <div className="navright"></div>
