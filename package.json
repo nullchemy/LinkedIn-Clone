@@ -4,5 +4,8 @@
     "node-cron": "^3.0.0",
     "random-words": "^1.1.2",
     "shelljs": "^0.8.5"
+  },
+  "scripts": {
+    "cron": "node cron-ping.js"
   }
 }
