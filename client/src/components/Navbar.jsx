@@ -9,6 +9,7 @@ import {  ReactComponent as Jobs } from '../assets/svg/nav-jobs.svg'
 import {  ReactComponent as Messaging } from '../assets/svg/nav-messaging.svg'
 import {  ReactComponent as Notifications } from '../assets/svg/nav-notifications.svg'
 import {  ReactComponent as ProfileDropDown } from '../assets/svg/down-icon.svg'
+import {  ReactComponent as NavWork } from '../assets/svg/nav-work.svg'
 import ProfileImage from '../assets/images/kibet.png'
 
 const Navbar = () => {
@@ -56,7 +57,17 @@ const Navbar = () => {
                             </Link>
                         </div>
                     </div>
-                    <div className="work"></div>
+                    <div className="nav-work">
+                        <Link to="/profile" className="nav-link">
+                            <NavWork className="nav-icon" />
+                            <span className="nav-texts">Me
+                                <span><ProfileDropDown className="profile-drop-icon"/></span>
+                            </span>
+                        </Link>
+                        <Link to="" className="nav-premium">
+                            Try premium for <br/>free
+                        </Link>
+                    </div>
                 </div>
             </div>
         </div>
