@@ -122,6 +122,10 @@
   line-height: 1.5;
 }
 
+.navbar .navcontainer .navflex .navright .navigation .nav-group .nav-link .nav-profile-image {
+  border-radius: 50%;
+}
+
 .navbar .navcontainer .navflex .navright .navigation .nav-group .nav-link .nav-texts {
   color: #00000099;
   cursor: pointer;
@@ -129,6 +133,20 @@
   font-weight: 400;
   line-height: 1.5;
   list-style-type: none;
+}
+
+.navbar .navcontainer .navflex .navright .navigation .nav-group .nav-link .nav-texts span .profile-drop-icon {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform .2s ease-in-out;
+  transition: -webkit-transform .2s ease-in-out;
+  transition: transform .2s ease-in-out;
+  transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
+  font-size: 1.2rem;
+  font-weight: 400;
+  cursor: pointer;
+  line-height: 1.5;
+  margin-bottom: -3px;
 }
 
 .navbar .navcontainer .navflex .navright .navigation .nav-group .nav-link:nth-child(1):after {

@@ -8,6 +8,8 @@ import {  ReactComponent as Network } from '../assets/svg/nav-network.svg'
 import {  ReactComponent as Jobs } from '../assets/svg/nav-jobs.svg'
 import {  ReactComponent as Messaging } from '../assets/svg/nav-messaging.svg'
 import {  ReactComponent as Notifications } from '../assets/svg/nav-notifications.svg'
+import {  ReactComponent as ProfileDropDown } from '../assets/svg/down-icon.svg'
+import ProfileImage from '../assets/images/kibet.png'
 
 const Navbar = () => {
   return (
@@ -26,29 +28,31 @@ const Navbar = () => {
                 <div className="navright">
                     <div className="navigation">
                         <div className="nav-group">
-                            <Link to="" className="nav-link">
+                            <Link to="/feed" className="nav-link">
                                 <Home className="nav-icon" />
                                 <span className="nav-texts">Home</span>
                             </Link>
-                            <Link to="" className="nav-link">
+                            <Link to="/network" className="nav-link">
                                 <Network className="nav-icon" />
                                 <span className="nav-texts">My Network</span>
                             </Link>
-                            <Link to="" className="nav-link">
+                            <Link to="/jobs" className="nav-link">
                                 <Jobs className="nav-icon" />
                                 <span className="nav-texts">Jobs</span>
                             </Link>
-                            <Link to="" className="nav-link">
+                            <Link to="/messaging" className="nav-link">
                                 <Messaging className="nav-icon" />
                                 <span className="nav-texts">Messaging</span>
                             </Link>
-                            <Link to="" className="nav-link">
+                            <Link to="/notifications" className="nav-link">
                                 <Notifications className="nav-icon" />
                                 <span className="nav-texts">Notifications</span>
                             </Link>
-                            <Link to="" className="nav-link">
-                                {/* <img src="" alt="" className="nav-icon" /> */}
-                                <span className="nav-texts">Me</span>
+                            <Link to="/profile" className="nav-link">
+                                <img src={ProfileImage} alt="avatar" className="nav-icon nav-profile-image" />
+                                <span className="nav-texts">Me
+                                    <span><ProfileDropDown className="profile-drop-icon"/></span>
+                                </span>
                             </Link>
                         </div>
                     </div>
