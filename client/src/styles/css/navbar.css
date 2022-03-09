@@ -275,6 +275,8 @@
 .navbar .navcontainer .navflex .navright .nav-work .nav-dropdown {
   display: none;
   position: absolute;
+  top: 60px;
+  right: 20px;
   background-color: #ff0000;
   height: 400px;
   min-width: 160px;
