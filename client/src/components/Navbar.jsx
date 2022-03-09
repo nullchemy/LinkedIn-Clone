@@ -14,18 +14,23 @@ import {  ReactComponent as More } from '../assets/svg/nav-more.svg'
 import ProfileImage from '../assets/images/kibet.png'
 
 const Navbar = () => {
+    let width = screen.width;
     const navDrop = () => {
-        document.querySelector(".nav-dropdown").classList.toggle("show");
+        if(width < 920){
+            document.querySelector(".nav-dropdown").classList.toggle("show");
+        }
     }
     window.onClick = function(event) {
-        if (!event.target.matches('.nav-more')) {
-            var dropdowns = document.getElementsByClassName("nav-dropdown");
-            var i;
-            for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
-            }
+        if(width < 920){
+            if (!event.target.matches('.nav-more')) {
+                var dropdowns = document.getElementsByClassName("nav-dropdown");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+                }
             }
         }
     }
