@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '../styles/css/navbar.css'
 import useWindowDimensions from '../includes/dimensions'
 import {  ReactComponent as NavLogo } from '../assets/svg/navlogo.svg'
@@ -16,6 +16,11 @@ import ProfileImage from '../assets/images/kibet.png'
 
 const Navbar = () => {
     const { width } = useWindowDimensions();
+    useEffect(()=>{
+        if(width < 920){
+            document.querySelector(".nav-dropdown").classList.remove("show");
+        }
+    }, [width]);
     console.log(width);
     const navDrop = () => {
         if(width < 920){
