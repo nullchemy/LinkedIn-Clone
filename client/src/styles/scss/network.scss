@@ -1,0 +1,210 @@
+.container {
+  margin: 0px 8%;
+  margin-top: 25px;
+  .row {
+    display: grid;
+    grid-template-columns: 1.5fr 4fr;
+    grid-gap: 1rem;
+    align-items: flex-start;
+    .aside {
+      background: #e7e6e6;
+      border: 1px solid #e7e6e6;
+      border-radius: 5px;
+      padding: 12px;
+      .asideHeader {
+        .asideHeaderTitle {
+          font-size: 15px;
+          font-weight: normal;
+          color: #505050;
+          padding-bottom: 10px;
+          cursor: pointer;
+        }
+      }
+
+      .asideNavigation {
+        .asideNavLinksContainer {
+          height: 20px;
+          overflow: hidden;
+          transition: 0.3s height;
+          .asideNavLinks {
+            .asideNavItem {
+              .asideNavLink {
+                display: block;
+                margin-bottom: 15px;
+                .asideNavIcon {
+                  margin-right: 12px;
+                  font-size: 17px;
+                  color: #6b6b6b;
+                }
+                .asideNavLinkText {
+                  font-size: 14px;
+                  color: #7c7c7c;
+                }
+              }
+            }
+          }
+        }
+        .asideNavLinksToggler {
+          margin-top: 15px;
+          .toggleBtn {
+            background: none;
+            border: 0;
+            outline: none;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            .asideTogglerIcon {
+              font-size: 17px;
+              color: #6b6b6b;
+            }
+            .asideTogglerText {
+              color: #7c7c7c;
+              font-size: 14px;
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+      .aside-footer {
+        text-align: center;
+        color: #1038ec;
+        font-weight: 600;
+        padding: 8px 0;
+        margin-top: 10px;
+        border-top: 2px solid #fff;
+        font-size: 14px;
+        border-bottom: 2px solid #fff;
+      }
+    }
+    .main {
+      background: #e7e6e6;
+      border: 1px solid #e7e6e6;
+      border-radius: 2px;
+      padding: 10px;
+      .followSection {
+        .followSectionHeader {
+          display: flex;
+          justify-content: space-between;
+          padding: 10px 0;
+          .followHeading {
+            color: #505050;
+            font-size: 16px;
+            font-weight: normal;
+          }
+          .followSectionBtn {
+            color: #505050;
+            border: 0;
+            cursor: pointer;
+          }
+        }
+        .followSectionRow {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          gap: 1rem;
+          .col {
+            flex-basis: 200px;
+            flex-grow: 1;
+            .card {
+              display: flex;
+              flex-direction: column;
+              border: 2px solid #e7e6e6;
+              padding: 10px 10px;
+              border-radius: 10px;
+              cursor: pointer;
+              position: relative;
+              .removeUserAction {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                z-index: 1;
+                width: 30px;
+                height: 30px;
+                line-height: 30px;
+                background: rgba(0, 0, 0, 0.25);
+                border-radius: 50%;
+                text-align: center;
+                color: #fff;
+              }
+              &:hover {
+                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+              }
+              .banner {
+                position: relative;
+                width: 100%;
+                height: 60px;
+
+                .bannerImg {
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                }
+              }
+              .userAvatar {
+                width: 67px;
+                height: 67px;
+                margin-top: -40px;
+                margin-left: 12px;
+                z-index: 1;
+                .userAvatarImg {
+                  width: 100%;
+                  height: 100%;
+                  border-radius: 50%;
+                  object-fit: cover;
+                }
+              }
+              .userName {
+                font-size: 15px;
+                color: #292929;
+                margin-top: 5px;
+                font-weight: 500;
+
+                .fakeLogo {
+                  padding: 1px 3px;
+                  color: #ffff;
+                  background: #0a66c2;
+                  font-weight: 600;
+                  border-radius: 4px;
+                }
+              }
+              .jobTitle {
+                color: #7c7c7c;
+                font-size: 13px;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+              }
+              .tags {
+                font-size: 14px;
+                color: #7c7c7c;
+                margin: 20px 0 10px;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+              }
+              .userAction {
+                .followBtn {
+                  background: none;
+                  color: #0a66c2;
+                  border: 1px solid #0a66c2;
+                  border-radius: 20px;
+                  width: 100%;
+                  padding: 10px;
+                  cursor: pointer;
+                  font-weight: 600;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
