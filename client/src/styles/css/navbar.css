@@ -290,7 +290,6 @@
 }
 
 .navbar .navcontainer .navflex .navright .nav-work .nav-dropdown .drop-nav-flex {
-  visibility: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
