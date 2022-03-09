@@ -1,4 +1,5 @@
 .navbar{
+    width: 100%;
     height: 54px;
     background-color: #fff;
     .navcontainer{
@@ -31,6 +32,7 @@
                         width: 15px;
                         margin-left: 10px;
                         color: #00000099;
+                        cursor: pointer;
                     }
                     .navsearchInput{
                         position: absolute;
@@ -163,8 +165,87 @@
                         list-style-type: none;
                         text-align: center;
                     }
+                    .nav-more{
+                        padding-top: 5px;
+                        width: 24px;
+                        height: 24px !important;
+                        display: none;
+                        margin: 0 20px;
+                        position: relative;
+                        .nav-icon{
+                            height: 24px;
+                            transform: scale(1);
+                            transition: transform .2s ease-in-out;
+                            width: 24px;
+                            font-size: 1.2rem;
+                            font-weight: 400;
+                            cursor: pointer;
+                            line-height: 1.5;
+                        }
+                    }
                 }
             }
         }
     }
+}
+
+//responsive design
+@media(max-width: 1000px){
+    .navsearch{
+        .navsearchInput{
+            display: none;
+        }
+    }
+    .nav-link{
+        .nav-icon{
+            height: 20px !important;
+            width: 20px !important;
+        }
+        .nav-texts{
+            display: none !important;
+        }
+    }
+    .nav-link::after{
+        display: none !important;
+    }
+}
+@media(max-width: 920px){
+    .nav-more{
+        display: unset !important;
+    }
+    .nav-premium{
+        display: none !important;
+    }
+}
+@media(max-width: 840px){
+    .nav-work{
+        border: none !important;
+    }
+    .nav-works{
+        display: none !important;
+    }
+}
+@media(max-width: 750px){
+    .prof-link-nav{
+        display: none !important;
+    }
+}
+@media(max-width: 710px){
+    .notif-link-nav{
+        display: none !important;
+    }
+}
+@media(max-width: 608px){
+    .messaging-link-nav{
+        display: none !important;
+    }
+}
+@media(max-width: 768px){
+    
+}
+@media(max-width: 480px){
+
+}
+@media(max-width: 320px){
+
 }
