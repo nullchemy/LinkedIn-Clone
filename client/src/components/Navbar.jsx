@@ -14,6 +14,9 @@ import {  ReactComponent as More } from '../assets/svg/nav-more.svg'
 import ProfileImage from '../assets/images/kibet.png'
 
 const Navbar = () => {
+    const navDrop = () => {
+        document.querySelector(".nav-dropdown").classList.toggle("show");
+    }
     window.onclick = function(event) {
         if (!event.target.matches('.nav-more')) {
             var dropdowns = document.getElementsByClassName("nav-dropdown");
@@ -82,7 +85,7 @@ const Navbar = () => {
                         <Link to="" className="nav-premium">
                             Try premium for <br/>free
                         </Link>
-                        <div className="nav-more">
+                        <div className="nav-more" onClick={()=>{navDrop()}}>
                             <More className="nav-icon" />
                         </div>
                         <div className="nav-dropdown">
