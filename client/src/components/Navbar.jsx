@@ -89,15 +89,15 @@ const Navbar = () => {
                             <More className="nav-icon" />
                         </div>
                         <div className="nav-dropdown">
-                            <Link to="/messaging" className="nav-link messaging-link-nav">
+                            <Link to="/messaging" className="nav-link messaging-link-nav-drop">
                                 <Messaging className="nav-icon" />
                                 <span className="nav-texts">Messaging</span>
                             </Link>
-                            <Link to="/notifications" className="nav-link notif-link-nav">
+                            <Link to="/notifications" className="nav-link notif-link-nav-drop">
                                 <Notifications className="nav-icon" />
                                 <span className="nav-texts">Notifications</span>
                             </Link>
-                            <Link to="/profile" className="nav-link prof-link-nav">
+                            <Link to="/profile" className="nav-link prof-link-nav-drop">
                                 <img src={ProfileImage} alt="avatar" className="nav-icon nav-profile-image" />
                                 <span className="nav-texts">Me
                                     <span><ProfileDropDown className="profile-drop-icon"/></span>
