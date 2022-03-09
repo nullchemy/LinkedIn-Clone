@@ -189,7 +189,7 @@
                         position: absolute;
                         top: 60px;
                         right: 20px;
-                        background-color: #ff0000;
+                        background-color: #ffffff;
                         height: 400px;
                         min-width: 160px;
                         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -200,7 +200,7 @@
         }
     }
 }
-.show {display:unset;}
+.show {display:unset !important;}
 
 //responsive design
 @media(max-width: 1000px){

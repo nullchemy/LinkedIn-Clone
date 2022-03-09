@@ -277,7 +277,7 @@
   position: absolute;
   top: 60px;
   right: 20px;
-  background-color: #ff0000;
+  background-color: #ffffff;
   height: 400px;
   min-width: 160px;
   -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -286,7 +286,7 @@
 }
 
 .show {
-  display: unset;
+  display: unset !important;
 }
 
 @media (max-width: 1000px) {
