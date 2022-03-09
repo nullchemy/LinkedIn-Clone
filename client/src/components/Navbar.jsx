@@ -17,7 +17,7 @@ const Navbar = () => {
     const navDrop = () => {
         document.querySelector(".nav-dropdown").classList.toggle("show");
     }
-    window.onclick = function(event) {
+    window.onClick = function(event) {
         if (!event.target.matches('.nav-more')) {
             var dropdowns = document.getElementsByClassName("nav-dropdown");
             var i;
