@@ -14,6 +14,18 @@ import {  ReactComponent as More } from '../assets/svg/nav-more.svg'
 import ProfileImage from '../assets/images/kibet.png'
 
 const Navbar = () => {
+    window.onclick = function(event) {
+        if (!event.target.matches('.nav-more')) {
+            var dropdowns = document.getElementsByClassName("nav-dropdown");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+            }
+        }
+    }
   return (
     <div className="navbar">
         <div className="navcontainer">
@@ -74,7 +86,7 @@ const Navbar = () => {
                             <More className="nav-icon" />
                         </div>
                         <div className="nav-dropdown">
-                            
+
                         </div>
                     </div>
                 </div>
