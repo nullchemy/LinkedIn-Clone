@@ -15,7 +15,7 @@ import {  ReactComponent as More } from '../assets/svg/nav-more.svg'
 import ProfileImage from '../assets/images/kibet.png'
 
 const Navbar = () => {
-    const { height, width } = useWindowDimensions();
+    const { width } = useWindowDimensions();
     console.log(width);
     const navDrop = () => {
         if(width < 920){
