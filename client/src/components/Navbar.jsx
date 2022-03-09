@@ -73,6 +73,9 @@ const Navbar = () => {
                         <div className="nav-more">
                             <More className="nav-icon" />
                         </div>
+                        <div className="nav-dropdown">
+                            
+                        </div>
                     </div>
                 </div>
             </div>
