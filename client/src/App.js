@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from './components/Navbar'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
 import Home from './routes/Feed'
 import Jobs from './routes/Jobs'
 import Messaging from './routes/Messaging'
@@ -18,6 +18,7 @@ function App() {
         <Navbar/>
         <Routes>
           <Route path="/feed" element={<Home />}></Route>
+          <Route path="/" element={<Navigate to="/feed" />}></Route>
           <Route path="/jobs" element={<Jobs />}></Route>
           <Route path="/messaging" element={<Messaging />}></Route>
           <Route path="/network" element={<Network />}></Route>
