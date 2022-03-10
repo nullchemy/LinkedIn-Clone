@@ -1,0 +1,255 @@
+.mainFeed {
+  .mainFeedRow {
+    display: grid;
+    grid-template-columns: 1fr 2.5fr 1.5fr;
+    gap: 2rem;
+
+    .mainFeedLeftCol {
+      .leftBar {
+        .card {
+          display: flex;
+          flex-direction: column;
+          background: #ffffff;
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+          border-radius: 10px;
+          padding-bottom: 10px;
+          overflow: hidden;
+          .userBanner {
+            position: relative;
+            width: 100%;
+            height: 60px;
+            .bannerImg {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+          .userProfile {
+            width: 67px;
+            height: 67px;
+            margin-top: -40px;
+            margin-left: auto;
+            margin-right: auto;
+            z-index: 2;
+            .userProfileImg {
+              width: 100%;
+              height: 100%;
+              border-radius: 50%;
+              object-fit: cover;
+            }
+          }
+          .cardBody {
+            padding: 20px 10px;
+            text-align: center;
+            .userName {
+              color: #505050;
+            }
+            .updatePhotoBtn {
+              color: #0a66c2;
+              border: 0;
+              background: none;
+              outline: none;
+              cursor: pointer;
+            }
+          }
+          .cardFooter {
+            .userListItems {
+              .networkRow {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+              }
+
+              .userListItem {
+                display: block;
+                cursor: pointer;
+                padding: 13px 13px;
+
+                border-top: 1px solid #d1d0d0;
+                .userListItemTitle {
+                  color: #a09e9e;
+                  font-size: 14px;
+                  font-weight: normal;
+                  text-transform: capitalize;
+                }
+                .userListItemText {
+                  color: #3b3b3b;
+                  font-size: 12px;
+                  font-weight: 600;
+                  white-space: nowrap;
+                }
+                &:nth-child(1) {
+                  display: flex;
+                  justify-content: space-between;
+                }
+              }
+              .networkIcon {
+                color: #292929;
+              }
+              .promotionIcon {
+                color: #e77407;
+                margin-right: 10px;
+              }
+              .fa-bookmark {
+                margin-right: 10px;
+                color: #505050;
+              }
+            }
+          }
+        }
+        .sidebarFooter {
+          background: #fff;
+          border-radius: 10px;
+          margin-top: 20px;
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+          padding: 10px 15px;
+          .sidebarNavLinks {
+            .sidebarNavItem {
+              .sidebarNavLink {
+                font-size: 14px;
+                display: block;
+                color: #0a66c2;
+                margin: 10px 0;
+                &.flex {
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  .fa-plus {
+                    color: #505050;
+                  }
+                }
+              }
+            }
+          }
+          .sidebarFooterActions {
+            text-align: center;
+            .discoverMoreBtn {
+              color: #505050;
+              border: none;
+              outline: none;
+              background: none;
+              font-size: 14px;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+    //     .mainFeedCenter {
+
+    //     }
+    .mainFeedRightCol {
+      .rightBar {
+        .newsCard {
+          background: #ffffff;
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+          border-radius: 10px;
+          padding: 10px 10px;
+          .newsCardHeader {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .headerTitle {
+              font-size: 14px;
+              color: #505050;
+              font-weight: 600;
+            }
+          }
+          .newsCardBody {
+            height: 231px;
+            transition: 0.3s;
+            overflow: hidden;
+            .newsList {
+              .newsListItem {
+                .newsHeader {
+                  a {
+                    font-size: 14px;
+                    font-weight: 600;
+                    color: #505050;
+                  }
+                }
+                .newsInfo {
+                  font-size: 12px;
+                  color: #a09e9e;
+                }
+              }
+            }
+          }
+          .newsCardFooter {
+            margin-top: 10px;
+            .shoreMoreBtn {
+              border: none;
+              background: none;
+              outline: none;
+              color: #505050;
+              cursor: pointer;
+              font-size: 15px;
+              i {
+                margin-left: 5px;
+                line-height: 5px;
+              }
+            }
+          }
+        }
+        .promotionsCard {
+          background: #ffffff;
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+          border-radius: 10px;
+          padding: 10px 10px;
+          margin: 20px 0;
+          .promotionsCardHeader {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .headerTitle {
+              font-size: 14px;
+              color: #505050;
+              font-weight: 600;
+            }
+          }
+          .promotionLists {
+            .promotionListItem {
+              display: flex;
+              align-items: center;
+              padding: 10px 10px;
+              gap: 5px;
+              justify-content: space-between;
+              .promotionImgContainer {
+                width: 100px;
+                height: 60px;
+                border-radius: 5px;
+                overflow: hidden;
+                .promotionImg {
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                }
+              }
+              .promotionInfo {
+                .promotionTitle {
+                  font-size: 14px;
+                  font-weight: 600;
+                  color: #505050;
+                  margin-bottom: 2px;
+                }
+                .promotionText {
+                  font-size: 12px;
+                  color: #a09e9e;
+                }
+              }
+              .externalLink {
+                .fa-chevron-right {
+                  color: #292929;
+                  font-weight: 700;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

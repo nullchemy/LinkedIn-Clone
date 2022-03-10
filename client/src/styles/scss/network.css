@@ -1,9 +1,4 @@
-.container {
-  margin: 0px 8%;
-  margin-top: 25px;
-}
-
-.container .row {
+.row {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1.5fr 4fr;
@@ -14,14 +9,14 @@
           align-items: flex-start;
 }
 
-.container .row .aside {
+.row .aside {
   background: #e7e6e6;
   border: 1px solid #e7e6e6;
   border-radius: 5px;
   padding: 12px;
 }
 
-.container .row .aside .asideHeader .asideHeaderTitle {
+.row .aside .asideHeader .asideHeaderTitle {
   font-size: 15px;
   font-weight: normal;
   color: #505050;
@@ -29,34 +24,34 @@
   cursor: pointer;
 }
 
-.container .row .aside .asideNavigation .asideNavLinksContainer {
+.row .aside .asideNavigation .asideNavLinksContainer {
   height: 20px;
   overflow: hidden;
   -webkit-transition: 0.3s height;
   transition: 0.3s height;
 }
 
-.container .row .aside .asideNavigation .asideNavLinksContainer .asideNavLinks .asideNavItem .asideNavLink {
+.row .aside .asideNavigation .asideNavLinksContainer .asideNavLinks .asideNavItem .asideNavLink {
   display: block;
   margin-bottom: 15px;
 }
 
-.container .row .aside .asideNavigation .asideNavLinksContainer .asideNavLinks .asideNavItem .asideNavLink .asideNavIcon {
+.row .aside .asideNavigation .asideNavLinksContainer .asideNavLinks .asideNavItem .asideNavLink .asideNavIcon {
   margin-right: 12px;
   font-size: 17px;
   color: #6b6b6b;
 }
 
-.container .row .aside .asideNavigation .asideNavLinksContainer .asideNavLinks .asideNavItem .asideNavLink .asideNavLinkText {
+.row .aside .asideNavigation .asideNavLinksContainer .asideNavLinks .asideNavItem .asideNavLink .asideNavLinkText {
   font-size: 14px;
   color: #7c7c7c;
 }
 
-.container .row .aside .asideNavigation .asideNavLinksToggler {
+.row .aside .asideNavigation .asideNavLinksToggler {
   margin-top: 15px;
 }
 
-.container .row .aside .asideNavigation .asideNavLinksToggler .toggleBtn {
+.row .aside .asideNavigation .asideNavLinksToggler .toggleBtn {
   background: none;
   border: 0;
   outline: none;
@@ -69,18 +64,18 @@
   cursor: pointer;
 }
 
-.container .row .aside .asideNavigation .asideNavLinksToggler .toggleBtn .asideTogglerIcon {
+.row .aside .asideNavigation .asideNavLinksToggler .toggleBtn .asideTogglerIcon {
   font-size: 17px;
   color: #6b6b6b;
 }
 
-.container .row .aside .asideNavigation .asideNavLinksToggler .toggleBtn .asideTogglerText {
+.row .aside .asideNavigation .asideNavLinksToggler .toggleBtn .asideTogglerText {
   color: #7c7c7c;
   font-size: 14px;
   margin-right: 10px;
 }
 
-.container .row .aside .aside-footer {
+.row .aside .aside-footer {
   text-align: center;
   color: #1038ec;
   font-weight: 600;
@@ -91,14 +86,14 @@
   border-bottom: 2px solid #fff;
 }
 
-.container .row .main {
+.row .main {
   background: #e7e6e6;
   border: 1px solid #e7e6e6;
   border-radius: 2px;
   padding: 10px;
 }
 
-.container .row .main .followSection .followSectionHeader {
+.row .main .followSection .followSectionHeader {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -108,19 +103,19 @@
   padding: 10px 0;
 }
 
-.container .row .main .followSection .followSectionHeader .followHeading {
+.row .main .followSection .followSectionHeader .followHeading {
   color: #505050;
   font-size: 16px;
   font-weight: normal;
 }
 
-.container .row .main .followSection .followSectionHeader .followSectionBtn {
+.row .main .followSection .followSectionHeader .followSectionBtn {
   color: #505050;
   border: 0;
   cursor: pointer;
 }
 
-.container .row .main .followSection .followSectionRow {
+.row .main .followSection .followSectionRow {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -133,7 +128,7 @@
   gap: 1rem;
 }
 
-.container .row .main .followSection .followSectionRow .col {
+.row .main .followSection .followSectionRow .col {
   -ms-flex-preferred-size: 200px;
       flex-basis: 200px;
   -webkit-box-flex: 1;
@@ -141,7 +136,7 @@
           flex-grow: 1;
 }
 
-.container .row .main .followSection .followSectionRow .col .card {
+.row .main .followSection .followSectionRow .col .card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -156,7 +151,7 @@
   position: relative;
 }
 
-.container .row .main .followSection .followSectionRow .col .card .removeUserAction {
+.row .main .followSection .followSectionRow .col .card .removeUserAction {
   position: absolute;
   top: 20px;
   right: 20px;
@@ -170,18 +165,18 @@
   color: #fff;
 }
 
-.container .row .main .followSection .followSectionRow .col .card:hover {
+.row .main .followSection .followSectionRow .col .card:hover {
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
           box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
 }
 
-.container .row .main .followSection .followSectionRow .col .card .banner {
+.row .main .followSection .followSectionRow .col .card .banner {
   position: relative;
   width: 100%;
   height: 60px;
 }
 
-.container .row .main .followSection .followSectionRow .col .card .banner .bannerImg {
+.row .main .followSection .followSectionRow .col .card .banner .bannerImg {
   position: absolute;
   top: 0;
   left: 0;
@@ -191,7 +186,7 @@
      object-fit: cover;
 }
 
-.container .row .main .followSection .followSectionRow .col .card .userAvatar {
+.row .main .followSection .followSectionRow .col .card .userAvatar {
   width: 67px;
   height: 67px;
   margin-top: -40px;
@@ -199,7 +194,7 @@
   z-index: 1;
 }
 
-.container .row .main .followSection .followSectionRow .col .card .userAvatar .userAvatarImg {
+.row .main .followSection .followSectionRow .col .card .userAvatar .userAvatarImg {
   width: 100%;
   height: 100%;
   border-radius: 50%;
@@ -207,14 +202,14 @@
      object-fit: cover;
 }
 
-.container .row .main .followSection .followSectionRow .col .card .userName {
+.row .main .followSection .followSectionRow .col .card .userName {
   font-size: 15px;
   color: #292929;
   margin-top: 5px;
   font-weight: 500;
 }
 
-.container .row .main .followSection .followSectionRow .col .card .userName .fakeLogo {
+.row .main .followSection .followSectionRow .col .card .userName .fakeLogo {
   padding: 1px 3px;
   color: #ffff;
   background: #0a66c2;
@@ -222,7 +217,7 @@
   border-radius: 4px;
 }
 
-.container .row .main .followSection .followSectionRow .col .card .jobTitle {
+.row .main .followSection .followSectionRow .col .card .jobTitle {
   color: #7c7c7c;
   font-size: 13px;
   text-overflow: ellipsis;
@@ -232,7 +227,7 @@
   -webkit-line-clamp: 2;
 }
 
-.container .row .main .followSection .followSectionRow .col .card .tags {
+.row .main .followSection .followSectionRow .col .card .tags {
   font-size: 14px;
   color: #7c7c7c;
   margin: 20px 0 10px;
@@ -243,7 +238,7 @@
   -webkit-line-clamp: 2;
 }
 
-.container .row .main .followSection .followSectionRow .col .card .userAction .followBtn {
+.row .main .followSection .followSectionRow .col .card .userAction .followBtn {
   background: none;
   color: #0a66c2;
   border: 1px solid #0a66c2;

@@ -21,9 +21,9 @@ body {
   overflow-x: hidden !important;
   text-rendering: optimizeLegibility;
   -webkit-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  text-size-adjust: 100%;
+     -moz-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+          text-size-adjust: 100%;
   position: relative;
   z-index: 0 !important;
   scroll-behavior: smooth;
