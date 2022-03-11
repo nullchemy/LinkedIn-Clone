@@ -15,12 +15,6 @@ import {  ReactComponent as More } from '../assets/svg/nav-more.svg'
 import ProfileImage from '../assets/images/kibet.png'
 
 const Navbar = () => {
-    //const [activePageTab, setActivePageTab] = useState('home');
-
-    const changeActivePage = (page) => {
-        console.log(page);
-        //setActivePageTab(page);
-    };
     const { width } = useWindowDimensions();
     useEffect(()=>{
         if(width > 920){
