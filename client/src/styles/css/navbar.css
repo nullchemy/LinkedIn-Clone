@@ -157,12 +157,6 @@
   margin-bottom: -3px;
 }
 
-.navbar .navcontainer .navflex .navright .navigation .nav-group .nav-link .profileDetDrop {
-  width: 150px;
-  height: 200px;
-  background-color: #002bb8;
-}
-
 .navbar .navcontainer .navflex .navright .navigation .nav-group .activeTab::after {
   background: none repeat scroll 0 0 transparent;
   content: "";
@@ -194,6 +188,14 @@
   100% {
     width: 160%;
   }
+}
+
+.navbar .navcontainer .navflex .navright .navigation .nav-group .profileDetDrop {
+  width: 150px;
+  height: 200px;
+  position: absolute;
+  top: 60px;
+  background-color: #002bb8;
 }
 
 .navbar .navcontainer .navflex .navright .nav-work {
