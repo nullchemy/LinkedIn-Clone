@@ -44,6 +44,16 @@ const Navbar = () => {
                 }
             }
         }
+        if (!event.target.matches('.profileDetDrop')) {
+            var dropdowns = document.getElementsByClassName("nav-dropdown");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+            }
+        }
     }
   return (
     <div className="navbar">
@@ -98,7 +108,7 @@ const Navbar = () => {
                                 <span><ProfileDropDown className="profile-drop-icon"/></span>
                             </span>
                             <div className="profileDetDrop">
-                                
+
                             </div>
                         </Link>
                         <Link to="" className="nav-premium">
