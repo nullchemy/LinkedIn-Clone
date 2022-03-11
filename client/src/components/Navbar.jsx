@@ -65,29 +65,29 @@ const Navbar = () => {
                             <Link 
                                 to="/feed"
                                 className={isActive === 'home' ? 'pageActive nav-link': 'nav-link'}
-                                onClick={toggleActivePage} >
+                                onClick={toggleActivePage('home')} >
                                 <div className="nav-icon">
                                     <Home height="100%" width="100%" />
                                 </div>
                                 <span className="nav-texts">Home</span>
                             </Link>
-                            <Link to="/network" className={isActive === 'home' ? 'pageActive nav-link': 'nav-link'} onClick={toggleActivePage}>
+                            <Link to="/network" className={isActive === 'network' ? 'pageActive nav-link': 'nav-link'} onClick={toggleActivePage('network')}>
                                 <Network className="nav-icon" />
                                 <span className="nav-texts">My Network</span>
                             </Link>
-                            <Link to="/jobs" className={isActive === 'home' ? 'pageActive nav-link': 'nav-link'} onClick={toggleActivePage}>
+                            <Link to="/jobs" className={isActive === 'jobs' ? 'pageActive nav-link': 'nav-link'} onClick={toggleActivePage('jobs')}>
                                 <Jobs className="nav-icon" />
                                 <span className="nav-texts">Jobs</span>
                             </Link>
-                            <Link to="/messaging" className={isActive === 'home' ? 'pageActive nav-link messaging-link-nav': 'nav-link messaging-link-nav'} onClick={toggleActivePage}>
+                            <Link to="/messaging" className={isActive === 'messaging' ? 'pageActive nav-link messaging-link-nav': 'nav-link messaging-link-nav'} onClick={toggleActivePage('messaging')}>
                                 <Messaging className="nav-icon" />
                                 <span className="nav-texts">Messaging</span>
                             </Link>
-                            <Link to="/notifications" className={isActive === 'home' ? 'pageActive nav-link notif-link-nav': 'nav-link notif-link-nav'} onClick={toggleActivePage}>
+                            <Link to="/notifications" className={isActive === 'notifications' ? 'pageActive nav-link notif-link-nav': 'nav-link notif-link-nav'} onClick={toggleActivePage('notifications')}>
                                 <Notifications className="nav-icon" />
                                 <span className="nav-texts">Notifications</span>
                             </Link>
-                            <Link to="/profile"  className={isActive === 'home' ? 'pageActive nav-link prof-link-nav': 'nav-link prof-link-nav'} onClick={toggleActivePage}>
+                            <Link to="/profile"  className={isActive === 'profile' ? 'pageActive nav-link prof-link-nav': 'nav-link prof-link-nav'} onClick={toggleActivePage('profile')}>
                                 <img src={ProfileImage} alt="avatar" className="nav-icon nav-profile-image" />
                                 <span className="nav-texts">Me
                                     <span><ProfileDropDown className="profile-drop-icon"/></span>
