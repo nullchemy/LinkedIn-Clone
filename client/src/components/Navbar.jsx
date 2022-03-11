@@ -72,23 +72,23 @@ const Navbar = () => {
                                 </div>
                                 <span className="nav-texts">Home</span>
                             </Link>
-                            <Link to="/network" className={(activePageTab === 'network') ? 'pageActive nav-link': 'nav-link'} onClick={toggleActivePage('network')}>
+                            <Link to="/network" className="nav-link" onClick={toggleActivePage('network')}>
                                 <Network className="nav-icon" />
                                 <span className="nav-texts">My Network</span>
                             </Link>
-                            <Link to="/jobs" className={(activePageTab === 'jobs') ? 'pageActive nav-link': 'nav-link'} onClick={toggleActivePage('jobs')}>
+                            <Link to="/jobs" className="nav-link" onClick={toggleActivePage('jobs')}>
                                 <Jobs className="nav-icon" />
                                 <span className="nav-texts">Jobs</span>
                             </Link>
-                            <Link to="/messaging" className={(activePageTab === 'messaging') ? 'pageActive nav-link messaging-link-nav': 'nav-link messaging-link-nav'} onClick={toggleActivePage('messaging')}>
+                            <Link to="/messaging" className="nav-link messaging-link-nav" onClick={toggleActivePage('messaging')}>
                                 <Messaging className="nav-icon" />
                                 <span className="nav-texts">Messaging</span>
                             </Link>
-                            <Link to="/notifications" className={(activePageTab === 'notifications') ? 'pageActive nav-link notif-link-nav': 'nav-link notif-link-nav'} onClick={toggleActivePage('notifications')}>
+                            <Link to="/notifications" className="nav-link notif-link-nav" onClick={toggleActivePage('notifications')}>
                                 <Notifications className="nav-icon" />
                                 <span className="nav-texts">Notifications</span>
                             </Link>
-                            <Link to="/profile"  className={(activePageTab === 'profile') ? 'pageActive nav-link prof-link-nav': 'nav-link prof-link-nav'} onClick={toggleActivePage('profile')}>
+                            <Link to="/profile"  className="nav-link prof-link-nav" onClick={toggleActivePage('profile')}>
                                 <img src={ProfileImage} alt="avatar" className="nav-icon nav-profile-image" />
                                 <span className="nav-texts">Me
                                     <span><ProfileDropDown className="profile-drop-icon"/></span>
