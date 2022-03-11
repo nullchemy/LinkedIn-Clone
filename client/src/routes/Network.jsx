@@ -130,8 +130,8 @@ const Network = () => {
             <button className="followSectionBtn">See all</button>
           </div>
           <div className="followSectionRow">
-            {users.map((user) => (
-              <UserCard key={useridKey} {...user} />
+            {[...new Set(users)].map((user) => (
+              <UserCard key={user.id} {...user} />
             ))}
           </div>
         </section>
