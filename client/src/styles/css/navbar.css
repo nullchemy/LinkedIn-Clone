@@ -155,7 +155,7 @@
   margin-bottom: -3px;
 }
 
-.navbar .navcontainer .navflex .navright .navigation .nav-group .nav-link:nth-child(1):after {
+.navbar .navcontainer .navflex .navright .navigation .nav-group .activeTab::after {
   border-bottom: 2px solid black;
   content: "";
   bottom: 0;

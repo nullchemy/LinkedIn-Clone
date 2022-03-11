@@ -98,7 +98,7 @@
                                 }
                             }
                         }
-                        .nav-link:nth-child(1):after{
+                        .activeTab::after{
                             border-bottom: 2px solid black;
                             content: "";
                             bottom: 0;
