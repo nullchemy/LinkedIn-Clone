@@ -65,30 +65,29 @@ const Navbar = () => {
                         <div className="nav-group">
                             <Link 
                                 to="/feed"
-                                className="nav-link"
-                                onClick={()=>{changeActivePage('home')}} >
+                                className="nav-link" >
                                 <div className="nav-icon">
                                     <Home height="100%" width="100%" />
                                 </div>
                                 <span className="nav-texts">Home</span>
                             </Link>
-                            <Link to="/network" className="nav-link" onClick={changeActivePage('network')}>
+                            <Link to="/network" className="nav-link">
                                 <Network className="nav-icon" />
                                 <span className="nav-texts">My Network</span>
                             </Link>
-                            <Link to="/jobs" className="nav-link" onClick={changeActivePage('jobs')}>
+                            <Link to="/jobs" className="nav-link">
                                 <Jobs className="nav-icon" />
                                 <span className="nav-texts">Jobs</span>
                             </Link>
-                            <Link to="/messaging" className="nav-link messaging-link-nav" onClick={changeActivePage('messaging')}>
+                            <Link to="/messaging" className="nav-link messaging-link-nav">
                                 <Messaging className="nav-icon" />
                                 <span className="nav-texts">Messaging</span>
                             </Link>
-                            <Link to="/notifications" className="nav-link notif-link-nav" onClick={changeActivePage('notifications')}>
+                            <Link to="/notifications" className="nav-link notif-link-nav">
                                 <Notifications className="nav-icon" />
                                 <span className="nav-texts">Notifications</span>
                             </Link>
-                            <Link to="/profile"  className="nav-link prof-link-nav" onClick={changeActivePage('profile')}>
+                            <Link to="/profile"  className="nav-link prof-link-nav">
                                 <img src={ProfileImage} alt="avatar" className="nav-icon nav-profile-image" />
                                 <span className="nav-texts">Me
                                     <span><ProfileDropDown className="profile-drop-icon"/></span>
