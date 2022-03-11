@@ -65,7 +65,7 @@ const Navbar = () => {
                             <Link 
                                 to="/feed"
                                 className={(isActive === 'home') ? 'pageActive nav-link': 'nav-link'}
-                                onClick={toggleActivePage('home')} >
+                                onClick={()=>{toggleActivePage('home')}} >
                                 <div className="nav-icon">
                                     <Home height="100%" width="100%" />
                                 </div>
