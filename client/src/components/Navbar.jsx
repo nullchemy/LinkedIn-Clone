@@ -21,7 +21,6 @@ const Navbar = () => {
             document.querySelector(".nav-dropdown").classList.remove("show");
         }
     }, [width]);
-    console.log(width);
     const navDrop = () => {
         if(width < 920){
             document.querySelector(".nav-dropdown").classList.toggle("show");
