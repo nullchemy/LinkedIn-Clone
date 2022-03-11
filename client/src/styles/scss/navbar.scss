@@ -105,19 +105,18 @@
                             bottom: 0;
                             left: 0;
                             position: absolute;
-                            animation: tabactive;
+                            animation: tabactive 0.1s ease-in-out forwards;
                             transform: translateX(-20px);
-                            transition: transform .2s ease-in-out;
+                            transition: transform .3s ease-in-out;
                             width: calc(100% + 40px);
                             margin-bottom: -3px;
+                            transform-origin: left;
                         }
-                        @keyframes slide{
+                        @keyframes tabactive{
                             0%{
-                                transform-origin: left;
                                 transform: scalex(0%);
                             }
                             100%{
-                                transform-origin: left;
                                 transform: scalex(100%);
                             }
                         }
