@@ -185,8 +185,8 @@
   100% {
     -webkit-transform-origin: left;
             transform-origin: left;
-    -webkit-transform: scalex(100);
-            transform: scalex(100);
+    -webkit-transform: scalex(100%);
+            transform: scalex(100%);
   }
 }
 
@@ -200,8 +200,8 @@
   100% {
     -webkit-transform-origin: left;
             transform-origin: left;
-    -webkit-transform: scalex(100);
-            transform: scalex(100);
+    -webkit-transform: scalex(100%);
+            transform: scalex(100%);
   }
 }
 
