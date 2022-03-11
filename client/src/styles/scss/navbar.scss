@@ -105,7 +105,7 @@
                             bottom: 0;
                             left: 0;
                             position: absolute;
-                            animation: tabactive 0.1s ease-in-out forwards;
+                            animation: tabactive 0.4s ease-in-out forwards;
                             transform: translateX(-20px);
                             transition: transform .3s ease-in-out;
                             width: calc(100% + 40px);
@@ -114,7 +114,7 @@
                         }
                         @keyframes tabactive{
                             0%{
-                                transform: scalex(calc(0% - 20px));
+                                transform: scalex(20px);
                             }
                             100%{
                                 transform: scalex(80%);
