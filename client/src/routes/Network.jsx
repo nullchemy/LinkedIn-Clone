@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 import Sidebar from "../components/Sidebar";
 import UserCard from "../components/UserCard";
 import { users } from "../users";
-import "../styles/scss/network.css";
+import "../styles/css/network.css";
 const Network = () => {
   const [clicked, setClicked] = useState(false);
   const containerRef = useRef(null);

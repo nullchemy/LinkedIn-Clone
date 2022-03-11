@@ -1,4 +1,5 @@
 import React from "react";
+import Preloader from './components/Preloader'
 import Navbar from "./components/Navbar";
 import {
   BrowserRouter as Router,
@@ -15,8 +16,25 @@ import Profile from "./routes/Profile";
 import NotFound from "./routes/Notfound";
 
 function App() {
+    //page pre loader
+    document.onreadystatechange = function() {
+      if (document.readyState !== "complete") {
+          document.querySelector(".Pagecontents").style.visibility = "hidden";
+          document.querySelector(".ppreloader").style.display = "unset";
+      } else {
+          setTimeout(() => {
+              document.querySelector(".ppreloader").style.display = "none";
+              document.querySelector(".Pagecontents").style.visibility = "visible";
+              document.querySelector(".Pagecontents").style.display = "unset";
+          }, 4000);
+      }
+    };
   return (
     <div className="App">
+      <div className="ppreloader">
+        <Preloader />
+      </div>
+      <div className="Pagecontents">
       <Router>
         <Navbar />
         <div className="container">
@@ -32,6 +50,7 @@ function App() {
           </Routes>
         </div>
       </Router>
+      </div>
     </div>
   );
 }

@@ -1,0 +1,124 @@
+.preloader {
+  height: 100vh;
+  background: #f5f5f5;
+  position: relative;
+}
+
+.preloader .prewrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  margin: 0 !important;
+}
+
+.preloader .prewrapper .precontainer .preLogo {
+  color: #0077B5;
+}
+
+.preloader .prewrapper .precontainer .preline {
+  height: 3px;
+  width: 100%;
+  background: #e8e8e8;
+  margin-top: 30%;
+}
+
+.preloader .prewrapper .precontainer .preline .preinner {
+  width: 100%;
+  height: inherit;
+  background: #0077B5;
+  -webkit-animation: slide 2s ease-in-out infinite;
+          animation: slide 2s ease-in-out infinite;
+}
+
+@-webkit-keyframes slide {
+  0% {
+    -webkit-transform-origin: left;
+            transform-origin: left;
+    -webkit-transform: scalex(0.3);
+            transform: scalex(0.3);
+  }
+  25% {
+    -webkit-transform-origin: left;
+            transform-origin: left;
+    -webkit-transform: scalex(1);
+            transform: scalex(1);
+  }
+  26% {
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    -webkit-transform: scalex(1);
+            transform: scalex(1);
+  }
+  50% {
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    -webkit-transform: scalex(0.3);
+            transform: scalex(0.3);
+  }
+  75% {
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    -webkit-transform: scalex(1);
+            transform: scalex(1);
+  }
+  76% {
+    -webkit-transform-origin: left;
+            transform-origin: left;
+    -webkit-transform: scalex(1);
+            transform: scalex(1);
+  }
+  100% {
+    -webkit-transform-origin: left;
+            transform-origin: left;
+    -webkit-transform: scalex(0.3);
+            transform: scalex(0.3);
+  }
+}
+
+@keyframes slide {
+  0% {
+    -webkit-transform-origin: left;
+            transform-origin: left;
+    -webkit-transform: scalex(0.3);
+            transform: scalex(0.3);
+  }
+  25% {
+    -webkit-transform-origin: left;
+            transform-origin: left;
+    -webkit-transform: scalex(1);
+            transform: scalex(1);
+  }
+  26% {
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    -webkit-transform: scalex(1);
+            transform: scalex(1);
+  }
+  50% {
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    -webkit-transform: scalex(0.3);
+            transform: scalex(0.3);
+  }
+  75% {
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    -webkit-transform: scalex(1);
+            transform: scalex(1);
+  }
+  76% {
+    -webkit-transform-origin: left;
+            transform-origin: left;
+    -webkit-transform: scalex(1);
+            transform: scalex(1);
+  }
+  100% {
+    -webkit-transform-origin: left;
+            transform-origin: left;
+    -webkit-transform: scalex(0.3);
+            transform: scalex(0.3);
+  }
+}
+/*# sourceMappingURL=preloader.css.map */

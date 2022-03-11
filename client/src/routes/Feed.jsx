@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import Sidebar from "../components/Sidebar";
-import "../styles/scss/feed.css";
+import "../styles/css/feed.css";
 import { Link } from "react-router-dom";
 import NewsListItem from "../components/NewsListItem";
 import Footer from "../components/Footer";
@@ -87,7 +87,7 @@ const Feed = () => {
                         viewBox="0 0 16 16"
                         data-supported-dps="16x16"
                         fill="currentColor"
-                        class="mercado-match"
+                        className="mercado-match"
                         width="16"
                         height="16"
                         focusable="false"
@@ -136,7 +136,7 @@ const Feed = () => {
                           viewBox="0 0 24 24"
                           data-supported-dps="24x24"
                           fill="currentColor"
-                          class="mercado-match"
+                          className="mercado-match"
                           width="24"
                           height="24"
                           focusable="false"
@@ -155,7 +155,7 @@ const Feed = () => {
                           viewBox="0 0 24 24"
                           data-supported-dps="24x24"
                           fill="currentColor"
-                          class="mercado-match"
+                          className="mercado-match"
                           width="24"
                           height="24"
                           focusable="false"
@@ -174,7 +174,7 @@ const Feed = () => {
                           viewBox="0 0 24 24"
                           data-supported-dps="24x24"
                           fill="currentColor"
-                          class="mercado-match"
+                          className="mercado-match"
                           width="24"
                           height="24"
                           focusable="false"
@@ -193,7 +193,7 @@ const Feed = () => {
                           viewBox="0 0 24 24"
                           data-supported-dps="24x24"
                           fill="currentColor"
-                          class="mercado-match"
+                          className="mercado-match"
                           width="24"
                           height="24"
                           focusable="false"
@@ -224,7 +224,7 @@ const Feed = () => {
                     viewBox="0 0 16 16"
                     data-supported-dps="16x16"
                     fill="currentColor"
-                    class="mercado-match"
+                    className="mercado-match"
                     width="16"
                     height="16"
                     focusable="false"
@@ -256,7 +256,7 @@ const Feed = () => {
                         viewBox="0 0 16 16"
                         data-supported-dps="16x16"
                         fill="currentColor"
-                        class="mercado-match"
+                        className="mercado-match"
                         width="16"
                         height="16"
                         focusable="false"
@@ -271,7 +271,7 @@ const Feed = () => {
                         viewBox="0 0 16 16"
                         data-supported-dps="16x16"
                         fill="currentColor"
-                        class="mercado-match"
+                        className="mercado-match"
                         width="16"
                         height="16"
                         focusable="false"
@@ -292,7 +292,7 @@ const Feed = () => {
                     viewBox="0 0 24 24"
                     data-supported-dps="24x24"
                     fill="currentColor"
-                    class="mercado-match"
+                    className="mercado-match"
                     width="24"
                     height="24"
                     focusable="false"
