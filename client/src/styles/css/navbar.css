@@ -177,23 +177,27 @@
 
 @-webkit-keyframes tabactive {
   0% {
-    -webkit-transform: scalex(20px);
-            transform: scalex(20px);
+    -webkit-transform: scalex(-60px);
+            transform: scalex(-60px);
   }
   100% {
     -webkit-transform: scalex(80%);
             transform: scalex(80%);
+    -webkit-transform: translateX(-20px);
+            transform: translateX(-20px);
   }
 }
 
 @keyframes tabactive {
   0% {
-    -webkit-transform: scalex(20px);
-            transform: scalex(20px);
+    -webkit-transform: scalex(-60px);
+            transform: scalex(-60px);
   }
   100% {
     -webkit-transform: scalex(80%);
             transform: scalex(80%);
+    -webkit-transform: translateX(-20px);
+            transform: translateX(-20px);
   }
 }
 
