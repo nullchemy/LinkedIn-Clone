@@ -113,11 +113,11 @@
                         }
                         @keyframes tabactive{
                             0%{
-                                transform: scalex(-60px);
+                                width: 0;
                             }
                             100%{
-                                transform: scalex(80%);
-                                transform: translateX(-20px);
+                                width: 100%; 
+                                left: 0;
                             }
                         }
                     }
