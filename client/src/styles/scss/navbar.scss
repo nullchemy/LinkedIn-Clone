@@ -105,11 +105,21 @@
                             bottom: 0;
                             left: 0;
                             position: absolute;
-                            // transform: scaleX(100%);
+                            animation: tabactive;
                             transform: translateX(-20px);
                             transition: transform .2s ease-in-out;
                             width: calc(100% + 40px);
                             margin-bottom: -3px;
+                        }
+                        @keyframes slide{
+                            0%{
+                                transform-origin: left;
+                                transform: scalex(0%);
+                            }
+                            100%{
+                                transform-origin: left;
+                                transform: scalex(100);
+                            }
                         }
                     }
                 }
