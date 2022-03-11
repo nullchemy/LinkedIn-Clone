@@ -75,7 +75,7 @@ const Navbar = () => {
                                 <Jobs className="nav-icon" />
                                 <span className="nav-texts">Jobs</span>
                             </Link>
-                            <Link to="/messaging" className="nav-link messaging-link-nav">
+                            <Link to="/messaging" className={activeTab==='messaging'?"activeTab nav-link messaging-link-nav":"nav-link messaging-link-nav"} onClick={()=>{activePageTab('messaging')}}>
                                 <Messaging className="nav-icon" />
                                 <span className="nav-texts">Messaging</span>
                             </Link>
