@@ -18,7 +18,8 @@ const Navbar = () => {
     const [isActive, setActive] = useState('home');
 
     const toggleActivePage = (page) => {
-        setActive(page);
+        console.log(page);
+        // setActive(page);
     };
     const { width } = useWindowDimensions();
     useEffect(()=>{
