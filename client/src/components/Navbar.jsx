@@ -17,9 +17,11 @@ import ProfileImage from '../assets/images/kibet.png'
 const Navbar = () => {
     const [isActive, setActive] = useState('home');
 
-    const toggleActivePage = (page) => {
-        setActive(page);
-    };
+    useEffect(()=>{
+        const toggleActivePage = (page) => {
+            setActive(page);
+        };
+    })
     const { width } = useWindowDimensions();
     useEffect(()=>{
         if(width > 920){
