@@ -15,6 +15,11 @@ import {  ReactComponent as More } from '../assets/svg/nav-more.svg'
 import ProfileImage from '../assets/images/kibet.png'
 
 const Navbar = () => {
+    const [isActive, setActive] = useState(false);
+
+    const toggleClass = () => {
+        setActive(!isActive);
+    };
     const { width } = useWindowDimensions();
     useEffect(()=>{
         if(width > 920){
@@ -57,7 +62,10 @@ const Navbar = () => {
                 <div className="navright">
                     <div className="navigation">
                         <div className="nav-group">
-                            <Link to="/feed" className="nav-link">
+                            <Link 
+                                to="/feed"
+                                className={isActive ? 'your_className nav-link': 'nav-link'}
+                                onClick={toggleClass} >
                                 <div className="nav-icon">
                                     <Home height="100%" width="100%" />
                                 </div>
