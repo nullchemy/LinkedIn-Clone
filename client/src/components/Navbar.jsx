@@ -32,7 +32,7 @@ const Navbar = () => {
         }
     }
     const pnavDrop = () => {
-        document.querySelector(".nav-dropdown").classList.toggle("show");
+        document.querySelector(".profileDetDrop").classList.toggle("show");
     }
     window.onClick = function(event) {
         if(width < 920){
@@ -106,7 +106,7 @@ const Navbar = () => {
                     </div>
                     <div className="nav-work">
                         <Link to="/profile" className="nav-link nav-works">
-                            <NavWork className="nav-icon" />
+                            <NavWork onClick={()=>{pnavDrop()}} className="nav-icon" />
                             <span className="nav-texts">Me
                                 <span><ProfileDropDown className="profile-drop-icon"/></span>
                             </span>
