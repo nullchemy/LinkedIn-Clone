@@ -162,13 +162,13 @@
   content: "";
   display: block;
   height: 2px;
-  background: -webkit-gradient(linear, right top, left top, from(#f69ec4), to(#f9dd94));
-  background: linear-gradient(to left, #f69ec4, #f9dd94 100%);
+  background: -webkit-gradient(linear, right top, left top, from(#494949), to(#353535));
+  background: linear-gradient(to left, #494949, #353535 100%);
   -webkit-transition: width .5s ease 0s, right .5s ease 0s;
   transition: width .5s ease 0s, right .5s ease 0s;
   width: 0;
-  -webkit-animation: tabactive 0.4s ease-in-out forwards;
-          animation: tabactive 0.4s ease-in-out forwards;
+  -webkit-animation: tabactive 0.2s ease-in-out forwards;
+          animation: tabactive 0.2s ease-in-out forwards;
 }
 
 @-webkit-keyframes tabactive {
