@@ -191,10 +191,12 @@
 }
 
 .navbar .navcontainer .navflex .navright .navigation .nav-group .profileDetDrop {
-  width: 150px;
+  display: none;
+  width: 200px;
   height: 200px;
   position: absolute;
   top: 60px;
+  right: 0;
   background-color: #002bb8;
 }
 
