@@ -33,7 +33,7 @@ const Navbar = () => {
     }
     window.onClick = function(event) {
         if(width < 920){
-            if (!event.target.matches('.nav-more')) {
+            if (!event.target.matches('.nav-dropdown')) {
                 var dropdowns = document.getElementsByClassName("nav-dropdown");
                 var i;
                 for (i = 0; i < dropdowns.length; i++) {
@@ -45,7 +45,7 @@ const Navbar = () => {
             }
         }
         if (!event.target.matches('.profileDetDrop')) {
-            var dropdowns = document.getElementsByClassName("nav-dropdown");
+            var dropdowns = document.getElementsByClassName("profileDetDrop");
             var i;
             for (i = 0; i < dropdowns.length; i++) {
             var openDropdown = dropdowns[i];
