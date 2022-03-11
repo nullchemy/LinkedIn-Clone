@@ -83,11 +83,11 @@ const Navbar = () => {
                                 <Messaging className="nav-icon" />
                                 <span className="nav-texts">Messaging</span>
                             </Link>
-                            <Link to="/notifications" className="nav-link notif-link-nav">
+                            <Link to="/notifications" className={isActive ? 'pageActive nav-link notif-link-nav': 'nav-link notif-link-nav'}>
                                 <Notifications className="nav-icon" />
                                 <span className="nav-texts">Notifications</span>
                             </Link>
-                            <Link to="/profile" className="nav-link prof-link-nav">
+                            <Link to="/profile"  className={isActive ? 'pageActive nav-link prof-link-nav': 'nav-link prof-link-nav'}>
                                 <img src={ProfileImage} alt="avatar" className="nav-icon nav-profile-image" />
                                 <span className="nav-texts">Me
                                     <span><ProfileDropDown className="profile-drop-icon"/></span>
