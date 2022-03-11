@@ -67,7 +67,7 @@ const Navbar = () => {
                                 </div>
                                 <span className="nav-texts">Home</span>
                             </Link>
-                            <Link to="/network" className="nav-link">
+                            <Link to="/network" className="nav-link" onClick={()=>{activePageTab('network')}}>
                                 <Network className="nav-icon" />
                                 <span className="nav-texts">My Network</span>
                             </Link>
