@@ -15,7 +15,7 @@ import {  ReactComponent as More } from '../assets/svg/nav-more.svg'
 import ProfileImage from '../assets/images/kibet.png'
 
 const Navbar = () => {
-    const [isActive, setActive] = useState(false);
+    const [isActive, setActive] = useState('home');
 
     const toggleActivePage = () => {
         setActive(!isActive);
