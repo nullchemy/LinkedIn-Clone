@@ -31,6 +31,9 @@ const Navbar = () => {
             document.querySelector(".nav-dropdown").classList.toggle("show");
         }
     }
+    const pnavDrop = () => {
+        document.querySelector(".nav-dropdown").classList.toggle("show");
+    }
     window.onClick = function(event) {
         if(width < 920){
             if (!event.target.matches('.nav-dropdown')) {
