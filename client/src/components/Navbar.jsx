@@ -110,10 +110,10 @@ const Navbar = () => {
                             <span className="nav-texts">Me
                                 <span><ProfileDropDown className="profile-drop-icon"/></span>
                             </span>
-                            <div className="profileDetDrop">
-
-                            </div>
                         </Link>
+                        <div className="profileDetDrop">
+
+                        </div>
                         <Link to="" className="nav-premium">
                             Try premium for <br/>free
                         </Link>
