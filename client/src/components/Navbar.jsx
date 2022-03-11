@@ -64,22 +64,22 @@ const Navbar = () => {
                         <div className="nav-group">
                             <Link 
                                 to="/feed"
-                                className={isActive ? 'your_className nav-link': 'nav-link'}
+                                className={isActive ? 'pageActive nav-link': 'nav-link'}
                                 onClick={toggleClass} >
                                 <div className="nav-icon">
                                     <Home height="100%" width="100%" />
                                 </div>
                                 <span className="nav-texts">Home</span>
                             </Link>
-                            <Link to="/network" className="nav-link">
+                            <Link to="/network" className={isActive ? 'pageActive nav-link': 'nav-link'}>
                                 <Network className="nav-icon" />
                                 <span className="nav-texts">My Network</span>
                             </Link>
-                            <Link to="/jobs" className="nav-link">
+                            <Link to="/jobs" className={isActive ? 'pageActive nav-link': 'nav-link'}>
                                 <Jobs className="nav-icon" />
                                 <span className="nav-texts">Jobs</span>
                             </Link>
-                            <Link to="/messaging" className="nav-link messaging-link-nav">
+                            <Link to="/messaging" className={isActive ? 'pageActive nav-link messaging-link-nav': 'nav-link messaging-link-nav'}>
                                 <Messaging className="nav-icon" />
                                 <span className="nav-texts">Messaging</span>
                             </Link>
