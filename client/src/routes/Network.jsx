@@ -131,7 +131,7 @@ const Network = () => {
           </div>
           <div className="followSectionRow">
             {users.map((user) => (
-              <UserCard key={user.id+useridKey} {...user} />
+              <UserCard key={useridKey} {...user} />
             ))}
           </div>
         </section>
