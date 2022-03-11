@@ -9,6 +9,7 @@ const Network = () => {
   const [clicked, setClicked] = useState(false);
   const containerRef = useRef(null);
   const linksRef = useRef(null);
+  let useridKey = (new Date()).getTime().toString(36) + Math.random().toString(36).slice(2);
 
   useEffect(() => {
     const linksHeight = linksRef.current.getBoundingClientRect().height;
@@ -130,7 +131,7 @@ const Network = () => {
           </div>
           <div className="followSectionRow">
             {users.map((user) => (
-              <UserCard key={user.id++} {...user} />
+              <UserCard key={user.id+useridKey} {...user} />
             ))}
           </div>
         </section>
