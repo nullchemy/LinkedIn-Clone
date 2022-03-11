@@ -105,8 +105,8 @@ const Navbar = () => {
                         </div>
                     </div>
                     <div className="nav-work">
-                        <Link to="/profile" className="nav-link nav-works">
-                            <NavWork onClick={()=>{pnavDrop()}} className="nav-icon" />
+                        <Link to="/profile" className="nav-link nav-works" onClick={()=>{pnavDrop()}}>
+                            <NavWork className="nav-icon" />
                             <span className="nav-texts">Me
                                 <span><ProfileDropDown className="profile-drop-icon"/></span>
                             </span>
