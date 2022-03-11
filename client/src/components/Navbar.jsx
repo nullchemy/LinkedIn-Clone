@@ -97,12 +97,12 @@ const Navbar = () => {
                                 <Notifications className="nav-icon" />
                                 <span className="nav-texts">Notifications</span>
                             </Link>
-                            <Link to="/profile"  className="nav-link prof-link-nav"  onClick={()=>{pnavDrop()}}>
+                            <div  className="nav-link prof-link-nav"  onClick={()=>{pnavDrop()}}>
                                 <img src={ProfileImage} alt="avatar" className="nav-icon nav-profile-image" />
                                 <span className="nav-texts">Me
                                     <span><ProfileDropDown className="profile-drop-icon"/></span>
                                 </span>
-                            </Link>
+                            </div>
                             <div className="profileDetDrop">
 
                             </div>
