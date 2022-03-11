@@ -19,7 +19,7 @@ const Navbar = () => {
 
     const toggleActivePage = (page) => {
         console.log(page);
-        setActivePageTab(page);
+        //setActivePageTab(page);
     };
     const { width } = useWindowDimensions();
     useEffect(()=>{
