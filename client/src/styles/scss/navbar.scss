@@ -100,17 +100,16 @@
                             }
                         }
                         .activeTab::after{
-                            border-bottom: 2px solid black;
+                            background: none repeat scroll 0 0 transparent;
+                            bottom: 5;
                             content: "";
-                            bottom: 0;
-                            left: 0;
+                            display: block;
+                            height: 2px;
+                            right: 0;
                             position: absolute;
-                            animation: tabactive 0.4s ease-in-out forwards;
-                            transform: translateX(-20px);
-                            transition: transform .3s ease-in-out;
-                            width: calc(100% + 40px);
-                            margin-bottom: -3px;
-                            // transform-origin: left;
+                            background: linear-gradient(to left, #f69ec4, #f9dd94 100%);
+                            transition: width .5s ease 0s, right .5s ease 0s;
+                            width: 0;
                         }
                         @keyframes tabactive{
                             0%{

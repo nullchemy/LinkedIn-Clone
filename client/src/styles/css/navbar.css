@@ -158,21 +158,18 @@
 }
 
 .navbar .navcontainer .navflex .navright .navigation .nav-group .activeTab::after {
-  border-bottom: 2px solid black;
+  background: none repeat scroll 0 0 transparent;
+  bottom: 5;
   content: "";
-  bottom: 0;
-  left: 0;
+  display: block;
+  height: 2px;
+  right: 0;
   position: absolute;
-  -webkit-animation: tabactive 0.4s ease-in-out forwards;
-          animation: tabactive 0.4s ease-in-out forwards;
-  -webkit-transform: translateX(-20px);
-          transform: translateX(-20px);
-  -webkit-transition: -webkit-transform .3s ease-in-out;
-  transition: -webkit-transform .3s ease-in-out;
-  transition: transform .3s ease-in-out;
-  transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
-  width: calc(100% + 40px);
-  margin-bottom: -3px;
+  background: -webkit-gradient(linear, right top, left top, from(#f69ec4), to(#f9dd94));
+  background: linear-gradient(to left, #f69ec4, #f9dd94 100%);
+  -webkit-transition: width .5s ease 0s, right .5s ease 0s;
+  transition: width .5s ease 0s, right .5s ease 0s;
+  width: 0;
 }
 
 @-webkit-keyframes tabactive {
