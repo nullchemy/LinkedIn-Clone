@@ -97,24 +97,24 @@ const Navbar = () => {
                                 <Notifications className="nav-icon" />
                                 <span className="nav-texts">Notifications</span>
                             </Link>
-                            <Link to="/profile"  className="nav-link prof-link-nav">
+                            <Link to="/profile"  className="nav-link prof-link-nav"  onClick={()=>{pnavDrop()}}>
                                 <img src={ProfileImage} alt="avatar" className="nav-icon nav-profile-image" />
                                 <span className="nav-texts">Me
                                     <span><ProfileDropDown className="profile-drop-icon"/></span>
                                 </span>
                             </Link>
+                            <div className="profileDetDrop">
+
+                            </div>
                         </div>
                     </div>
                     <div className="nav-work">
-                        <Link to="/profile" className="nav-link nav-works" onClick={()=>{pnavDrop()}}>
+                        <Link to="/profile" className="nav-link nav-works">
                             <NavWork className="nav-icon" />
-                            <span className="nav-texts">Me
+                            <span className="nav-texts">Work
                                 <span><ProfileDropDown className="profile-drop-icon"/></span>
                             </span>
                         </Link>
-                        <div className="profileDetDrop">
-
-                        </div>
                         <Link to="" className="nav-premium">
                             Try premium for <br/>free
                         </Link>
