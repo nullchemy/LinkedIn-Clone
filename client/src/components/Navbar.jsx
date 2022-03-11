@@ -33,6 +33,7 @@ const Navbar = () => {
     }
     const pnavDrop = () => {
         document.querySelector(".profileDetDrop").classList.toggle("show");
+        console.log('clicked');
     }
     window.onClick = function(event) {
         if(width < 920){
