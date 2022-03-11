@@ -61,7 +61,7 @@ const Navbar = () => {
                 <div className="navright">
                     <div className="navigation">
                         <div className="nav-group">
-                            <Link to="/feed" className="nav-link" onClick={()=>{activePageTab('home')}} >
+                            <Link to="/feed" className={activeTab==='home'?"activeTab nav-link":"nav-link"} onClick={()=>{activePageTab('home')}} >
                                 <div className="nav-icon">
                                     <Home height="100%" width="100%" />
                                 </div>
