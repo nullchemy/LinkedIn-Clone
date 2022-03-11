@@ -101,12 +101,9 @@
                         }
                         .activeTab::after{
                             background: none repeat scroll 0 0 transparent;
-                            bottom: 5;
                             content: "";
                             display: block;
                             height: 2px;
-                            right: 0;
-                            position: absolute;
                             background: linear-gradient(to left, #f69ec4, #f9dd94 100%);
                             transition: width .5s ease 0s, right .5s ease 0s;
                             width: 0;
