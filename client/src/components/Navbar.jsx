@@ -17,8 +17,8 @@ import ProfileImage from '../assets/images/kibet.png'
 const Navbar = () => {
     const [isActive, setActive] = useState('home');
 
-    const toggleActivePage = () => {
-        setActive(!isActive);
+    const toggleActivePage = (page) => {
+        setActive(page);
     };
     const { width } = useWindowDimensions();
     useEffect(()=>{
@@ -64,30 +64,30 @@ const Navbar = () => {
                         <div className="nav-group">
                             <Link 
                                 to="/feed"
-                                className={isActive ? 'pageActive nav-link': 'nav-link'}
+                                className={isActive === 'home' ? 'pageActive nav-link': 'nav-link'}
                                 onClick={toggleActivePage} >
                                 <div className="nav-icon">
                                     <Home height="100%" width="100%" />
                                 </div>
                                 <span className="nav-texts">Home</span>
                             </Link>
-                            <Link to="/network" className={isActive ? 'pageActive nav-link': 'nav-link'} onClick={toggleActivePage}>
+                            <Link to="/network" className={isActive === 'home' ? 'pageActive nav-link': 'nav-link'} onClick={toggleActivePage}>
                                 <Network className="nav-icon" />
                                 <span className="nav-texts">My Network</span>
                             </Link>
-                            <Link to="/jobs" className={isActive ? 'pageActive nav-link': 'nav-link'} onClick={toggleActivePage}>
+                            <Link to="/jobs" className={isActive === 'home' ? 'pageActive nav-link': 'nav-link'} onClick={toggleActivePage}>
                                 <Jobs className="nav-icon" />
                                 <span className="nav-texts">Jobs</span>
                             </Link>
-                            <Link to="/messaging" className={isActive ? 'pageActive nav-link messaging-link-nav': 'nav-link messaging-link-nav'} onClick={toggleActivePage}>
+                            <Link to="/messaging" className={isActive === 'home' ? 'pageActive nav-link messaging-link-nav': 'nav-link messaging-link-nav'} onClick={toggleActivePage}>
                                 <Messaging className="nav-icon" />
                                 <span className="nav-texts">Messaging</span>
                             </Link>
-                            <Link to="/notifications" className={isActive ? 'pageActive nav-link notif-link-nav': 'nav-link notif-link-nav'} onClick={toggleActivePage}>
+                            <Link to="/notifications" className={isActive === 'home' ? 'pageActive nav-link notif-link-nav': 'nav-link notif-link-nav'} onClick={toggleActivePage}>
                                 <Notifications className="nav-icon" />
                                 <span className="nav-texts">Notifications</span>
                             </Link>
-                            <Link to="/profile"  className={isActive ? 'pageActive nav-link prof-link-nav': 'nav-link prof-link-nav'} onClick={toggleActivePage}>
+                            <Link to="/profile"  className={isActive === 'home' ? 'pageActive nav-link prof-link-nav': 'nav-link prof-link-nav'} onClick={toggleActivePage}>
                                 <img src={ProfileImage} alt="avatar" className="nav-icon nav-profile-image" />
                                 <span className="nav-texts">Me
                                     <span><ProfileDropDown className="profile-drop-icon"/></span>
