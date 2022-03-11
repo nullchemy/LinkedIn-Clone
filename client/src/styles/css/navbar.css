@@ -197,7 +197,10 @@
   position: absolute;
   top: 60px;
   right: 0;
-  background-color: #002bb8;
+  background-color: white;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .navbar .navcontainer .navflex .navright .nav-work {
