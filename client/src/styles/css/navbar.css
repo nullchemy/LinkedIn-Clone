@@ -173,29 +173,27 @@
   transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
   width: calc(100% + 40px);
   margin-bottom: -3px;
-  -webkit-transform-origin: left;
-          transform-origin: left;
 }
 
 @-webkit-keyframes tabactive {
   0% {
-    -webkit-transform: scalex(0%);
-            transform: scalex(0%);
+    -webkit-transform: scalex(calc(0% - 20px));
+            transform: scalex(calc(0% - 20px));
   }
   100% {
-    -webkit-transform: scalex(100%);
-            transform: scalex(100%);
+    -webkit-transform: scalex(80%);
+            transform: scalex(80%);
   }
 }
 
 @keyframes tabactive {
   0% {
-    -webkit-transform: scalex(0%);
-            transform: scalex(0%);
+    -webkit-transform: scalex(calc(0% - 20px));
+            transform: scalex(calc(0% - 20px));
   }
   100% {
-    -webkit-transform: scalex(100%);
-            transform: scalex(100%);
+    -webkit-transform: scalex(80%);
+            transform: scalex(80%);
   }
 }
 
