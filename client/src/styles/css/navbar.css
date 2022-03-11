@@ -167,6 +167,8 @@
   -webkit-transition: width .5s ease 0s, right .5s ease 0s;
   transition: width .5s ease 0s, right .5s ease 0s;
   width: 0;
+  -webkit-animation: tabactive 2s ease-in-out forwards;
+          animation: tabactive 2s ease-in-out forwards;
 }
 
 @-webkit-keyframes tabactive {
@@ -175,7 +177,6 @@
   }
   100% {
     width: 100%;
-    left: 0;
   }
 }
 
@@ -185,7 +186,6 @@
   }
   100% {
     width: 100%;
-    left: 0;
   }
 }
 

@@ -107,14 +107,14 @@
                             background: linear-gradient(to left, #f69ec4, #f9dd94 100%);
                             transition: width .5s ease 0s, right .5s ease 0s;
                             width: 0;
+                            animation: tabactive 2s ease-in-out forwards;
                         }
                         @keyframes tabactive{
                             0%{
                                 width: 0;
                             }
                             100%{
-                                width: 100%; 
-                                left: 0;
+                                width: 100%;
                             }
                         }
                     }
