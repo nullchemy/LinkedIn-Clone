@@ -45,12 +45,12 @@ const Navbar = () => {
             }
         }
         if (!event.target.matches('.profileDetDrop')) {
-            var dropdowns = document.getElementsByClassName("profileDetDrop");
-            var i;
-            for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
+            var pdropdowns = document.getElementsByClassName("profileDetDrop");
+            var k;
+            for (k = 0; k < pdropdowns.length; k++) {
+            var popendrop = pdropdowns[k];
+            if (popendrop.classList.contains('show')) {
+                popendrop.classList.remove('show');
             }
             }
         }
