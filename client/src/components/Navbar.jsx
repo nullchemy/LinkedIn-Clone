@@ -16,6 +16,10 @@ import ProfileImage from '../assets/images/kibet.png'
 
 const Navbar = () => {
     const [activeTab, setActiveTab] = useState('home')
+    const activeTab = (page) =>{
+        console.log(page);
+        setActiveTab(page)
+    }
     const { width } = useWindowDimensions();
     useEffect(()=>{
         if(width > 920){
