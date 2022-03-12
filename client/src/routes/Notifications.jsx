@@ -19,7 +19,7 @@ const Notifications = () => {
               </div>
               <div className="sidebarBottom">
                 <p className="sbexplns">Improve your notifications</p>
-                <Link to="" className="sbsttngs">View settings</Link>
+                <p className="sbsttngs"><Link to="">View settings</Link></p>
               </div>
             </div>
           </div>
