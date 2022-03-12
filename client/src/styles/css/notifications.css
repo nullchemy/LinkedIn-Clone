@@ -1,9 +1,12 @@
 .notificationsPage .notifwrapper .notifcontainer .notifFlex {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(320px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  -ms-grid-columns: (minmax(160px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  -ms-grid-rows: (200px)[2];
+      grid-template-rows: repeat(2, 200px);
   grid-gap: 1rem;
+  grid-auto-flow: dense;
 }
 
 .notificationsPage .notifwrapper .notifcontainer .notifFlex .notifLeft {
