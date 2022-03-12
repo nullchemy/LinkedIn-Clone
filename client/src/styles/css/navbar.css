@@ -295,7 +295,13 @@
   position: relative;
 }
 
-.navbar .navcontainer .navflex .navright .nav-work .nav-link .nav-icon {
+.navbar .navcontainer .navflex .navright .nav-work .nav-link .icon-nav-wrapper {
+  position: relative;
+}
+
+.navbar .navcontainer .navflex .navright .nav-work .nav-link .icon-nav-wrapper .nav-icon {
+  position: absolute;
+  top: 0;
   height: 24px;
   -webkit-transform: scale(1);
           transform: scale(1);
@@ -310,11 +316,11 @@
   line-height: 1.5;
 }
 
-.navbar .navcontainer .navflex .navright .nav-work .nav-link .nav-profile-image {
+.navbar .navcontainer .navflex .navright .nav-work .nav-link .icon-nav-wrapper .nav-profile-image {
   border-radius: 50%;
 }
 
-.navbar .navcontainer .navflex .navright .nav-work .nav-link .nav-texts {
+.navbar .navcontainer .navflex .navright .nav-work .nav-link .icon-nav-wrapper .nav-texts {
   color: #00000099;
   cursor: pointer;
   font-size: 0.75rem;
@@ -323,7 +329,7 @@
   list-style-type: none;
 }
 
-.navbar .navcontainer .navflex .navright .nav-work .nav-link .nav-texts span .profile-drop-icon {
+.navbar .navcontainer .navflex .navright .nav-work .nav-link .icon-nav-wrapper .nav-texts span .profile-drop-icon {
   -webkit-transform: scale(1);
           transform: scale(1);
   -webkit-transition: -webkit-transform .2s ease-in-out;
@@ -335,6 +341,12 @@
   cursor: pointer;
   line-height: 1.5;
   margin-bottom: -3px;
+}
+
+.navbar .navcontainer .navflex .navright .nav-work .nav-link .icon-nav-wrapper .icon-badge {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .navbar .navcontainer .navflex .navright .nav-work .nav-premium {
