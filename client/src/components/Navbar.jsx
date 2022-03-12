@@ -64,16 +64,6 @@ const Navbar = () => {
                 }
             }
         }
-        if (!event.target.matches('.profileDetDrop')) {
-            var pdropdowns = document.getElementsByClassName("profileDetDrop");
-            var k;
-            for (k = 0; k < pdropdowns.length; k++) {
-            var popendrop = pdropdowns[k];
-            if (popendrop.classList.contains('show')) {
-                popendrop.classList.remove('show');
-            }
-            }
-        }
     }
   return (
     <div className="navbar">
