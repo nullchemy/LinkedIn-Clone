@@ -98,6 +98,12 @@
     overflow: hidden;
     padding-right: 1rem; /* space for ellipsis */
   }
+  .noElipsis{
+    position: absolute;
+    content: "...";
+    bottom: 0;
+    right: 10%;
+  }
   .truncate-overflow::before {
     position: absolute;
     content: "...";
