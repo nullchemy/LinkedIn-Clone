@@ -2,6 +2,7 @@ import React from 'react'
 import '../styles/css/notifications.css'
 import { Link } from 'react-router-dom'
 import { notifications } from "../data/notifications";
+import notifAuthorImage from '../assets/svg/google.svg'
 
 const Notifications = () => {
   return (
