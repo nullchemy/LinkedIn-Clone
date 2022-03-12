@@ -66,36 +66,44 @@
                             margin: 0 20px;
                             position: relative;
                             transition: 0.3s;
-                            .nav-icon{
-                                height: 24px;
-                                transform: scale(1);
-                                transition: transform .2s ease-in-out;
-                                width: 24px;
-                                font-size: 1.2rem;
-                                font-weight: 400;
-                                cursor: pointer;
-                                line-height: 1.5;
-                            }
-                            .nav-profile-image{
-                                border-radius: 50%;
-                            }
-                            .nav-texts{
-                                color: #00000099;
-                                cursor: pointer;
-                                font-size: 0.75rem;
-                                font-weight: 400;
-                                line-height: 1.5;
-                                list-style-type: none;
-                                span{
-                                    .profile-drop-icon{
-                                        transform: scale(1);
-                                        transition: transform .2s ease-in-out;
-                                        font-size: 1.2rem;
-                                        font-weight: 400;
-                                        cursor: pointer;
-                                        line-height: 1.5;
-                                        margin-bottom: -3px;
+                            .icon-nav-wrapper{
+                                position: relative;
+                                .nav-icon{
+                                    height: 24px;
+                                    transform: scale(1);
+                                    transition: transform .2s ease-in-out;
+                                    width: 24px;
+                                    font-size: 1.2rem;
+                                    font-weight: 400;
+                                    cursor: pointer;
+                                    line-height: 1.5;
+                                }
+                                .nav-profile-image{
+                                    border-radius: 50%;
+                                }
+                                .nav-texts{
+                                    color: #00000099;
+                                    cursor: pointer;
+                                    font-size: 0.75rem;
+                                    font-weight: 400;
+                                    line-height: 1.5;
+                                    list-style-type: none;
+                                    span{
+                                        .profile-drop-icon{
+                                            transform: scale(1);
+                                            transition: transform .2s ease-in-out;
+                                            font-size: 1.2rem;
+                                            font-weight: 400;
+                                            cursor: pointer;
+                                            line-height: 1.5;
+                                            margin-bottom: -3px;
+                                        }
                                     }
+                                }
+                                .icon-badge{
+                                    position: absolute;
+                                    top: 0;
+                                    right: 0;
                                 }
                             }
                         }
@@ -193,8 +201,6 @@
                         align-items: center;
                         margin: 0 20px;
                         position: relative;
-                        .icon-nav-wrapper{
-                            position: relative;
                             .nav-icon{
                                 position: absolute;
                                 top: 0;
@@ -229,12 +235,6 @@
                                     }
                                 }
                             }
-                            .icon-badge{
-                                position: absolute;
-                                top: 0;
-                                right: 0;
-                            }
-                        }
                     }
                     .nav-premium{
                         color: #915907;
