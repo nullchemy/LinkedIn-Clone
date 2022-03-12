@@ -145,14 +145,15 @@
   z-index: 999;
   height: 5px;
   width: 5px;
-  padding: 7px;
+  padding: 5px;
   font-size: 10px;
   text-align: center;
   background-color: red;
   color: white;
   border-radius: 50%;
-  margin-top: -10px;
-  margin-right: -10px;
+  margin-top: -5px;
+  margin-right: -5px;
+  line-height: 0.5px;
 }
 
 .navbar .navcontainer .navflex .navright .navigation .nav-group .nav-link .nav-texts {
