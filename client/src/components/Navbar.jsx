@@ -146,9 +146,7 @@ const Navbar = () => {
                     </div>
                     <div className="nav-work">
                         <Link to="/profile" className="nav-link nav-works">
-                            <span className="icon-nav-wrapper">
-                                <NavWork className="nav-icon" />
-                            </span>
+                            <NavWork className="nav-icon" />
                             <span className="nav-texts">Work
                                 <span><ProfileDropDown className="profile-drop-icon"/></span>
                             </span>

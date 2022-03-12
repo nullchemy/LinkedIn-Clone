@@ -387,6 +387,7 @@
   font-weight: 400;
   line-height: 1.5;
   list-style-type: none;
+  margin-top: 24px;
 }
 
 .navbar .navcontainer .navflex .navright .nav-work .nav-link .nav-texts span .profile-drop-icon {
