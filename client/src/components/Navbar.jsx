@@ -81,13 +81,19 @@ const Navbar = () => {
                     <div className="navigation">
                         <div className="nav-group">
                             <Link to="/feed" className={activeTab==='home'?"activeTab nav-link":"nav-link"} onClick={()=>{activePageTab('home')}} >
-                                <div className="nav-icon">
-                                    <Home height="100%" width="100%" />
-                                </div>
+                                <span className="icon-nav-wrapper">
+                                    <div className="nav-icon">
+                                        <Home height="100%" width="100%" />
+                                    </div>
+                                    <span className="icon-badge">1</span>
+                                </span>
                                 <span className="nav-texts">Home</span>
                             </Link>
                             <Link to="/network" className={activeTab==='network'?"activeTab nav-link":"nav-link"} onClick={()=>{activePageTab('network')}}>
-                                <Network className="nav-icon" />
+                                <span className="icon-nav-wrapper">
+                                    <Network className="nav-icon" />
+                                    <span className="icon-badge">1</span>
+                                </span>
                                 <span className="nav-texts">My Network</span>
                             </Link>
                             <Link to="/jobs" className={activeTab==='jobs'?"activeTab nav-link":"nav-link"} onClick={()=>{activePageTab('jobs')}}>
