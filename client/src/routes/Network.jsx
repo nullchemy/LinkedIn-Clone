@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
 import Sidebar from "../components/Sidebar";
 import UserCard from "../components/UserCard";
-import { users } from "../users";
+import { users } from "../data/users";
 import "../styles/css/network.css";
 const Network = () => {
   const [clicked, setClicked] = useState(false);
