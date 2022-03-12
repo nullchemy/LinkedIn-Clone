@@ -85,6 +85,13 @@
                                     position: absolute;
                                     top: 0;
                                     right: 0;
+                                    z-index: 999;
+                                    height: 5px;
+                                    width: 5px;
+                                    padding: 5px;
+                                    background-color: rgb(255, 0, 0);
+                                    color: red;
+                                    border-radius: 50%;
                                 }
                             }
                             .nav-texts{
