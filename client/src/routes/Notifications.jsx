@@ -21,7 +21,7 @@ const Notifications = () => {
                   <div className="notmImage">
                     <span className="notificationStatus"></span>
                     <div className="notAuthorImage">
-                      <img src={notifAuthorImage} alt="" />
+                      <img src={require(notification.image_url)} alt="" />
                     </div>
                   </div>
                   <div className="notmtexts">
