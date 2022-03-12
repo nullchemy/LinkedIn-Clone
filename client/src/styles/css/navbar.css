@@ -146,8 +146,9 @@
   height: 5px;
   width: 5px;
   padding: 5px;
+  font-size: 10px;
   background-color: red;
-  color: red;
+  color: white;
   border-radius: 50%;
 }
 
