@@ -164,6 +164,32 @@
           align-items: center;
 }
 
+.navbar .navcontainer .navflex .navright .navigation .nav-group .nav-link .icon-nav-wrapper .icon-badge-home {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 999;
+  height: 5px;
+  width: 5px;
+  padding: 5px;
+  font-size: 10px;
+  text-align: center;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  margin-top: -5px;
+  margin-right: -5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .navbar .navcontainer .navflex .navright .navigation .nav-group .nav-link .nav-texts {
   color: #00000099;
   cursor: pointer;

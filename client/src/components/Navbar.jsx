@@ -85,7 +85,7 @@ const Navbar = () => {
                                     <div className="nav-icon">
                                         <Home height="100%" width="100%" />
                                     </div>
-                                    <span className="icon-badge">1</span>
+                                    <span className="icon-badge-home"><span></span></span>
                                 </span>
                                 <span className="nav-texts" style={{marginTop: "0px"}}>Home</span>
                             </Link>
