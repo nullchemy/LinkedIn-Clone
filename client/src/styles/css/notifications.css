@@ -30,6 +30,10 @@
   grid-area: main;
 }
 
+.notificationsPage .notifwrapper .notifcontainer .notifFlex .notifMiddle .notMWrapper .notmNotification .notmImage .notmtexts .thnotmtexts .thnotmauthor {
+  font-weight: 500;
+}
+
 .notificationsPage .notifwrapper .notifcontainer .notifFlex .notifRight {
   background-color: #fff;
   height: -webkit-min-content;
