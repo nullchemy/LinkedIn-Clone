@@ -96,7 +96,8 @@
 .truncate-overflow {
     --max-lines: 3;
     position: relative;
-    max-height: calc(var(--lh) * var(--max-lines));
+    // max-height: calc(var(--lh) * var(--max-lines));
+    max-height: 6rem;
     overflow: hidden;
     padding-right: 1rem; /* space for ellipsis */
   }
