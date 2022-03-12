@@ -16,6 +16,10 @@ const Notifications = () => {
                 <h1 className="sidebarNotifTitle">Notifications</h1>
                 <p className="sidebarNotifCachy">You have new notifications</p>
               </div>
+              <div className="sidebarBottom">
+                <p className="sbexplns">Improve your notifications</p>
+                <Link to="" className="sbsttngs">View settings</Link>
+              </div>
             </div>
           </div>
         </div>
