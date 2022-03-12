@@ -22,12 +22,17 @@
                         .notmNotification{
                             display: flex;
                             .notmImage{
-                                .notmtexts{
-                                    .thnotmtexts{
-                                        .thnotmauthor{
-                                            font-weight: 500;
-                                            margin-right: 5px;
-                                        }
+
+                            }
+                            .notmtexts{
+                                .thnotmtexts{
+                                    width: 70%;
+                                    white-space: nowrap;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    .thnotmauthor{
+                                        font-weight: 500;
+                                        margin-right: 5px;
                                     }
                                 }
                             }
