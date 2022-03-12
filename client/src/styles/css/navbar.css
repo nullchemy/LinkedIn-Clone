@@ -178,6 +178,7 @@
   color: white;
   border-radius: 50%;
   margin-top: -5px;
+  font-weight: 500;
   margin-right: -5px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -192,7 +193,7 @@
 
 .navbar .navcontainer .navflex .navright .navigation .nav-group .nav-link .icon-nav-wrapper .icon-badge-home span {
   background-color: #fff;
-  padding: 5px;
+  padding: 3.5px;
   border-radius: 50%;
 }
 
