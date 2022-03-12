@@ -19,7 +19,7 @@ const Notifications = () => {
               <div key={notification.id} className="notMWrapper">
                 <div className="notmNotification">
                   <div className="notmImage">
-                    {(notification.status==='new')?<span className="notificationStatus"></span>:''}
+                    {(notification.status==='new')?<span className="notificationStatus"></span>:<span></span>}
                     <div className="notAuthorImage">
                       <img src={notification.image_url} alt="" />
                     </div>
