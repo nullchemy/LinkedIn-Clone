@@ -26,7 +26,7 @@ const Navbar = () => {
             document.querySelector(".nav-dropdown").classList.remove("show");
         }
     }, [width]);
-    function collapseDropDowns(ref) {
+    function useCollapseDropDowns(ref) {
         useEffect(() => {
                 function handleClickOutside(event) {
                 if (ref.current && !ref.current.contains(event.target)) {
@@ -42,7 +42,7 @@ const Navbar = () => {
         }, [ref]);
     }
     const wrapperRef = useRef(null);
-    collapseDropDowns(wrapperRef);
+    useCollapseDropDowns(wrapperRef);
     const navDrop = () => {
         if(width < 920){
             document.querySelector(".nav-dropdown").classList.toggle("show");
