@@ -87,7 +87,7 @@ const Navbar = () => {
                                     </div>
                                     <span className="icon-badge">1</span>
                                 </span>
-                                <span className="nav-texts">Home</span>
+                                <span className="nav-texts" style={{marginTop: "0px"}}>Home</span>
                             </Link>
                             <Link to="/network" className={activeTab==='network'?"activeTab nav-link":"nav-link"} onClick={()=>{activePageTab('network')}}>
                                 <span className="icon-nav-wrapper">
