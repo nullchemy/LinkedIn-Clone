@@ -40,12 +40,6 @@
   display: flex;
 }
 
-.notificationsPage .notifwrapper .notifcontainer .notifFlex .notifMiddle .notMWrapper .notmNotification .notmtexts .thnotmtexts {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
 .notificationsPage .notifwrapper .notifcontainer .notifFlex .notifMiddle .notMWrapper .notmNotification .notmtexts .thnotmtexts .thnotmauthor {
   font-weight: 500;
   margin-right: 5px;
