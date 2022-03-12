@@ -24,6 +24,11 @@
   border-bottom: 1px solid #00000014;
 }
 
+.notificationsPage .notifwrapper .notifcontainer .notifFlex .notifLeft .asideTitle .asideNotifTitle {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
 .notificationsPage .notifwrapper .notifcontainer .notifFlex .notifMiddle {
   background-color: #fff;
   height: -webkit-min-content;
