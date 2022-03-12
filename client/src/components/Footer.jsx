@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "../styles/css/footer.css";
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className="footer" style={{backgroundColor: "rgb(240, 240, 240)"}}>
       <div className="footerWrapper">
         <ul className="footerNavLinks">
           <li className="footerNavItem">
