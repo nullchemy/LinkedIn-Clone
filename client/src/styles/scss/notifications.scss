@@ -32,8 +32,13 @@
                             .notmImage{
                                 display: flex;
                                 align-items: center;
+                                margin-right: 10px;
                                 .notificationStatus{
-                                    
+                                    width: 5px;
+                                    height: 5px;
+                                    background-color: rgb(57, 53, 255);
+                                    border-radius: 50%;
+                                    margin-right: 10px;
                                 }
                                 .notAuthorImage{
                                     width: 50px;
