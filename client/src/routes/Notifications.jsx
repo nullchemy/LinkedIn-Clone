@@ -15,8 +15,9 @@ const Notifications = () => {
             </div>
             <div className="notifMiddle">
             {[...new Set(notifications)].map((notification) => {
+              if(notification.status==='new'){document.querySelector('.notMWrapper').style.backgroundColor="#70b5f933";}
               return (
-              <div key={notification.id} className="notMWrapper">
+              <div key={notification.id} className="notMWrapper" >
                 <div className="notmNotification">
                   <div className="notmImage">
                     {(notification.status==='new')?<span className="notificationStatus"></span>:<span></span>}
