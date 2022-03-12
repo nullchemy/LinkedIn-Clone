@@ -1,7 +1,7 @@
 export const notifications = [
     {
         id: 1,
-        "image_url": "",
+        "image_url": "./images/user1.jpg",
         "name": "Google",
         "time": "13h",
         "status": "new",
@@ -9,7 +9,7 @@ export const notifications = [
     },
     {
         id: 2,
-        "image_url": "",
+        "image_url": "./images/user4.jpg",
         "name": "Google",
         "time": "13h",
         "status": "new",
