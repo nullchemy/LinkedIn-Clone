@@ -17,7 +17,6 @@ import ProfileImage from '../assets/images/kibet.png'
 const Navbar = () => {
     const [activeTab, setActiveTab] = useState('home')
     const activePageTab = (page) =>{
-        console.log(page);
         setActiveTab(page)
     }
     const { width } = useWindowDimensions();
