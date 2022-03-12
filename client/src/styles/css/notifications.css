@@ -38,6 +38,7 @@
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: sidebar;
+  border-radius: 7px;
 }
 
 .notificationsPage .notifwrapper .notifcontainer .notifFlex .notifRight .sidebarTitle {
@@ -45,7 +46,7 @@
 }
 
 .notificationsPage .notifwrapper .notifcontainer .notifFlex .notifRight .sidebarTitle .sidebarNotifTitle {
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 1.5;
   font-weight: 600;
   vertical-align: baseline;

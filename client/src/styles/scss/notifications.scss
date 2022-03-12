@@ -23,10 +23,11 @@
                     background-color: #fff;
                     height: min-content;
                     grid-area: sidebar;
+                    border-radius: 7px;
                     .sidebarTitle{
                         border-bottom: 1px solid #00000014;
                         .sidebarNotifTitle{
-                            font-size: 1.1rem;
+                            font-size: 1rem;
                             line-height: 1.5;
                             font-weight: 600;
                             vertical-align: baseline;
