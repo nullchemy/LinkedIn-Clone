@@ -39,6 +39,7 @@
 
 .notificationsPage .notifwrapper .notifcontainer .notifFlex .notifMiddle .notMWrapper {
   border-bottom: 1px solid #cecece;
+  background-color: #70b5f933;
 }
 
 .notificationsPage .notifwrapper .notifcontainer .notifFlex .notifMiddle .notMWrapper .notmNotification {
