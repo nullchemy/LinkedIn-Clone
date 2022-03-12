@@ -113,7 +113,7 @@
   position: absolute;
   content: "...";
   bottom: 0;
-  right: 0;
+  right: 10px;
 }
 
 .truncate-overflow::after {
