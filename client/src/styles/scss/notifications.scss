@@ -22,7 +22,7 @@
                     height: min-content;
                     grid-area: main;
                     border-radius: 7px;
-                    border: 1px solid rgb(206, 206, 206);
+                    box-shadow: 0px 0px 0px 1px rgba(206, 206, 206, 0.9);
                     .notMWrapper{
                         border-bottom: 1px solid rgb(206, 206, 206);
                         .notmNotification{
