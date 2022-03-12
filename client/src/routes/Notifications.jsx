@@ -15,7 +15,11 @@ const Notifications = () => {
             <div className="notifMiddle">
               <div className="notMWrapper">
                 <div className="notmNotification">
-                  <div className="notmImage"></div>
+                  <div className="notmImage">
+                    <div className="notAuthorImage">
+                      <img src={notifAuthorImage} alt="" />
+                    </div>
+                  </div>
                   <div className="notmtexts">
                     <p className="thnotmtexts">
                       <strong className="thnotmauthor">Google</strong>
