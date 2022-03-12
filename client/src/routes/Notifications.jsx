@@ -16,6 +16,7 @@ const Notifications = () => {
               <div className="notMWrapper">
                 <div className="notmNotification">
                   <div className="notmImage">
+                    <span className="notificationStatus"></span>
                     <div className="notAuthorImage">
                       <img src={notifAuthorImage} alt="" />
                     </div>
