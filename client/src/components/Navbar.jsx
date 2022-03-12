@@ -99,7 +99,10 @@ const Navbar = () => {
                                 <span className="nav-texts">Messaging</span>
                             </Link>
                             <Link to="/notifications" className={activeTab==='notifications'?"activeTab nav-link notif-link-nav":"nav-link notif-link-nav"} onClick={()=>{activePageTab('notifications')}}>
-                                <Notifications className="nav-icon" />
+                                <span className="icon-nav-wrapper">
+                                    <Notifications className="nav-icon" />
+                                    <span className="icon-badge">1</span>
+                                </span>
                                 <span className="nav-texts">Notifications</span>
                             </Link>
                             <div  className="nav-link prof-link-nav"  onClick={()=>{pnavDrop()}}>
