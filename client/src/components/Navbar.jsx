@@ -28,18 +28,17 @@ const Navbar = () => {
     }, [width]);
     function useOutsideAlerter(ref) {
         useEffect(() => {
-            console.log(document.querySelector(".profileDetDrop").classList.contains('show'));
-            // if(document.querySelector(".profileDetDrop").classList.contains('show')){
                 function handleClickOutside(event) {
                 if (ref.current && !ref.current.contains(event.target)) {
-                    //alert("You clicked outside of me!");
+                    if(document.querySelector(".profileDetDrop").classList.contains('show')){
+                        document.querySelector(".profileDetDrop").classList.remove("show");
+                    }
                 }
                 }
                 document.addEventListener("mousedown", handleClickOutside);
                 return () => {
                 document.removeEventListener("mousedown", handleClickOutside);
                 };
-            // }
         }, [ref]);
     }
     const wrapperRef = useRef(null);
@@ -51,7 +50,6 @@ const Navbar = () => {
     }
     const pnavDrop = () => {
         document.querySelector(".profileDetDrop").classList.toggle("show");
-        console.log('clicked');
     }
     window.onClick = function(event) {
         if(width < 920){
