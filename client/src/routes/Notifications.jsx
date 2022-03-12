@@ -14,6 +14,7 @@ const Notifications = () => {
             <div className="notifRight">
               <div className="sidebarTitle">
                 <h1 className="sidebarNotifTitle">Notifications</h1>
+                <p className="sidebarNotifCachy">You have new notifications</p>
               </div>
             </div>
           </div>
