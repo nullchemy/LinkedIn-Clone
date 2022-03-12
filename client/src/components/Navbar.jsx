@@ -28,21 +28,21 @@ const Navbar = () => {
     }, [width]);
     function useOutsideAlerter(ref) {
         useEffect(() => {
-            function handleClickOutside(event) {
-            if (ref.current && !ref.current.contains(event.target)) {
-                alert("You clicked outside of me!");
+            if(document.querySelector(".profileDetDrop").classList.contains('show')){
+                function handleClickOutside(event) {
+                if (ref.current && !ref.current.contains(event.target)) {
+                    alert("You clicked outside of me!");
+                }
+                }
+                document.addEventListener("mousedown", handleClickOutside);
+                return () => {
+                document.removeEventListener("mousedown", handleClickOutside);
+                };
             }
-            }
-            document.addEventListener("mousedown", handleClickOutside);
-            return () => {
-            document.removeEventListener("mousedown", handleClickOutside);
-            };
         }, [ref]);
     }
     const wrapperRef = useRef(null);
-    if(document.querySelector(".profileDetDrop").classList.contains('show')){
-        useOutsideAlerter(wrapperRef);
-    }
+    useOutsideAlerter(wrapperRef);
     const navDrop = () => {
         if(width < 920){
             document.querySelector(".nav-dropdown").classList.toggle("show");
