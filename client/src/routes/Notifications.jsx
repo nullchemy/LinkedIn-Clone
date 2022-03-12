@@ -14,7 +14,9 @@ const Notifications = () => {
 
             </div>
             <div className="notifMiddle">
-              <div className="notMWrapper">
+            {[...new Set(notifications)].map((notification) => {
+              return (
+              <div key={notification.id} className="notMWrapper">
                 <div className="notmNotification">
                   <div className="notmImage">
                     <span className="notificationStatus"></span>
@@ -30,6 +32,8 @@ const Notifications = () => {
                   </div>
                 </div>
               </div>
+              )
+              })}
             </div>
             <div className="notifRight">
               <div className="sidebarTitle">
