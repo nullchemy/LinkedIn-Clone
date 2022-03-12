@@ -38,6 +38,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 10px;
 }
 
 .notificationsPage .notifwrapper .notifcontainer .notifFlex .notifMiddle .notMWrapper .notmNotification .notmtexts .thnotmtexts .thnotmauthor {
@@ -103,7 +104,7 @@
 .truncate-overflow {
   --max-lines: 3;
   position: relative;
-  max-height: 6rem;
+  max-height: calc(var(--lh) * var(--max-lines));
   overflow: hidden;
   padding-right: 1rem;
   /* space for ellipsis */

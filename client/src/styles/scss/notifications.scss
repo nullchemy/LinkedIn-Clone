@@ -24,14 +24,12 @@
                     .notMWrapper{
                         .notmNotification{
                             display: flex;
+                            padding: 10px;
                             .notmImage{
 
                             }
                             .notmtexts{
                                 .thnotmtexts{
-                                    // white-space: nowrap;
-                                    // overflow: hidden;
-                                    // text-overflow: ellipsis;
                                     .thnotmauthor{
                                         font-weight: 500;
                                         margin-right: 5px;
@@ -96,8 +94,7 @@
 .truncate-overflow {
     --max-lines: 3;
     position: relative;
-    // max-height: calc(var(--lh) * var(--max-lines));
-    max-height: 6rem;
+    max-height: calc(var(--lh) * var(--max-lines));
     overflow: hidden;
     padding-right: 1rem; /* space for ellipsis */
   }
