@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useRef, useState, useEffect } from 'react'
 import '../styles/css/navbar.css'
 import useWindowDimensions from '../includes/dimensions'
 import {  ReactComponent as NavLogo } from '../assets/svg/navlogo.svg'
@@ -44,6 +44,8 @@ const Navbar = () => {
             };
         }, [ref]);
     }
+    const wrapperRef = useRef(null);
+    useOutsideAlerter(wrapperRef);
     const navDrop = () => {
         if(width < 920){
             document.querySelector(".nav-dropdown").classList.toggle("show");
@@ -121,7 +123,7 @@ const Navbar = () => {
                                     <span><ProfileDropDown className="profile-drop-icon"/></span>
                                 </span>
                             </div>
-                            <div className="profileDetDrop">
+                            <div className="profileDetDrop" ref={wrapperRef}>
                                 <div className="profdetfl">
                                     <div className="profdetimage">
                                         <div className="topprofdetflex">
