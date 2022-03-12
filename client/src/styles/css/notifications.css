@@ -1,3 +1,11 @@
+.notificationsPage .notifwrapper .notifcontainer .notifFlex {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(320px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 1rem;
+}
+
 .notificationsPage .notifwrapper .notifcontainer .notifFlex .notifLeft {
   background-color: #fff;
   height: 300px;

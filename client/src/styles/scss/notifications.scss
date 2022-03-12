@@ -2,6 +2,9 @@
     .notifwrapper{
         .notifcontainer{
             .notifFlex{
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+                grid-gap: 1rem;
                 .notifLeft{
                     background-color: #fff;
                     height: 300px;
