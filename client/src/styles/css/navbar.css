@@ -153,7 +153,12 @@
   border-radius: 50%;
   margin-top: -5px;
   margin-right: -5px;
-  line-height: 0.5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .navbar .navcontainer .navflex .navright .navigation .nav-group .nav-link .nav-texts {
