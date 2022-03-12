@@ -1,8 +1,8 @@
 .notificationsPage .notifwrapper .notifcontainer .notifFlex {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: minmax(0, 5fr) minmax(0, 12fr) minmax(300px, 7fr);
-      grid-template-columns: minmax(0, 5fr) minmax(0, 12fr) minmax(300px, 7fr);
+  -ms-grid-columns: minmax(0, 3fr) minmax(0, 12fr) minmax(300px, 5fr);
+      grid-template-columns: minmax(0, 3fr) minmax(0, 12fr) minmax(300px, 5fr);
   -webkit-column-gap: 1rem;
           column-gap: 1rem;
   row-gap: .5rem;
@@ -16,7 +16,6 @@
 .notificationsPage .notifwrapper .notifcontainer .notifFlex .notifMiddle {
   background-color: #fff;
   height: 300px;
-  grid-column: span 2;
 }
 
 .notificationsPage .notifwrapper .notifcontainer .notifFlex .notifRight {
