@@ -117,7 +117,12 @@
                                     margin-right: -5px;
                                     display: flex;
                                     justify-content: center;
-                                    align-items: center
+                                    align-items: center;
+                                    span {
+                                        background-color: #fff;
+                                        padding: 5px;
+                                        border-radius: 50%;
+                                    }
                                 }
                             }
                             .nav-texts{

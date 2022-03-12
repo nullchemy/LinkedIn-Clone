@@ -190,6 +190,12 @@
           align-items: center;
 }
 
+.navbar .navcontainer .navflex .navright .navigation .nav-group .nav-link .icon-nav-wrapper .icon-badge-home span {
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 50%;
+}
+
 .navbar .navcontainer .navflex .navright .navigation .nav-group .nav-link .nav-texts {
   color: #00000099;
   cursor: pointer;
