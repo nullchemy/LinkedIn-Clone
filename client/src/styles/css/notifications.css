@@ -32,6 +32,12 @@
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: main;
+  border-radius: 7px;
+  border: 1px solid #cecece;
+}
+
+.notificationsPage .notifwrapper .notifcontainer .notifFlex .notifMiddle .notMWrapper {
+  border-bottom: 1px solid #cecece;
 }
 
 .notificationsPage .notifwrapper .notifcontainer .notifFlex .notifMiddle .notMWrapper .notmNotification {

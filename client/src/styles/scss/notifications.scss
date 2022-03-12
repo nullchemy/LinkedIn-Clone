@@ -21,10 +21,14 @@
                     background-color: #fff;
                     height: min-content;
                     grid-area: main;
+                    border-radius: 7px;
+                    border: 1px solid rgb(206, 206, 206);
                     .notMWrapper{
+                        border-bottom: 1px solid rgb(206, 206, 206);
                         .notmNotification{
                             display: flex;
                             padding: 10px;
+                            
                             .notmImage{
 
                             }
