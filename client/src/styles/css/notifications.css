@@ -65,4 +65,14 @@
   text-align: center;
   margin-top: 5px;
 }
+
+.notificationsPage .notifwrapper .notifcontainer .notifFlex .notifRight .sidebarBottom .sbexplns {
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 200;
+  vertical-align: baseline;
+  color: rgba(48, 48, 48, 0.9);
+  text-align: center;
+  margin-top: 5px;
+}
 /*# sourceMappingURL=notifications.css.map */
