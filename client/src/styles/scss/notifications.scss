@@ -20,11 +20,13 @@
                     grid-area: main;
                     .notMWrapper{
                         .notmNotification{
+                            display: flex;
                             .notmImage{
                                 .notmtexts{
                                     .thnotmtexts{
                                         .thnotmauthor{
                                             font-weight: 500;
+                                            margin-right: 5px;
                                         }
                                     }
                                 }

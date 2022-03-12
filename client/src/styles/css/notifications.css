@@ -30,8 +30,15 @@
   grid-area: main;
 }
 
+.notificationsPage .notifwrapper .notifcontainer .notifFlex .notifMiddle .notMWrapper .notmNotification {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .notificationsPage .notifwrapper .notifcontainer .notifFlex .notifMiddle .notMWrapper .notmNotification .notmImage .notmtexts .thnotmtexts .thnotmauthor {
   font-weight: 500;
+  margin-right: 5px;
 }
 
 .notificationsPage .notifwrapper .notifcontainer .notifFlex .notifRight {
