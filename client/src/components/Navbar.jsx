@@ -29,6 +29,7 @@ const Navbar = () => {
     function useOutsideAlerter(ref) {
         useEffect(() => {
             if(document.querySelector(".profileDetDrop").classList.contains('show')){
+                console.log("You clicked outside of me!");
                 function handleClickOutside(event) {
                 if (ref.current && !ref.current.contains(event.target)) {
                     alert("You clicked outside of me!");
