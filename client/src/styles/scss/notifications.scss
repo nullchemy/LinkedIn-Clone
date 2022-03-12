@@ -11,16 +11,18 @@
                     background-color: #fff;
                     height: 300px;
                     grid-row: span 2;
+                    grid-column: span 1;
                 }
                 .notifMiddle{
                     background-color: #fff;
                     height: 300px;
-                    grid-column: span 2;
+                    grid-column: span 3;
                     grid-row: span 5;
                 }
                 .notifRight{
                     background-color: #fff;
                     height: 300px;
+                    grid-column: span 2;
                     grid-row: span 3;
                 }
             }
