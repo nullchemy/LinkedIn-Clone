@@ -1,25 +1,32 @@
 .notificationsPage .notifwrapper .notifcontainer .notifFlex {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: minmax(0, 3fr) minmax(0, 9fr) minmax(0, 4fr);
-      grid-template-columns: minmax(0, 3fr) minmax(0, 9fr) minmax(0, 4fr);
-  -webkit-column-gap: 1rem;
-          column-gap: 1rem;
-  row-gap: .5rem;
+      grid-template-areas: "sidebar main aside";
+  -ms-grid-columns: minmax(0, 5fr) minmax(0, 12fr) minmax(300px, 7fr);
+      grid-template-columns: minmax(0, 5fr) minmax(0, 12fr) minmax(300px, 7fr);
 }
 
 .notificationsPage .notifwrapper .notifcontainer .notifFlex .notifLeft {
   background-color: #fff;
   height: 300px;
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: aside;
 }
 
 .notificationsPage .notifwrapper .notifcontainer .notifFlex .notifMiddle {
   background-color: #fff;
   height: 300px;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: main;
 }
 
 .notificationsPage .notifwrapper .notifcontainer .notifFlex .notifRight {
   background-color: #fff;
   height: 300px;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: sidebar;
 }
 /*# sourceMappingURL=notifications.css.map */
