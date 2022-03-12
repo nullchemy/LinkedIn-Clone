@@ -192,15 +192,74 @@
 
 .navbar .navcontainer .navflex .navright .navigation .nav-group .profileDetDrop {
   display: none;
-  width: 200px;
+  width: 300px;
   height: 200px;
   position: absolute;
-  top: 60px;
+  top: 50px;
   right: 0;
+  z-index: 999;
   background-color: white;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
   border-bottom-left-radius: 5px;
   border-top-left-radius: 5px;
   border-bottom-right-radius: 5px;
+}
+
+.navbar .navcontainer .navflex .navright .navigation .nav-group .profileDetDrop .profdetfl:nth-child(1), .navbar .navcontainer .navflex .navright .navigation .nav-group .profileDetDrop .profdetfl:nth-child(2) {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.navbar .navcontainer .navflex .navright .navigation .nav-group .profileDetDrop .profdetfl {
+  padding: 10px;
+}
+
+.navbar .navcontainer .navflex .navright .navigation .nav-group .profileDetDrop .profdetfl .profileViewDet {
+  padding: 1px 10px;
+  width: 250px;
+  text-align: center;
+  border-radius: 30px;
+  border: 2px solid blue;
+  color: blue;
+  margin: 10px;
+}
+
+.navbar .navcontainer .navflex .navright .navigation .nav-group .profileDetDrop .profdetimage {
+  margin-bottom: 10px;
+}
+
+.navbar .navcontainer .navflex .navright .navigation .nav-group .profileDetDrop .profdetimage .topprofdetflex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar .navcontainer .navflex .navright .navigation .nav-group .profileDetDrop .profdetimage .topprofdetflex img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.navbar .navcontainer .navflex .navright .navigation .nav-group .profileDetDrop .profdetimage .topprofdetflex .profdettxtsflex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 10px;
+}
+
+.navbar .navcontainer .navflex .navright .navigation .nav-group .profileDetDrop .profdetimage .topprofdetflex .profdettxtsflex .profNameDet {
+  color: #2c2c2c;
+  font-weight: 600;
+}
+
+.navbar .navcontainer .navflex .navright .navigation .nav-group .profileDetDrop .profdetimage .topprofdetflex .profdettxtsflex .profSchoolDet {
+  color: #2c2c2c;
+  font-weight: 300;
+  font-size: 15px;
 }
 
 .navbar .navcontainer .navflex .navright .nav-work {

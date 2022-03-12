@@ -104,7 +104,20 @@ const Navbar = () => {
                                 </span>
                             </div>
                             <div className="profileDetDrop">
-
+                                <div className="profdetfl">
+                                    <div className="profdetimage">
+                                        <div className="topprofdetflex">
+                                            <img src={ProfileImage} alt="avatar" />
+                                            <div className="profdettxtsflex">
+                                                <Link to="" className="profNameDet">Finn Neron</Link>
+                                                <Link to="" className="profSchoolDet">Student at machackos university</Link>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <Link to="/profile" className="profileViewDet">view profile</Link>
+                                </div>
+                                <div className="profdetfl"></div>
+                                <div className="profdetfl"></div>
                             </div>
                         </div>
                     </div>
