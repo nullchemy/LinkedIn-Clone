@@ -48,6 +48,28 @@
   padding: 10px;
 }
 
+.notificationsPage .notifwrapper .notifcontainer .notifFlex .notifMiddle .notMWrapper .notmNotification .notmImage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.notificationsPage .notifwrapper .notifcontainer .notifFlex .notifMiddle .notMWrapper .notmNotification .notmImage .notAuthorImage {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.notificationsPage .notifwrapper .notifcontainer .notifFlex .notifMiddle .notMWrapper .notmNotification .notmImage .notAuthorImage img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .notificationsPage .notifwrapper .notifcontainer .notifFlex .notifMiddle .notMWrapper .notmNotification .notmtexts .thnotmtexts {
   display: -webkit-box;
   -webkit-box-orient: vertical;
