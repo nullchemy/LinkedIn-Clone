@@ -54,4 +54,14 @@
   text-align: center;
   margin-top: 15px;
 }
+
+.notificationsPage .notifwrapper .notifcontainer .notifFlex .notifRight .sidebarTitle .sidebarNotifCachy {
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 400;
+  vertical-align: baseline;
+  color: rgba(48, 48, 48, 0.9);
+  text-align: center;
+  margin-top: 15px;
+}
 /*# sourceMappingURL=notifications.css.map */
