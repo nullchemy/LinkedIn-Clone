@@ -12,7 +12,9 @@
 
 .notificationsPage .notifwrapper .notifcontainer .notifFlex .notifLeft {
   background-color: #fff;
-  height: 300px;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   grid-area: aside;
@@ -20,7 +22,9 @@
 
 .notificationsPage .notifwrapper .notifcontainer .notifFlex .notifMiddle {
   background-color: #fff;
-  height: 300px;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: main;
@@ -28,7 +32,9 @@
 
 .notificationsPage .notifwrapper .notifcontainer .notifFlex .notifRight {
   background-color: #fff;
-  height: 300px;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: sidebar;

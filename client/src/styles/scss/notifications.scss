@@ -10,17 +10,17 @@
                 gap: 2.4rem;
                 .notifLeft{
                     background-color: #fff;
-                    height: 300px;
+                    height: min-content;
                     grid-area: aside;
                 }
                 .notifMiddle{
                     background-color: #fff;
-                    height: 300px;
+                    height: min-content;
                     grid-area: main;
                 }
                 .notifRight{
                     background-color: #fff;
-                    height: 300px;
+                    height: min-content;
                     grid-area: sidebar;
                 }
             }
