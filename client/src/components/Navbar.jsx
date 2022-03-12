@@ -120,7 +120,7 @@ const Navbar = () => {
                             <div  className="nav-link prof-link-nav"  onClick={()=>{pnavDrop()}}>
                                 <span className="icon-nav-wrapper">
                                     <img src={ProfileImage} alt="avatar" className="nav-icon nav-profile-image" />
-                                    <span className="icon-badge">1</span>
+                                    {/* <span className="icon-badge-debunk">1</span> */}
                                 </span>
                                 <span className="nav-texts">Me
                                     <span><ProfileDropDown className="profile-drop-icon"/></span>

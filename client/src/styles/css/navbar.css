@@ -162,6 +162,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-weight: 900;
 }
 
 .navbar .navcontainer .navflex .navright .navigation .nav-group .nav-link .icon-nav-wrapper .icon-badge-home {
@@ -178,7 +179,6 @@
   color: white;
   border-radius: 50%;
   margin-top: -5px;
-  font-weight: 900;
   margin-right: -5px;
   display: -webkit-box;
   display: -ms-flexbox;
