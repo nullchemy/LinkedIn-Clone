@@ -41,6 +41,19 @@
   padding: 10px;
 }
 
+.notificationsPage .notifwrapper .notifcontainer .notifFlex .notifMiddle .notMWrapper .notmNotification .notmtexts .thnotmtexts {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-height: 1rem !important;
+  max-height: 6rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  word-break: break-word;
+  cursor: pointer;
+}
+
 .notificationsPage .notifwrapper .notifcontainer .notifFlex .notifMiddle .notMWrapper .notmNotification .notmtexts .thnotmtexts .thnotmauthor {
   font-weight: 500;
   margin-right: 5px;
@@ -99,30 +112,5 @@
   color: #004182;
   font-weight: 600;
   margin-bottom: 20px;
-}
-
-.truncate-overflow {
-  --max-lines: 3;
-  position: relative;
-  max-height: calc(var(--lh) * var(--max-lines));
-  overflow: hidden;
-  padding-right: 1rem;
-  /* space for ellipsis */
-}
-
-.truncate-overflow::before {
-  position: absolute;
-  content: "...";
-  bottom: 0;
-  right: 3%;
-}
-
-.truncate-overflow::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  width: 1rem;
-  height: 1rem;
-  background: white;
 }
 /*# sourceMappingURL=notifications.css.map */
