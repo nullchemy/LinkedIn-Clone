@@ -8,12 +8,14 @@ const Notifications = () => {
         <div className="notifcontainer">
           <div className="notifFlex">
             <div className="notifLeft">
+
+            </div>
+            <div className="notifMiddle"></div>
+            <div className="notifRight">
               <div className="asideTitle">
                 <h1 className="asideNotifTitle">notifications</h1>
               </div>
             </div>
-            <div className="notifMiddle"></div>
-            <div className="notifRight"></div>
           </div>
         </div>
       </div>
