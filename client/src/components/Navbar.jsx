@@ -95,7 +95,10 @@ const Navbar = () => {
                                 <span className="nav-texts">Jobs</span>
                             </Link>
                             <Link to="/messaging" className={activeTab==='messaging'?"activeTab nav-link messaging-link-nav":"nav-link messaging-link-nav"} onClick={()=>{activePageTab('messaging')}}>
-                                <Messaging className="nav-icon" />
+                                <span className="icon-nav-wrapper">
+                                    <Messaging className="nav-icon" />
+                                    <span className="icon-badge">1</span>
+                                </span>
                                 <span className="nav-texts">Messaging</span>
                             </Link>
                             <Link to="/notifications" className={activeTab==='notifications'?"activeTab nav-link notif-link-nav":"nav-link notif-link-nav"} onClick={()=>{activePageTab('notifications')}}>
