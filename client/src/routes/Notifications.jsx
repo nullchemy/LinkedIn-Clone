@@ -12,8 +12,8 @@ const Notifications = () => {
             </div>
             <div className="notifMiddle"></div>
             <div className="notifRight">
-              <div className="asideTitle">
-                <h1 className="asideNotifTitle">notifications</h1>
+              <div className="sidebarTitle">
+                <h1 className="sidebarNotifTitle">Notifications</h1>
               </div>
             </div>
           </div>

@@ -12,16 +12,7 @@
                     background-color: #fff;
                     height: min-content;
                     grid-area: aside;
-                    .asideTitle{
-                        border-bottom: 1px solid #00000014;
-                        .asideNotifTitle{
-                            font-size: 1.6rem;
-                            line-height: 1.5;
-                            font-weight: 600;
-                            vertical-align: baseline;
-                            color: rgba(0,0,0,0.9);
-                        }
-                    }
+
                 }
                 .notifMiddle{
                     background-color: #fff;
@@ -32,6 +23,16 @@
                     background-color: #fff;
                     height: min-content;
                     grid-area: sidebar;
+                    .sidebarTitle{
+                        border-bottom: 1px solid #00000014;
+                        .sidebarNotifTitle{
+                            font-size: 1.6rem;
+                            line-height: 1.5;
+                            font-weight: 600;
+                            vertical-align: baseline;
+                            color: rgba(0,0,0,0.9);
+                        }
+                    }
                 }
             }
         }
