@@ -1,8 +1,8 @@
 .notificationsPage .notifwrapper .notifcontainer .notifFlex {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: minmax(0, 4fr) minmax(0, 10fr) minmax(0, 5fr);
-      grid-template-columns: minmax(0, 4fr) minmax(0, 10fr) minmax(0, 5fr);
+  -ms-grid-columns: minmax(0, 3fr) minmax(0, 9fr) minmax(0, 4fr);
+      grid-template-columns: minmax(0, 3fr) minmax(0, 9fr) minmax(0, 4fr);
   -webkit-column-gap: 1rem;
           column-gap: 1rem;
   row-gap: .5rem;
