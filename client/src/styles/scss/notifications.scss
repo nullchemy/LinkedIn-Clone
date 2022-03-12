@@ -2,11 +2,14 @@
     .notifwrapper{
         .notifcontainer{
             .notifFlex{
+                grid-template-areas: "sidebar main aside";
+                grid-template-columns: minmax(0,5fr) minmax(0,12fr) minmax(300px,7fr);
+                column-gap: 1rem;
                 display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-                grid-template-rows: repeat(2, 200px);
-                grid-gap: 1.5rem;
-                grid-auto-flow: dense;
+                grid-area: content;
+                grid-template-columns: minmax(0,1fr);
+                grid-template-rows: auto;
+                row-gap: .5rem;
                 .notifLeft{
                     background-color: #fff;
                     height: 300px;
