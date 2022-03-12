@@ -145,8 +145,9 @@
   z-index: 999;
   height: 5px;
   width: 5px;
-  padding: 5px;
+  padding: 7px;
   font-size: 10px;
+  text-align: center;
   background-color: red;
   color: white;
   border-radius: 50%;
