@@ -12,6 +12,9 @@
                     background-color: #fff;
                     height: min-content;
                     grid-area: aside;
+                    .asideTitle{
+                        border-bottom: 1px solid #00000014;
+                    }
                 }
                 .notifMiddle{
                     background-color: #fff;
