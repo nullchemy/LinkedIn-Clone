@@ -1,3 +1,7 @@
+:root {
+  --lh: 1.4rem;
+}
+
 .notificationsPage .notifwrapper .notifcontainer .notifFlex {
   display: -ms-grid;
   display: grid;
@@ -37,7 +41,6 @@
 }
 
 .notificationsPage .notifwrapper .notifcontainer .notifFlex .notifMiddle .notMWrapper .notmNotification .notmtexts .thnotmtexts {
-  width: 70%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;

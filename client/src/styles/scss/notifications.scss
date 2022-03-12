@@ -1,3 +1,6 @@
+:root {
+    --lh: 1.4rem;
+}
 .notificationsPage{
     .notifwrapper{
         .notifcontainer{
@@ -26,7 +29,6 @@
                             }
                             .notmtexts{
                                 .thnotmtexts{
-                                    width: 70%;
                                     white-space: nowrap;
                                     overflow: hidden;
                                     text-overflow: ellipsis;
