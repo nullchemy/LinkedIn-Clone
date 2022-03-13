@@ -81,15 +81,15 @@ const Notifications = () => {
                         <div className="mutenotif">
                           <MuteIcon className="mutenotificon"/>
                           <div className="mutenotiftxts">
-                            <h2>Delete</h2>
-                            <p>delete this notification</p>
+                            <h2>Mute</h2>
+                            <p>mute this notification</p>
                           </div>
                         </div>
                         <div className="turnoffnotif">
                           <TurnOffIcon className="turnoffnotificon"/>
                           <div className="turnoffnotiftxts">
-                            <h2>Delete</h2>
-                            <p>delete this notification</p>
+                            <h2>Turn off</h2>
+                            <p>turn off this notification</p>
                           </div>
                         </div>
                       </div>
