@@ -3,8 +3,8 @@
   display: grid;
   grid-area: content;
       grid-template-areas: "sidebar main aside";
-  -ms-grid-columns: minmax(0, 5fr) minmax(0, 12fr) minmax(300px, 7fr);
-      grid-template-columns: minmax(0, 5fr) minmax(0, 12fr) minmax(300px, 7fr);
+  -ms-grid-columns: minmax(0, 5fr) minmax(500px, 12fr) minmax(0px, 7fr);
+      grid-template-columns: minmax(0, 5fr) minmax(500px, 12fr) minmax(0px, 7fr);
   -ms-grid-rows: auto;
       grid-template-rows: auto;
   gap: 1.7rem;
@@ -330,5 +330,36 @@
   color: #004182;
   font-weight: 600;
   margin-bottom: 20px;
+}
+
+@media (max-width: 1200px) {
+  .notifFlex {
+    -ms-grid-columns: minmax(0, 5fr) minmax(500px, 12fr) minmax(0px, 1fr) !important;
+        grid-template-columns: minmax(0, 5fr) minmax(500px, 12fr) minmax(0px, 1fr) !important;
+  }
+  .notifFlex .notifLeft {
+    display: none;
+  }
+}
+
+@media (max-width: 960px) {
+  .notifFlex {
+    -ms-grid-columns: minmax(0, 0fr) minmax(500px, 12fr) minmax(0px, 1fr) !important;
+        grid-template-columns: minmax(0, 0fr) minmax(500px, 12fr) minmax(0px, 1fr) !important;
+    gap: 0px !important;
+  }
+  .notifFlex .notifRight {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .notifFlex {
+    display: unset !important;
+  }
 }
 /*# sourceMappingURL=notifications.css.map */
