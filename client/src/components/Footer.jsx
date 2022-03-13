@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/css/footer.css";
+import { ReactComponent as FooterLogo } from '../assets/svg/footer-logo.svg'
 const Footer = () => {
   return (
     <footer className="footer" style={{backgroundColor: "rgb(240, 240, 240)"}}>
@@ -58,7 +59,7 @@ const Footer = () => {
         <div className="siteCredit">
           <p>
             <span className="fakeLogoText">
-              Linked<span className="fakeLogo">in</span>
+              <FooterLogo />&nbsp;
             </span>
             Linked Coporation &copy; {new Date().getFullYear()}
           </p>
