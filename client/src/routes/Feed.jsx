@@ -7,11 +7,13 @@ import Footer from "../components/Footer";
 import PromotionListItem from "../components/PromotionListItem";
 import ProfileImg from "../assets/images/kibet.png";
 import FeedCard from "../components/FeedCard";
+import CreatePost from "../components/CreatePost";
 
 const Feed = () => {
   const [clicked, setClicked] = useState(false);
   const containerRef = useRef(null);
   const newsRef = useRef(null);
+  const [showModal, setShowModal] = useState(false);
   useEffect(() => {
     const linksHeight = newsRef.current.getBoundingClientRect().height;
     if (clicked) {
@@ -121,7 +123,10 @@ const Feed = () => {
                   </Link>
                 </div>
                 <div className="feedInput">
-                  <button className="feedInputBtn">
+                  <button
+                    className="feedInputBtn"
+                    onClick={() => setShowModal(!showModal)}
+                  >
                     <span>Start a post</span>
                   </button>
                 </div>
@@ -310,6 +315,8 @@ const Feed = () => {
           </Sidebar>
         </div>
       </div>
+
+      <CreatePost showModal={showModal} setShowModal={setShowModal} />
     </main>
   );
 };
