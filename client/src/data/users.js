@@ -25,7 +25,7 @@ export const users = [
     userImg: "/images/user6.jpg",
   },
   {
-    id: 2,
+    id: 4,
     name: "Karamo Brown",
     tags: "",
     title: "Member’s occupation Culture Expert QUEER EYE at Netflix",

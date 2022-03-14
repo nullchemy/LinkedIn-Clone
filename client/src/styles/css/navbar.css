@@ -1,6 +1,10 @@
 .navbar {
   width: 100%;
   height: 54px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 999;
   background-color: #fff;
   border-bottom: 1px solid #f0f0f0;
 }
@@ -111,9 +115,15 @@
           align-items: center;
   margin: 0 20px;
   position: relative;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
-.navbar .navcontainer .navflex .navright .navigation .nav-group .nav-link .nav-icon {
+.navbar .navcontainer .navflex .navright .navigation .nav-group .nav-link .icon-nav-wrapper {
+  position: relative;
+}
+
+.navbar .navcontainer .navflex .navright .navigation .nav-group .nav-link .icon-nav-wrapper .nav-icon {
   height: 24px;
   -webkit-transform: scale(1);
           transform: scale(1);
@@ -128,7 +138,66 @@
   line-height: 1.5;
 }
 
-.navbar .navcontainer .navflex .navright .navigation .nav-group .nav-link .nav-profile-image {
+.navbar .navcontainer .navflex .navright .navigation .nav-group .nav-link .icon-nav-wrapper .nav-profile-image {
+  border-radius: 50%;
+}
+
+.navbar .navcontainer .navflex .navright .navigation .nav-group .nav-link .icon-nav-wrapper .icon-badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 999;
+  height: 5px;
+  width: 5px;
+  padding: 5px;
+  font-size: 10px;
+  text-align: center;
+  background-color: #cc1016;
+  color: white;
+  border-radius: 50%;
+  margin-top: -5px;
+  margin-right: -5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 900;
+}
+
+.navbar .navcontainer .navflex .navright .navigation .nav-group .nav-link .icon-nav-wrapper .icon-badge-home {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 999;
+  height: 5px;
+  width: 5px;
+  padding: 5px;
+  font-size: 10px;
+  text-align: center;
+  background-color: #cc1016;
+  color: white;
+  border-radius: 50%;
+  margin-top: -5px;
+  margin-right: -5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar .navcontainer .navflex .navright .navigation .nav-group .nav-link .icon-nav-wrapper .icon-badge-home span {
+  background-color: #fff;
+  padding: 3.5px;
   border-radius: 50%;
 }
 
@@ -139,6 +208,7 @@
   font-weight: 400;
   line-height: 1.5;
   list-style-type: none;
+  margin-top: -5px;
 }
 
 .navbar .navcontainer .navflex .navright .navigation .nav-group .nav-link .nav-texts span .profile-drop-icon {
@@ -155,20 +225,116 @@
   margin-bottom: -3px;
 }
 
-.navbar .navcontainer .navflex .navright .navigation .nav-group .nav-link:nth-child(1):after {
-  border-bottom: 2px solid black;
+.navbar .navcontainer .navflex .navright .navigation .nav-group .activeTab::after {
+  background: none repeat scroll 0 0 transparent;
   content: "";
-  bottom: 0;
-  left: 0;
+  display: block;
+  height: 2px;
+  margin-top: 2px;
+  background: -webkit-gradient(linear, right top, left top, from(#494949), to(#353535));
+  background: linear-gradient(to left, #494949, #353535 100%);
+  -webkit-transition: width .5s ease 0s, right .5s ease 0s;
+  transition: width .5s ease 0s, right .5s ease 0s;
+  width: 0;
+  -webkit-animation: tabactive 0.2s ease-in-out forwards;
+          animation: tabactive 0.2s ease-in-out forwards;
+}
+
+@-webkit-keyframes tabactive {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 160%;
+  }
+}
+
+@keyframes tabactive {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 160%;
+  }
+}
+
+.navbar .navcontainer .navflex .navright .navigation .nav-group .profileDetDrop {
+  display: none;
+  width: 300px;
+  height: 200px;
   position: absolute;
-  -webkit-transform: translateX(-20px);
-          transform: translateX(-20px);
-  -webkit-transition: -webkit-transform .2s ease-in-out;
-  transition: -webkit-transform .2s ease-in-out;
-  transition: transform .2s ease-in-out;
-  transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
-  width: calc(100% + 40px);
-  margin-bottom: -3px;
+  top: 50px;
+  right: 0;
+  z-index: 999;
+  background-color: white;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.navbar .navcontainer .navflex .navright .navigation .nav-group .profileDetDrop .profdetfl:nth-child(1), .navbar .navcontainer .navflex .navright .navigation .nav-group .profileDetDrop .profdetfl:nth-child(2) {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.navbar .navcontainer .navflex .navright .navigation .nav-group .profileDetDrop .profdetfl {
+  padding: 10px;
+}
+
+.navbar .navcontainer .navflex .navright .navigation .nav-group .profileDetDrop .profdetfl .profileViewDet {
+  display: block;
+  padding: 1px 10px;
+  width: 85%;
+  text-align: center;
+  border-radius: 30px;
+  border: 1px solid blue;
+  color: blue;
+  margin: 10px;
+}
+
+.navbar .navcontainer .navflex .navright .navigation .nav-group .profileDetDrop .profdetfl .profileViewDet:hover {
+  border: 2px solid blue;
+  margin-bottom: 8px;
+  margin-right: 8px;
+}
+
+.navbar .navcontainer .navflex .navright .navigation .nav-group .profileDetDrop .profdetimage {
+  margin-bottom: 10px;
+}
+
+.navbar .navcontainer .navflex .navright .navigation .nav-group .profileDetDrop .profdetimage .topprofdetflex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar .navcontainer .navflex .navright .navigation .nav-group .profileDetDrop .profdetimage .topprofdetflex img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.navbar .navcontainer .navflex .navright .navigation .nav-group .profileDetDrop .profdetimage .topprofdetflex .profdettxtsflex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 10px;
+}
+
+.navbar .navcontainer .navflex .navright .navigation .nav-group .profileDetDrop .profdetimage .topprofdetflex .profdettxtsflex .profNameDet {
+  color: #2c2c2c;
+  font-weight: 600;
+}
+
+.navbar .navcontainer .navflex .navright .navigation .nav-group .profileDetDrop .profdetimage .topprofdetflex .profdettxtsflex .profSchoolDet {
+  color: #2c2c2c;
+  font-weight: 300;
+  font-size: 15px;
 }
 
 .navbar .navcontainer .navflex .navright .nav-work {
@@ -198,6 +364,8 @@
 }
 
 .navbar .navcontainer .navflex .navright .nav-work .nav-link .nav-icon {
+  position: absolute;
+  top: 0;
   height: 24px;
   -webkit-transform: scale(1);
           transform: scale(1);
@@ -223,6 +391,7 @@
   font-weight: 400;
   line-height: 1.5;
   list-style-type: none;
+  margin-top: 24px;
 }
 
 .navbar .navcontainer .navflex .navright .nav-work .nav-link .nav-texts span .profile-drop-icon {

@@ -1,0 +1,365 @@
+.notificationsPage .notifwrapper .notifcontainer .notifFlex {
+  display: -ms-grid;
+  display: grid;
+  grid-area: content;
+      grid-template-areas: "sidebar main aside";
+  -ms-grid-columns: minmax(0, 5fr) minmax(500px, 12fr) minmax(0px, 7fr);
+      grid-template-columns: minmax(0, 5fr) minmax(500px, 12fr) minmax(0px, 7fr);
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  gap: 1.7rem;
+}
+
+.notificationsPage .notifwrapper .notifcontainer .notifFlex .notifLeft {
+  background-color: #fff;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: aside;
+  height: min-content;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 80px;
+}
+
+.notificationsPage .notifwrapper .notifcontainer .notifFlex .notifLeft .notifLeftTop {
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+}
+
+.notificationsPage .notifwrapper .notifcontainer .notifFlex .notifLeft .notifLeftTop img {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin: 0 auto;
+}
+
+.notificationsPage .notifwrapper .notifcontainer .notifFlex .notifMiddle {
+  background-color: #fff;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: main;
+  border-radius: 7px;
+  -webkit-box-shadow: 0px 0px 0px 1px rgba(206, 206, 206, 0.9);
+          box-shadow: 0px 0px 0px 1px rgba(206, 206, 206, 0.9);
+  overflow: hidden !important;
+}
+
+.notificationsPage .notifwrapper .notifcontainer .notifFlex .notifMiddle .notificationLink .notMWrapper {
+  border-bottom: 1px solid #cecece;
+  background-color: #ffffff;
+}
+
+.notificationsPage .notifwrapper .notifcontainer .notifFlex .notifMiddle .notificationLink .notMWrapper .notmNotification {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+}
+
+.notificationsPage .notifwrapper .notifcontainer .notifFlex .notifMiddle .notificationLink .notMWrapper .notmNotification .notmImage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 10px;
+}
+
+.notificationsPage .notifwrapper .notifcontainer .notifFlex .notifMiddle .notificationLink .notMWrapper .notmNotification .notmImage .notificationStatus {
+  width: 5px;
+  height: 5px;
+  background-color: #3935ff;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.notificationsPage .notifwrapper .notifcontainer .notifFlex .notifMiddle .notificationLink .notMWrapper .notmNotification .notmImage .notAuthorImage {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden !important;
+}
+
+.notificationsPage .notifwrapper .notifcontainer .notifFlex .notifMiddle .notificationLink .notMWrapper .notmNotification .notmImage .notAuthorImage img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.notificationsPage .notifwrapper .notifcontainer .notifFlex .notifMiddle .notificationLink .notMWrapper .notmNotification .notmtexts .thnotmtexts {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-height: 1.4rem !important;
+  font-size: 13px;
+  max-height: 6rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  word-break: break-word;
+  cursor: pointer;
+}
+
+.notificationsPage .notifwrapper .notifcontainer .notifFlex .notifMiddle .notificationLink .notMWrapper .notmNotification .notmtexts .thnotmtexts .thnotmauthor {
+  font-weight: 500;
+  margin-right: 5px;
+}
+
+.notificationsPage .notifwrapper .notifcontainer .notifFlex .notifMiddle .notificationLink .notMWrapper .notmNotification .notLater {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.notificationsPage .notifwrapper .notifcontainer .notifFlex .notifMiddle .notificationLink .notMWrapper .notmNotification .notLater .notifTime p {
+  font-size: 12px;
+  font-weight: 200;
+  color: #949494;
+  text-align: center;
+  margin-bottom: 3px;
+  margin-top: 10px;
+}
+
+.notificationsPage .notifwrapper .notifcontainer .notifFlex .notifMiddle .notificationLink .notMWrapper .notmNotification .notLater .notifAction {
+  color: #949494;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.notificationsPage .notifwrapper .notifcontainer .notifFlex .notifMiddle .notificationLink .notMWrapper .notmNotification .notLater .notifAction:hover {
+  background-color: #c5c5c5;
+}
+
+.notificationsPage .notifwrapper .notifcontainer .notifFlex .notifMiddle .notificationLink .notMWrapper .notmNotification .notLater .notif-drop-down {
+  display: none;
+  position: absolute;
+  right: 0;
+  width: 200px;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  background-color: #fff;
+  margin-top: 63px;
+  margin-right: -5px;
+  z-index: 900;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+
+.notificationsPage .notifwrapper .notifcontainer .notifFlex .notifMiddle .notificationLink .notMWrapper .notmNotification .notLater .notif-drop-down .deletenotif {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px 10px;
+}
+
+.notificationsPage .notifwrapper .notifcontainer .notifFlex .notifMiddle .notificationLink .notMWrapper .notmNotification .notLater .notif-drop-down .deletenotif:hover {
+  background-color: #cccccc;
+}
+
+.notificationsPage .notifwrapper .notifcontainer .notifFlex .notifMiddle .notificationLink .notMWrapper .notmNotification .notLater .notif-drop-down .deletenotif .deletenotificon {
+  color: #000000b2;
+  margin-right: 10px;
+}
+
+.notificationsPage .notifwrapper .notifcontainer .notifFlex .notifMiddle .notificationLink .notMWrapper .notmNotification .notLater .notif-drop-down .deletenotif .deletenotiftxts h2 {
+  color: #000000b2;
+  font-size: 0.8rem;
+}
+
+.notificationsPage .notifwrapper .notifcontainer .notifFlex .notifMiddle .notificationLink .notMWrapper .notmNotification .notLater .notif-drop-down .deletenotif .deletenotiftxts p {
+  color: #000000b2;
+  font-size: 0.7rem;
+}
+
+.notificationsPage .notifwrapper .notifcontainer .notifFlex .notifMiddle .notificationLink .notMWrapper .notmNotification .notLater .notif-drop-down .mutenotif {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px 10px;
+}
+
+.notificationsPage .notifwrapper .notifcontainer .notifFlex .notifMiddle .notificationLink .notMWrapper .notmNotification .notLater .notif-drop-down .mutenotif:hover {
+  background-color: #cccccc;
+}
+
+.notificationsPage .notifwrapper .notifcontainer .notifFlex .notifMiddle .notificationLink .notMWrapper .notmNotification .notLater .notif-drop-down .mutenotif .mutenotificon {
+  color: #000000b2;
+  margin-right: 10px;
+}
+
+.notificationsPage .notifwrapper .notifcontainer .notifFlex .notifMiddle .notificationLink .notMWrapper .notmNotification .notLater .notif-drop-down .mutenotif .mutenotiftxts h2 {
+  color: #000000b2;
+  font-size: 0.8rem;
+}
+
+.notificationsPage .notifwrapper .notifcontainer .notifFlex .notifMiddle .notificationLink .notMWrapper .notmNotification .notLater .notif-drop-down .mutenotif .mutenotiftxts p {
+  color: #000000b2;
+  font-size: 0.7rem;
+}
+
+.notificationsPage .notifwrapper .notifcontainer .notifFlex .notifMiddle .notificationLink .notMWrapper .notmNotification .notLater .notif-drop-down .turnoffnotif {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px 10px;
+}
+
+.notificationsPage .notifwrapper .notifcontainer .notifFlex .notifMiddle .notificationLink .notMWrapper .notmNotification .notLater .notif-drop-down .turnoffnotif:hover {
+  background-color: #cccccc;
+}
+
+.notificationsPage .notifwrapper .notifcontainer .notifFlex .notifMiddle .notificationLink .notMWrapper .notmNotification .notLater .notif-drop-down .turnoffnotif .turnoffnotificon {
+  color: #000000b2;
+  margin-right: 10px;
+}
+
+.notificationsPage .notifwrapper .notifcontainer .notifFlex .notifMiddle .notificationLink .notMWrapper .notmNotification .notLater .notif-drop-down .turnoffnotif .turnoffnotiftxts h2 {
+  color: #000000b2;
+  font-size: 0.8rem;
+}
+
+.notificationsPage .notifwrapper .notifcontainer .notifFlex .notifMiddle .notificationLink .notMWrapper .notmNotification .notLater .notif-drop-down .turnoffnotif .turnoffnotiftxts p {
+  color: #000000b2;
+  font-size: 0.7rem;
+}
+
+.notificationsPage .notifwrapper .notifcontainer .notifFlex .notifMiddle .notificationLink .notMWrapper .notmNotification .notLater .showDropDown {
+  display: unset !important;
+}
+
+.notificationsPage .notifwrapper .notifcontainer .notifFlex .notifMiddle .notificationLink .newNotification {
+  background-color: #70b5f933;
+}
+
+.notificationsPage .notifwrapper .notifcontainer .notifFlex .notifRight {
+  background-color: #fff;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: sidebar;
+  border-radius: 7px;
+  -webkit-box-shadow: 0px 0px 0px 1px rgba(206, 206, 206, 0.9);
+          box-shadow: 0px 0px 0px 1px rgba(206, 206, 206, 0.9);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 80px;
+}
+
+.notificationsPage .notifwrapper .notifcontainer .notifFlex .notifRight .sidebarTitle {
+  border-bottom: 1px solid #00000014;
+  padding: 10px;
+}
+
+.notificationsPage .notifwrapper .notifcontainer .notifFlex .notifRight .sidebarTitle .sidebarNotifTitle {
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 600;
+  vertical-align: baseline;
+  color: rgba(0, 0, 0, 0.9);
+  text-align: center;
+  margin-top: 15px;
+}
+
+.notificationsPage .notifwrapper .notifcontainer .notifFlex .notifRight .sidebarTitle .sidebarNotifCachy {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  font-weight: 400;
+  vertical-align: baseline;
+  color: rgba(48, 48, 48, 0.9);
+  text-align: center;
+  margin-top: 5px;
+}
+
+.notificationsPage .notifwrapper .notifcontainer .notifFlex .notifRight .sidebarBottom .sbexplns {
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 200;
+  vertical-align: baseline;
+  color: rgba(48, 48, 48, 0.9);
+  text-align: center;
+  margin-top: 5px;
+}
+
+.notificationsPage .notifwrapper .notifcontainer .notifFlex .notifRight .sidebarBottom .sbsttngs {
+  text-align: center;
+  color: #004182;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1200px) {
+  .notifFlex {
+    -ms-grid-columns: minmax(0, 5fr) minmax(500px, 12fr) minmax(0px, 1fr) !important;
+        grid-template-columns: minmax(0, 5fr) minmax(500px, 12fr) minmax(0px, 1fr) !important;
+  }
+  .notifFlex .notifLeft {
+    display: none;
+  }
+}
+
+@media (max-width: 960px) {
+  .notifFlex {
+    -ms-grid-columns: minmax(0, 0fr) minmax(500px, 12fr) minmax(0px, 1fr) !important;
+        grid-template-columns: minmax(0, 0fr) minmax(500px, 12fr) minmax(0px, 1fr) !important;
+    gap: 0px !important;
+  }
+  .notifFlex .notifRight {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .notifFlex {
+    display: unset !important;
+  }
+}
+/*# sourceMappingURL=notifications.css.map */

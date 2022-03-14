@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
 import Sidebar from "../components/Sidebar";
 import UserCard from "../components/UserCard";
-import { users } from "../users";
-import "../styles/scss/network.css";
+import { users } from "../data/users";
+import "../styles/css/network.css";
 const Network = () => {
   const [clicked, setClicked] = useState(false);
   const containerRef = useRef(null);
@@ -129,7 +129,7 @@ const Network = () => {
             <button className="followSectionBtn">See all</button>
           </div>
           <div className="followSectionRow">
-            {users.map((user) => (
+            {[...new Set(users)].map((user) => (
               <UserCard key={user.id} {...user} />
             ))}
           </div>

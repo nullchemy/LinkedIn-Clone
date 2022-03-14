@@ -1,9 +1,13 @@
 import React from "react";
+import { ReactComponent as Close } from "../assets/svg/close-icon.svg";
+
 const UserCard = ({ name, title, tags, userImg, bannerImg }) => {
   return (
     <div className="col">
       <div className="card">
-        <span className="removeUserAction fas fa-times"></span>
+        <span className="removeUserAction">
+          <Close className="removeIcon" />
+        </span>
 
         <div className="banner">
           <img src={bannerImg} alt="" className="bannerImg" />

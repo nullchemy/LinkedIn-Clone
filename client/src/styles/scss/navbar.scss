@@ -1,6 +1,9 @@
 .navbar{
     width: 100%;
     height: 54px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
     background-color: #fff;
     border-bottom: 1px solid rgb(240, 240, 240);
     .navcontainer{
@@ -65,7 +68,185 @@
                             align-items: center;
                             margin: 0 20px;
                             position: relative;
+                            transition: 0.3s;
+                            .icon-nav-wrapper{
+                                position: relative;
+                                .nav-icon{
+                                    height: 24px;
+                                    transform: scale(1);
+                                    transition: transform .2s ease-in-out;
+                                    width: 24px;
+                                    font-size: 1.2rem;
+                                    font-weight: 400;
+                                    cursor: pointer;
+                                    line-height: 1.5;
+                                }
+                                .nav-profile-image{
+                                    border-radius: 50%;
+                                }
+                                .icon-badge{
+                                    position: absolute;
+                                    top: 0;
+                                    right: 0;
+                                    z-index: 999;
+                                    height: 5px;
+                                    width: 5px;
+                                    padding: 5px;
+                                    font-size: 10px;
+                                    text-align: center;
+                                    background-color: #cc1016;
+                                    color: rgb(255, 255, 255);
+                                    border-radius: 50%;
+                                    margin-top: -5px;
+                                    margin-right: -5px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    font-weight: 900;
+                                }
+                                .icon-badge-home{
+                                    position: absolute;
+                                    top: 0;
+                                    right: 0;
+                                    z-index: 999;
+                                    height: 5px;
+                                    width: 5px;
+                                    padding: 5px;
+                                    font-size: 10px;
+                                    text-align: center;
+                                    background-color: #cc1016;
+                                    color: rgb(255, 255, 255);
+                                    border-radius: 50%;
+                                    margin-top: -5px;
+                                    margin-right: -5px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    span {
+                                        background-color: #fff;
+                                        padding: 3.5px;
+                                        border-radius: 50%;
+                                    }
+                                }
+                            }
+                            .nav-texts{
+                                color: #00000099;
+                                cursor: pointer;
+                                font-size: 0.75rem;
+                                font-weight: 400;
+                                line-height: 1.5;
+                                list-style-type: none;
+                                margin-top: -5px;
+                                span{
+                                    .profile-drop-icon{
+                                        transform: scale(1);
+                                        transition: transform .2s ease-in-out;
+                                        font-size: 1.2rem;
+                                        font-weight: 400;
+                                        cursor: pointer;
+                                        line-height: 1.5;
+                                        margin-bottom: -3px;
+                                    }
+                                }
+                            }
+                        }
+                        .activeTab::after{
+                            background: none repeat scroll 0 0 transparent;
+                            content: "";
+                            display: block;
+                            height: 2px;
+                            margin-top: 2px;
+                            background: linear-gradient(to left, #494949, #353535 100%);
+                            transition: width .5s ease 0s, right .5s ease 0s;
+                            width: 0;
+                            animation: tabactive 0.2s ease-in-out forwards;
+                        }
+                        @keyframes tabactive{
+                            0%{
+                                width: 0;
+                            }
+                            100%{
+                                width: 160%;
+                            }
+                        }
+                        .profileDetDrop{
+                            display: none;
+                            width: 300px;
+                            height: 200px;
+                            position: absolute;
+                            top: 50px;
+                            right: 0;
+                            z-index: 999;
+                            background-color: rgb(255, 255, 255);
+                            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+                            border-bottom-left-radius: 5px;
+                            border-top-left-radius: 5px;
+                            border-bottom-right-radius: 5px;
+                            .profdetfl:nth-child(1),.profdetfl:nth-child(2){
+                                border-bottom: 1px solid rgb(240, 240, 240);
+                            }
+                            .profdetfl{
+                                padding: 10px;
+                                .profileViewDet{
+                                    display: block;
+                                    padding: 1px 10px;
+                                    width: 85%;
+                                    text-align: center;
+                                    border-radius: 30px;
+                                    border: 1px solid blue;
+                                    color: blue;
+                                    margin: 10px;
+                                }
+                                .profileViewDet:hover{
+                                    border: 2px solid blue;
+                                    margin-bottom: 8px;
+                                    margin-right: 8px;
+                                }
+                            }
+                            .profdetimage{
+                                margin-bottom: 10px;
+                                .topprofdetflex{
+                                    display: flex;
+                                    img{
+                                        width: 45px;
+                                        height: 45px;
+                                        border-radius: 50%;
+                                    }
+                                    .profdettxtsflex{
+                                        display: flex;
+                                        flex-direction: column;
+                                        margin-left: 10px;
+                                        .profNameDet{
+                                            color: rgb(44, 44, 44);
+                                            font-weight: 600;
+                                        }
+                                        .profSchoolDet{
+                                            color: rgb(44, 44, 44);
+                                            font-weight: 300;
+                                            font-size: 15px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .nav-work{
+                    border-left: 2px solid rgb(240, 240, 240);
+                    display: flex;
+                    margin-top: -10px;
+                    margin-bottom: -2px;
+                    padding-top: 10px;
+                    position: relative;
+                    .nav-link{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        margin: 0 20px;
+                        position: relative;
                             .nav-icon{
+                                position: absolute;
+                                top: 0;
                                 height: 24px;
                                 transform: scale(1);
                                 transition: transform .2s ease-in-out;
@@ -85,6 +266,7 @@
                                 font-weight: 400;
                                 line-height: 1.5;
                                 list-style-type: none;
+                                margin-top: 24px;
                                 span{
                                     .profile-drop-icon{
                                         transform: scale(1);
@@ -97,66 +279,6 @@
                                     }
                                 }
                             }
-                        }
-                        .nav-link:nth-child(1):after{
-                            border-bottom: 2px solid black;
-                            content: "";
-                            bottom: 0;
-                            left: 0;
-                            position: absolute;
-                            // transform: scaleX(100%);
-                            transform: translateX(-20px);
-                            transition: transform .2s ease-in-out;
-                            width: calc(100% + 40px);
-                            margin-bottom: -3px;
-                        }
-                    }
-                }
-                .nav-work{
-                    border-left: 2px solid rgb(240, 240, 240);
-                    display: flex;
-                    margin-top: -10px;
-                    margin-bottom: -2px;
-                    padding-top: 10px;
-                    position: relative;
-                    .nav-link{
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                        margin: 0 20px;
-                        position: relative;
-                        .nav-icon{
-                            height: 24px;
-                            transform: scale(1);
-                            transition: transform .2s ease-in-out;
-                            width: 24px;
-                            font-size: 1.2rem;
-                            font-weight: 400;
-                            cursor: pointer;
-                            line-height: 1.5;
-                        }
-                        .nav-profile-image{
-                            border-radius: 50%;
-                        }
-                        .nav-texts{
-                            color: #00000099;
-                            cursor: pointer;
-                            font-size: 0.75rem;
-                            font-weight: 400;
-                            line-height: 1.5;
-                            list-style-type: none;
-                            span{
-                                .profile-drop-icon{
-                                    transform: scale(1);
-                                    transition: transform .2s ease-in-out;
-                                    font-size: 1.2rem;
-                                    font-weight: 400;
-                                    cursor: pointer;
-                                    line-height: 1.5;
-                                    margin-bottom: -3px;
-                                }
-                            }
-                        }
                     }
                     .nav-premium{
                         color: #915907;
