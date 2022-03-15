@@ -1,28 +1,36 @@
-.createPostOverlay {
+.createPostModalContainer {
   position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
   width: 100%;
-  height: 100vh;
-  overflow-y: hidden;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 40;
+  min-height: 100vh;
   visibility: hidden;
+  z-index: 4000;
   opacity: 0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-.createPostOverlay.overlayActive {
+.createPostModalContainer.modalActive {
   visibility: visible;
   opacity: 1;
 }
 
-.createPostOverlay .createPostCard {
+.createPostModalContainer .modalOverlay {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.createPostModalContainer .createPostCard {
   position: relative;
-  top: 6rem;
+  top: 2rem;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -32,10 +40,10 @@
   height: -moz-max-content;
   height: max-content;
   border-radius: 10px;
-  padding: 13px 16px;
+  padding: 13px 0;
 }
 
-.createPostOverlay .createPostCard .modalHeader {
+.createPostModalContainer .createPostCard .modalHeader {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -45,19 +53,55 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 10px 0;
+  padding: 10px 16px;
 }
 
-.createPostOverlay .createPostCard .modalHeader .title {
+.createPostModalContainer .createPostCard .modalHeader .title {
   color: #505050;
 }
 
-.createPostOverlay .createPostCard .modalHeader .cancelPostBtn {
+.createPostModalContainer .createPostCard .modalHeader .cancelPostBtn {
   color: #505050;
   cursor: pointer;
 }
 
-.createPostOverlay .createPostCard .modalBody .flex {
+.createPostModalContainer .createPostCard .modalBody .photoUploadArea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 2px solid #ececec;
+}
+
+.createPostModalContainer .createPostCard .modalBody .photoUploadArea .customUpload {
+  display: block;
+  color: #0a66c2;
+  background: #ececec;
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.createPostModalContainer .createPostCard .modalBody .photoUploadArea .imagePreviewContainer {
+  width: 100%;
+  overflow-y: auto !important;
+}
+
+.createPostModalContainer .createPostCard .modalBody .photoUploadArea .imagePreviewContainer .previewImg {
+  width: 100%;
+  max-height: auto;
+}
+
+.createPostModalContainer .createPostCard .modalBody .flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -68,77 +112,141 @@
       -ms-flex-pack: start;
           justify-content: flex-start;
   gap: 1rem;
+  padding: 0 16px;
 }
 
-.createPostOverlay .createPostCard .modalBody .flex .userImageContainer {
+.createPostModalContainer .createPostCard .modalBody .flex .userImageContainer {
   width: 40px;
   height: 40px;
   border-radius: 50%;
   overflow: hidden;
 }
 
-.createPostOverlay .createPostCard .modalBody .flex .userImageContainer .userAvatar {
+.createPostModalContainer .createPostCard .modalBody .flex .userImageContainer .userAvatar {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.createPostOverlay .createPostCard .modalBody .flex .userPreference .userName {
+.createPostModalContainer .createPostCard .modalBody .flex .userPreference .userName {
   font-size: 15px;
   font-weight: 600;
   color: #292929;
 }
 
-.createPostOverlay .createPostCard .modalBody .flex .userPreference .selectDropDown {
-  border-radius: 50%;
+.createPostModalContainer .createPostCard .modalBody .flex .userPreference .postPreferenceBtn {
+  background: none;
+  border-radius: 25px;
+  border: 1px solid #292929;
+  padding: 10px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
 }
 
-.createPostOverlay .createPostCard .modalBody .postDetails {
+.createPostModalContainer .createPostCard .modalBody .postDetails {
   width: 100%;
   padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.createPostOverlay .createPostCard .modalBody .postDetails #postDescription {
+.createPostModalContainer .createPostCard .modalBody .postDetails #postDescription {
+  padding-left: 20px;
   border: 0;
   outline: none;
   width: 100%;
   min-height: 100px;
   resize: vertical;
   font-size: 15px;
+  font-family: system-ui, "Roboto";
+  font-weight: 400;
+  color: #383838;
+}
+
+.createPostModalContainer .createPostCard .modalBody .postDetails #postDescription::-webkit-input-placeholder {
+  font-size: 15px;
+  font-family: system-ui, "Roboto";
+  font-weight: 300;
+  color: #808080;
+}
+
+.createPostModalContainer .createPostCard .modalBody .postDetails #postDescription:-ms-input-placeholder {
+  font-size: 15px;
+  font-family: system-ui, "Roboto";
+  font-weight: 300;
+  color: #808080;
+}
+
+.createPostModalContainer .createPostCard .modalBody .postDetails #postDescription::-ms-input-placeholder {
+  font-size: 15px;
+  font-family: system-ui, "Roboto";
+  font-weight: 300;
+  color: #808080;
+}
+
+.createPostModalContainer .createPostCard .modalBody .postDetails #postDescription::placeholder {
+  font-size: 15px;
+  font-family: system-ui, "Roboto";
+  font-weight: 300;
+  color: #808080;
+}
+
+.createPostModalContainer .createPostCard .modalBody .imagePreviewContainer {
+  overflow-y: auto !important;
+  width: 100%;
+}
+
+.createPostModalContainer .createPostCard .modalBody .imagePreviewContainer .previewImg {
+  width: 100%;
+  max-height: auto;
+}
+
+.createPostModalContainer .createPostCard .modalFooter {
+  padding: 0 16px;
+}
+
+.createPostModalContainer .createPostCard .modalFooter .editingRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 0;
+}
+
+.createPostModalContainer .createPostCard .modalFooter .editingRow .btn {
+  background: none;
+  color: #0a66c2;
+  border: 1px solid #0a66c2;
+  outline: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.createPostModalContainer .createPostCard .modalFooter .editingRow .btn.backBtn {
+  margin-right: 14px;
+}
+
+.createPostModalContainer .createPostCard .modalFooter .editingRow .btn.saveBtn:disabled {
   color: #505050;
-  font-weight: 600;
+  border: none !important;
+  cursor: not-allowed;
+  background: #ececec;
 }
 
-.createPostOverlay .createPostCard .modalBody .postDetails #postDescription::-webkit-input-placeholder {
-  font-size: 15px;
-  font-family: system-ui, "Roboto";
-  font-weight: 300;
-  color: #808080;
-}
-
-.createPostOverlay .createPostCard .modalBody .postDetails #postDescription:-ms-input-placeholder {
-  font-size: 15px;
-  font-family: system-ui, "Roboto";
-  font-weight: 300;
-  color: #808080;
-}
-
-.createPostOverlay .createPostCard .modalBody .postDetails #postDescription::-ms-input-placeholder {
-  font-size: 15px;
-  font-family: system-ui, "Roboto";
-  font-weight: 300;
-  color: #808080;
-}
-
-.createPostOverlay .createPostCard .modalBody .postDetails #postDescription::placeholder {
-  font-size: 15px;
-  font-family: system-ui, "Roboto";
-  font-weight: 300;
-  color: #808080;
-}
-
-.createPostOverlay .createPostCard .modalFooter .row {
+.createPostModalContainer .createPostCard .modalFooter .row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -147,7 +255,7 @@
           align-items: center;
 }
 
-.createPostOverlay .createPostCard .modalFooter .row .colLeft {
+.createPostModalContainer .createPostCard .modalFooter .row .colLeft {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -158,7 +266,7 @@
       flex-basis: 60%;
 }
 
-.createPostOverlay .createPostCard .modalFooter .row .colLeft .colLeftToolBars {
+.createPostModalContainer .createPostCard .modalFooter .row .colLeft .colLeftToolBars {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -168,7 +276,7 @@
   gap: 1rem;
 }
 
-.createPostOverlay .createPostCard .modalFooter .row .colLeft .colLeftToolBars .toolBarItem button {
+.createPostModalContainer .createPostCard .modalFooter .row .colLeft .colLeftToolBars .toolBarItem button {
   border: none;
   outline: none;
   background: none;
@@ -176,7 +284,7 @@
   cursor: pointer;
 }
 
-.createPostOverlay .createPostCard .modalFooter .row .colRight {
+.createPostModalContainer .createPostCard .modalFooter .row .colRight {
   -ms-flex-preferred-size: 40%;
       flex-basis: 40%;
   display: -webkit-box;
@@ -190,14 +298,32 @@
           align-items: center;
 }
 
-.createPostOverlay .createPostCard .modalFooter .row .colRight .createPostBtn {
-  color: #292929;
-  border: 0;
-  outline: 0;
+.createPostModalContainer .createPostCard .modalFooter .row .colRight .commentPreferenceBtn {
+  background: none;
+  border-radius: 25px;
+  border: 1px solid #292929;
+  padding: 10px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   cursor: pointer;
 }
 
-.createPostOverlay .createPostCard .modalFooter .row .colRight .createPostBtn:disabled {
+.createPostModalContainer .createPostCard .modalFooter .row .colRight .createPostBtn {
+  color: #0a66c2;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  font-weight: 500;
+  background: none;
+  cursor: pointer;
+}
+
+.createPostModalContainer .createPostCard .modalFooter .row .colRight .createPostBtn:disabled {
   color: #808080;
+  cursor: not-allowed;
 }
 /*# sourceMappingURL=modal.css.map */
