@@ -1,6 +1,7 @@
 .row {
   display: grid;
   grid-template-columns: 1.5fr 4fr;
+  grid-template-rows: auto;
   grid-gap: 1rem;
   align-items: flex-start;
   .aside {
@@ -102,6 +103,7 @@
         .col {
           flex-basis: 200px;
           flex-grow: 1;
+          flex-shrink: 0;
           .card {
             display: flex;
             flex-direction: column;
@@ -202,6 +204,23 @@
               }
             }
           }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .row {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 500px) {
+  .row {
+    .main {
+      .followSection {
+        .followSectionRow {
+          flex-direction: column;
         }
       }
     }

@@ -5,9 +5,15 @@
 .mainFeed .mainFeedRow {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 2.5fr 1.5fr;
-      grid-template-columns: 1fr 2.5fr 1.5fr;
-  gap: 2rem;
+  -ms-grid-columns: 1fr 4fr;
+      grid-template-columns: 1fr 4fr;
+  gap: 1rem;
+}
+
+.mainFeed .mainFeedRow .mainFeedLeftCol .leftBar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 80px;
 }
 
 .mainFeed .mainFeedRow .mainFeedLeftCol .leftBar .card {
@@ -175,7 +181,15 @@
   cursor: pointer;
 }
 
-.mainFeed .mainFeedRow .mainFeedCenter .toolsBar {
+.mainFeed .mainFeedRow .mainFeedCenter {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2.8fr 1.2fr;
+      grid-template-columns: 2.8fr 1.2fr;
+  gap: 1rem;
+}
+
+.mainFeed .mainFeedRow .mainFeedCenter .mainFeedCenterLeft .toolsBar {
   background: #ffffff;
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
           box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
@@ -183,21 +197,21 @@
   padding: 10px 20px;
 }
 
-.mainFeed .mainFeedRow .mainFeedCenter .toolsBar .toolsBarWrapper .topBar {
+.mainFeed .mainFeedRow .mainFeedCenter .mainFeedCenterLeft .toolsBar .toolsBarWrapper .topBar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 10px;
 }
 
-.mainFeed .mainFeedRow .mainFeedCenter .toolsBar .toolsBarWrapper .topBar .userAvatar {
+.mainFeed .mainFeedRow .mainFeedCenter .mainFeedCenterLeft .toolsBar .toolsBarWrapper .topBar .userAvatar {
   width: 45px;
   height: 45px;
   border-radius: 50%;
   overflow: hidden;
 }
 
-.mainFeed .mainFeedRow .mainFeedCenter .toolsBar .toolsBarWrapper .topBar .userAvatar .userImg {
+.mainFeed .mainFeedRow .mainFeedCenter .mainFeedCenterLeft .toolsBar .toolsBarWrapper .topBar .userAvatar .userImg {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -206,7 +220,7 @@
      object-position: center;
 }
 
-.mainFeed .mainFeedRow .mainFeedCenter .toolsBar .toolsBarWrapper .topBar .feedInput {
+.mainFeed .mainFeedRow .mainFeedCenter .mainFeedCenterLeft .toolsBar .toolsBarWrapper .topBar .feedInput {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -214,7 +228,7 @@
       flex-shrink: 0;
 }
 
-.mainFeed .mainFeedRow .mainFeedCenter .toolsBar .toolsBarWrapper .topBar .feedInput .feedInputBtn {
+.mainFeed .mainFeedRow .mainFeedCenter .mainFeedCenterLeft .toolsBar .toolsBarWrapper .topBar .feedInput .feedInputBtn {
   background: none;
   width: 100%;
   height: 50px;
@@ -233,13 +247,19 @@
           align-items: center;
   color: #a09e9e;
   cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
-.mainFeed .mainFeedRow .mainFeedCenter .toolsBar .toolsBarWrapper .bottomBar {
+.mainFeed .mainFeedRow .mainFeedCenter .mainFeedCenterLeft .toolsBar .toolsBarWrapper .topBar .feedInput .feedInputBtn:hover {
+  background: #dddddd;
+}
+
+.mainFeed .mainFeedRow .mainFeedCenter .mainFeedCenterLeft .toolsBar .toolsBarWrapper .bottomBar {
   padding-top: 10px;
 }
 
-.mainFeed .mainFeedRow .mainFeedCenter .toolsBar .toolsBarWrapper .bottomBar .toolsWrapper {
+.mainFeed .mainFeedRow .mainFeedCenter .mainFeedCenterLeft .toolsBar .toolsBarWrapper .bottomBar .toolsWrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -247,7 +267,7 @@
       justify-content: space-around;
 }
 
-.mainFeed .mainFeedRow .mainFeedCenter .toolsBar .toolsBarWrapper .bottomBar .toolsWrapper .tool button {
+.mainFeed .mainFeedRow .mainFeedCenter .mainFeedCenterLeft .toolsBar .toolsBarWrapper .bottomBar .toolsWrapper .tool button {
   border: none;
   outline: none;
   padding: 8px 15px;
@@ -261,34 +281,34 @@
           align-items: center;
 }
 
-.mainFeed .mainFeedRow .mainFeedCenter .toolsBar .toolsBarWrapper .bottomBar .toolsWrapper .tool button:hover {
-  background: #e6e6e6;
+.mainFeed .mainFeedRow .mainFeedCenter .mainFeedCenterLeft .toolsBar .toolsBarWrapper .bottomBar .toolsWrapper .tool button:hover {
+  background: #dddddd;
   cursor: pointer;
 }
 
-.mainFeed .mainFeedRow .mainFeedCenter .toolsBar .toolsBarWrapper .bottomBar .toolsWrapper .tool button .btnIcon.image {
+.mainFeed .mainFeedRow .mainFeedCenter .mainFeedCenterLeft .toolsBar .toolsBarWrapper .bottomBar .toolsWrapper .tool button .btnIcon.image {
   color: #208af3;
 }
 
-.mainFeed .mainFeedRow .mainFeedCenter .toolsBar .toolsBarWrapper .bottomBar .toolsWrapper .tool button .btnIcon.video {
+.mainFeed .mainFeedRow .mainFeedCenter .mainFeedCenterLeft .toolsBar .toolsBarWrapper .bottomBar .toolsWrapper .tool button .btnIcon.video {
   color: #3ff867;
 }
 
-.mainFeed .mainFeedRow .mainFeedCenter .toolsBar .toolsBarWrapper .bottomBar .toolsWrapper .tool button .btnIcon.event {
+.mainFeed .mainFeedRow .mainFeedCenter .mainFeedCenterLeft .toolsBar .toolsBarWrapper .bottomBar .toolsWrapper .tool button .btnIcon.event {
   color: #f5b351;
 }
 
-.mainFeed .mainFeedRow .mainFeedCenter .toolsBar .toolsBarWrapper .bottomBar .toolsWrapper .tool button .btnIcon.article {
+.mainFeed .mainFeedRow .mainFeedCenter .mainFeedCenterLeft .toolsBar .toolsBarWrapper .bottomBar .toolsWrapper .tool button .btnIcon.article {
   color: #f86377;
 }
 
-.mainFeed .mainFeedRow .mainFeedCenter .toolsBar .toolsBarWrapper .bottomBar .toolsWrapper .tool button .btnText {
+.mainFeed .mainFeedRow .mainFeedCenter .mainFeedCenterLeft .toolsBar .toolsBarWrapper .bottomBar .toolsWrapper .tool button .btnText {
   color: #a09e9e;
   margin-left: 10px;
   white-space: nowrap;
 }
 
-.mainFeed .mainFeedRow .mainFeedCenter .feedCard {
+.mainFeed .mainFeedRow .mainFeedCenter .mainFeedCenterLeft .feedCard {
   background: #ffffff;
   -webkit-box-shadow: 0 3px 8px rgba(78, 78, 78, 0.1);
           box-shadow: 0 3px 8px rgba(78, 78, 78, 0.1);
@@ -298,14 +318,14 @@
   border: 1px solid #dadada;
 }
 
-.mainFeed .mainFeedRow .mainFeedCenter .feedCard .feedCardHeader {
+.mainFeed .mainFeedRow .mainFeedCenter .mainFeedCenterLeft .feedCard .feedCardHeader {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 0 10px;
 }
 
-.mainFeed .mainFeedRow .mainFeedCenter .feedCard .feedCardHeader .imageContainer {
+.mainFeed .mainFeedRow .mainFeedCenter .mainFeedCenterLeft .feedCard .feedCardHeader .imageContainer {
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -313,7 +333,7 @@
   margin-right: 10px;
 }
 
-.mainFeed .mainFeedRow .mainFeedCenter .feedCard .feedCardHeader .imageContainer .userAvatar {
+.mainFeed .mainFeedRow .mainFeedCenter .mainFeedCenterLeft .feedCard .feedCardHeader .imageContainer .userAvatar {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -322,7 +342,7 @@
      object-position: center;
 }
 
-.mainFeed .mainFeedRow .mainFeedCenter .feedCard .feedCardHeader .feedInfo {
+.mainFeed .mainFeedRow .mainFeedCenter .mainFeedCenterLeft .feedCard .feedCardHeader .feedInfo {
   -ms-flex-preferred-size: 200px;
       flex-basis: 200px;
   -webkit-box-flex: 1;
@@ -332,20 +352,20 @@
       flex-shrink: 0;
 }
 
-.mainFeed .mainFeedRow .mainFeedCenter .feedCard .feedCardHeader .feedInfo .feedCreator {
+.mainFeed .mainFeedRow .mainFeedCenter .mainFeedCenterLeft .feedCard .feedCardHeader .feedInfo .feedCreator {
   color: #292929;
   font-weight: 600;
   font-size: 15px;
 }
 
-.mainFeed .mainFeedRow .mainFeedCenter .feedCard .feedCardHeader .feedInfo .feedCreator .followStatus {
+.mainFeed .mainFeedRow .mainFeedCenter .mainFeedCenterLeft .feedCard .feedCardHeader .feedInfo .feedCreator .followStatus {
   font-weight: normal;
   font-size: 13px;
   color: #505050;
   list-style-type: disc;
 }
 
-.mainFeed .mainFeedRow .mainFeedCenter .feedCard .feedCardHeader .feedInfo .userBio {
+.mainFeed .mainFeedRow .mainFeedCenter .mainFeedCenterLeft .feedCard .feedCardHeader .feedInfo .userBio {
   color: #505050;
   font-size: 11px;
   overflow: hidden;
@@ -355,21 +375,21 @@
   text-overflow: ellipsis;
 }
 
-.mainFeed .mainFeedRow .mainFeedCenter .feedCard .feedCardHeader .feedHeaderAction {
+.mainFeed .mainFeedRow .mainFeedCenter .mainFeedCenterLeft .feedCard .feedCardHeader .feedHeaderAction {
   color: #505050;
   cursor: pointer;
 }
 
-.mainFeed .mainFeedRow .mainFeedCenter .feedCard .feedCardBody {
+.mainFeed .mainFeedRow .mainFeedCenter .mainFeedCenterLeft .feedCard .feedCardBody {
   padding: 10px 0;
 }
 
-.mainFeed .mainFeedRow .mainFeedCenter .feedCard .feedCardBody .feedBody {
+.mainFeed .mainFeedRow .mainFeedCenter .mainFeedCenterLeft .feedCard .feedCardBody .feedBody {
   margin-bottom: 13px;
   padding: 0 10px;
 }
 
-.mainFeed .mainFeedRow .mainFeedCenter .feedCard .feedCardBody .feedBody .feedDescription {
+.mainFeed .mainFeedRow .mainFeedCenter .mainFeedCenterLeft .feedCard .feedCardBody .feedBody .feedDescription {
   font-size: 14px;
   color: #424242;
   overflow: hidden;
@@ -380,14 +400,14 @@
   text-overflow: ellipsis;
 }
 
-.mainFeed .mainFeedRow .mainFeedCenter .feedCard .feedCardBody .feedImageContainer {
+.mainFeed .mainFeedRow .mainFeedCenter .mainFeedCenterLeft .feedCard .feedCardBody .feedImageContainer {
   width: 100%;
   max-height: -webkit-max-content;
   max-height: -moz-max-content;
   max-height: max-content;
 }
 
-.mainFeed .mainFeedRow .mainFeedCenter .feedCard .feedCardBody .feedImageContainer .feedImg {
+.mainFeed .mainFeedRow .mainFeedCenter .mainFeedCenterLeft .feedCard .feedCardBody .feedImageContainer .feedImg {
   width: 100%;
   max-height: 100%;
   -o-object-fit: cover;
@@ -396,11 +416,11 @@
      object-position: center;
 }
 
-.mainFeed .mainFeedRow .mainFeedCenter .feedCard .feedCardFooter {
+.mainFeed .mainFeedRow .mainFeedCenter .mainFeedCenterLeft .feedCard .feedCardFooter {
   padding: 0 10px;
 }
 
-.mainFeed .mainFeedRow .mainFeedCenter .feedCard .feedCardFooter .feedToolsBar .toolsWrapper {
+.mainFeed .mainFeedRow .mainFeedCenter .mainFeedCenterLeft .feedCard .feedCardFooter .feedToolsBar .toolsWrapper {
   border-top: 1px solid #b9b8b8;
   padding: 5px 0;
   display: -webkit-box;
@@ -410,7 +430,7 @@
       justify-content: space-around;
 }
 
-.mainFeed .mainFeedRow .mainFeedCenter .feedCard .feedCardFooter .feedToolsBar .toolsWrapper .tool button {
+.mainFeed .mainFeedRow .mainFeedCenter .mainFeedCenterLeft .feedCard .feedCardFooter .feedToolsBar .toolsWrapper .tool button {
   border: none;
   outline: none;
   padding: 8px 15px;
@@ -422,18 +442,25 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-size: 12px;
 }
 
-.mainFeed .mainFeedRow .mainFeedCenter .feedCard .feedCardFooter .feedToolsBar .toolsWrapper .tool button:hover {
+.mainFeed .mainFeedRow .mainFeedCenter .mainFeedCenterLeft .feedCard .feedCardFooter .feedToolsBar .toolsWrapper .tool button:hover {
   background: #e6e6e6;
   cursor: pointer;
 }
 
-.mainFeed .mainFeedRow .mainFeedCenter .feedCard .feedCardFooter .feedToolsBar .toolsWrapper .tool button .btnIcon {
+.mainFeed .mainFeedRow .mainFeedCenter .mainFeedCenterLeft .feedCard .feedCardFooter .feedToolsBar .toolsWrapper .tool button .btnIcon {
   color: #505050;
 }
 
-.mainFeed .mainFeedRow .mainFeedRightCol .rightBar .newsCard {
+.mainFeed .mainFeedRow .mainFeedCenter .mainFeedCenterRight .mainFeedRightCol {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 80px;
+}
+
+.mainFeed .mainFeedRow .mainFeedCenter .mainFeedCenterRight .mainFeedRightCol .rightBar .newsCard {
   background: #ffffff;
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
           box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
@@ -441,7 +468,7 @@
   padding: 10px 10px;
 }
 
-.mainFeed .mainFeedRow .mainFeedRightCol .rightBar .newsCard .newsCardHeader {
+.mainFeed .mainFeedRow .mainFeedCenter .mainFeedCenterRight .mainFeedRightCol .rightBar .newsCard .newsCardHeader {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -453,35 +480,35 @@
           align-items: center;
 }
 
-.mainFeed .mainFeedRow .mainFeedRightCol .rightBar .newsCard .newsCardHeader .headerTitle {
+.mainFeed .mainFeedRow .mainFeedCenter .mainFeedCenterRight .mainFeedRightCol .rightBar .newsCard .newsCardHeader .headerTitle {
   font-size: 14px;
   color: #505050;
   font-weight: 600;
 }
 
-.mainFeed .mainFeedRow .mainFeedRightCol .rightBar .newsCard .newsCardBody {
+.mainFeed .mainFeedRow .mainFeedCenter .mainFeedCenterRight .mainFeedRightCol .rightBar .newsCard .newsCardBody {
   height: 231px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   overflow: hidden;
 }
 
-.mainFeed .mainFeedRow .mainFeedRightCol .rightBar .newsCard .newsCardBody .newsList .newsListItem .newsHeader a {
+.mainFeed .mainFeedRow .mainFeedCenter .mainFeedCenterRight .mainFeedRightCol .rightBar .newsCard .newsCardBody .newsList .newsListItem .newsHeader a {
   font-size: 14px;
   font-weight: 600;
   color: #505050;
 }
 
-.mainFeed .mainFeedRow .mainFeedRightCol .rightBar .newsCard .newsCardBody .newsList .newsListItem .newsInfo {
+.mainFeed .mainFeedRow .mainFeedCenter .mainFeedCenterRight .mainFeedRightCol .rightBar .newsCard .newsCardBody .newsList .newsListItem .newsInfo {
   font-size: 12px;
   color: #a09e9e;
 }
 
-.mainFeed .mainFeedRow .mainFeedRightCol .rightBar .newsCard .newsCardFooter {
+.mainFeed .mainFeedRow .mainFeedCenter .mainFeedCenterRight .mainFeedRightCol .rightBar .newsCard .newsCardFooter {
   margin-top: 10px;
 }
 
-.mainFeed .mainFeedRow .mainFeedRightCol .rightBar .newsCard .newsCardFooter .shoreMoreBtn {
+.mainFeed .mainFeedRow .mainFeedCenter .mainFeedCenterRight .mainFeedRightCol .rightBar .newsCard .newsCardFooter .shoreMoreBtn {
   border: none;
   background: none;
   outline: none;
@@ -490,12 +517,12 @@
   font-size: 15px;
 }
 
-.mainFeed .mainFeedRow .mainFeedRightCol .rightBar .newsCard .newsCardFooter .shoreMoreBtn i {
+.mainFeed .mainFeedRow .mainFeedCenter .mainFeedCenterRight .mainFeedRightCol .rightBar .newsCard .newsCardFooter .shoreMoreBtn i {
   margin-left: 5px;
   line-height: 5px;
 }
 
-.mainFeed .mainFeedRow .mainFeedRightCol .rightBar .promotionsCard {
+.mainFeed .mainFeedRow .mainFeedCenter .mainFeedCenterRight .mainFeedRightCol .rightBar .promotionsCard {
   background: #ffffff;
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
           box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
@@ -504,7 +531,7 @@
   margin: 20px 0;
 }
 
-.mainFeed .mainFeedRow .mainFeedRightCol .rightBar .promotionsCard .promotionsCardHeader {
+.mainFeed .mainFeedRow .mainFeedCenter .mainFeedCenterRight .mainFeedRightCol .rightBar .promotionsCard .promotionsCardHeader {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -516,13 +543,13 @@
           align-items: center;
 }
 
-.mainFeed .mainFeedRow .mainFeedRightCol .rightBar .promotionsCard .promotionsCardHeader .headerTitle {
+.mainFeed .mainFeedRow .mainFeedCenter .mainFeedCenterRight .mainFeedRightCol .rightBar .promotionsCard .promotionsCardHeader .headerTitle {
   font-size: 14px;
   color: #505050;
   font-weight: 600;
 }
 
-.mainFeed .mainFeedRow .mainFeedRightCol .rightBar .promotionsCard .promotionLists .promotionListItem {
+.mainFeed .mainFeedRow .mainFeedCenter .mainFeedCenterRight .mainFeedRightCol .rightBar .promotionsCard .promotionLists .promotionListItem {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -536,34 +563,69 @@
           justify-content: space-between;
 }
 
-.mainFeed .mainFeedRow .mainFeedRightCol .rightBar .promotionsCard .promotionLists .promotionListItem .promotionImgContainer {
+.mainFeed .mainFeedRow .mainFeedCenter .mainFeedCenterRight .mainFeedRightCol .rightBar .promotionsCard .promotionLists .promotionListItem .promotionImgContainer {
   width: 100px;
   height: 60px;
   border-radius: 5px;
   overflow: hidden;
 }
 
-.mainFeed .mainFeedRow .mainFeedRightCol .rightBar .promotionsCard .promotionLists .promotionListItem .promotionImgContainer .promotionImg {
+.mainFeed .mainFeedRow .mainFeedCenter .mainFeedCenterRight .mainFeedRightCol .rightBar .promotionsCard .promotionLists .promotionListItem .promotionImgContainer .promotionImg {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.mainFeed .mainFeedRow .mainFeedRightCol .rightBar .promotionsCard .promotionLists .promotionListItem .promotionInfo .promotionTitle {
+.mainFeed .mainFeedRow .mainFeedCenter .mainFeedCenterRight .mainFeedRightCol .rightBar .promotionsCard .promotionLists .promotionListItem .promotionInfo .promotionTitle {
   font-size: 14px;
   font-weight: 600;
   color: #505050;
   margin-bottom: 2px;
 }
 
-.mainFeed .mainFeedRow .mainFeedRightCol .rightBar .promotionsCard .promotionLists .promotionListItem .promotionInfo .promotionText {
+.mainFeed .mainFeedRow .mainFeedCenter .mainFeedCenterRight .mainFeedRightCol .rightBar .promotionsCard .promotionLists .promotionListItem .promotionInfo .promotionText {
   font-size: 12px;
   color: #a09e9e;
 }
 
-.mainFeed .mainFeedRow .mainFeedRightCol .rightBar .promotionsCard .promotionLists .promotionListItem .externalLink .fa-chevron-right {
+.mainFeed .mainFeedRow .mainFeedCenter .mainFeedCenterRight .mainFeedRightCol .rightBar .promotionsCard .promotionLists .promotionListItem .externalLink .fa-chevron-right {
   color: #292929;
   font-weight: 700;
+}
+
+@media (max-width: 990px) {
+  .mainFeed .mainFeedRow .mainFeedCenter {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .mainFeed {
+    padding: 0 10px 10px;
+  }
+  .mainFeed .mainFeedRow {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .mainFeed .mainFeedRow .mainFeedLeftCol {
+    display: none;
+  }
+  .mainFeed .mainFeedRow .mainFeedCenter .mainFeedCenterLeft .toolsBar {
+    display: none;
+  }
+  .mainFeed .mainFeedRow .mainFeedCenter .mainFeedCenterLeft .feedCard .feedCardFooter .feedToolsBar .toolsWrapper .tool:nth-child(4) {
+    display: none;
+  }
+  .mainFeed .mainFeedRow .mainFeedCenter .mainFeedCenterRight {
+    display: none;
+  }
 }
 /*# sourceMappingURL=feed.css.map */

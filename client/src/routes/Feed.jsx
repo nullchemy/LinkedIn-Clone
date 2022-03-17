@@ -111,161 +111,165 @@ const Feed = () => {
           </Sidebar>
         </div>
         <div className="mainFeedCenter">
-          <div className="toolsBar">
-            <div className="toolsBarWrapper">
-              <div className="topBar">
-                <div className="userAvatar">
-                  <Link to="">
-                    <img src={ProfileImg} alt="" className="userImg" />
-                  </Link>
+          <div className="mainFeedCenterLeft">
+            <div className="toolsBar">
+              <div className="toolsBarWrapper">
+                <div className="topBar">
+                  <div className="userAvatar">
+                    <Link to="">
+                      <img src={ProfileImg} alt="" className="userImg" />
+                    </Link>
+                  </div>
+                  <div className="feedInput">
+                    <button
+                      className="feedInputBtn"
+                      onClick={() => setShowModal(!showModal)}
+                    >
+                      <span>Start a post</span>
+                    </button>
+                  </div>
                 </div>
-                <div className="feedInput">
-                  <button
-                    className="feedInputBtn"
-                    onClick={() => setShowModal(!showModal)}
-                  >
-                    <span>Start a post</span>
-                  </button>
+                <div className="bottomBar">
+                  <ul className="toolsWrapper">
+                    <li className="tool">
+                      <button className="">
+                        <span className="btnIcon image">
+                          <Image />
+                        </span>
+                        <span className="btnText">Photo</span>
+                      </button>
+                    </li>
+                    <li className="tool">
+                      <button className="">
+                        <span className="btnIcon video">
+                          <Video />
+                        </span>
+                        <span className="btnText">Video</span>
+                      </button>
+                    </li>
+                    <li className="tool">
+                      <button className="">
+                        <span className="btnIcon event">
+                          <Event />
+                        </span>
+                        <span className="btnText">Event</span>
+                      </button>
+                    </li>
+                    <li className="tool">
+                      <button className="">
+                        <span className="btnIcon article">
+                          <Article />
+                        </span>
+                        <span className="btnText">Write Article</span>
+                      </button>
+                    </li>
+                  </ul>
                 </div>
               </div>
-              <div className="bottomBar">
-                <ul className="toolsWrapper">
-                  <li className="tool">
-                    <button className="">
-                      <span className="btnIcon image">
-                        <Image />
-                      </span>
-                      <span className="btnText">Photo</span>
+            </div>
+            <FeedCard />
+            <FeedCard />
+            <FeedCard />
+            <FeedCard />
+          </div>
+          <div className="mainFeedCenterRight">
+            <div className="mainFeedRightCol">
+              <Sidebar className={"rightBar"}>
+                <div className="newsCard">
+                  <div className="newsCardHeader">
+                    <h1 className="headerTitle">LinkedIn news</h1>
+                    <span className="headerIcon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 16 16"
+                        data-supported-dps="16x16"
+                        fill="currentColor"
+                        className="mercado-match"
+                        width="16"
+                        height="16"
+                        focusable="false"
+                      >
+                        <path d="M12 2H4a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2V4a2 2 0 00-2-2zm-3 8v2H7.5A1.5 1.5 0 016 10.5a1.56 1.56 0 01.1-.5l1.08-3h2.13l-1.09 3zm0-3.75A1.25 1.25 0 1110.25 5 1.25 1.25 0 019 6.25z"></path>
+                      </svg>
+                    </span>
+                  </div>
+                  <div className="newsCardBody" ref={containerRef}>
+                    <ul className="newsList" ref={newsRef}>
+                      <NewsListItem />
+                      <NewsListItem />
+                      <NewsListItem />
+                      <NewsListItem />
+                      <NewsListItem />
+                      <NewsListItem />
+                    </ul>
+                  </div>
+                  <div className="newsCardFooter">
+                    <button
+                      className="shoreMoreBtn"
+                      onClick={() => setClicked(!clicked)}
+                    >
+                      {clicked ? "Less" : "More"}
+                      {clicked ? (
+                        <span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 16 16"
+                            data-supported-dps="16x16"
+                            fill="currentColor"
+                            className="mercado-match"
+                            width="16"
+                            height="16"
+                            focusable="false"
+                          >
+                            <path d="M1 5l7 4.61L15 5v2.39L8 12 1 7.39z"></path>
+                          </svg>
+                        </span>
+                      ) : (
+                        <span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 16 16"
+                            data-supported-dps="16x16"
+                            fill="currentColor"
+                            className="mercado-match"
+                            width="16"
+                            height="16"
+                            focusable="false"
+                          >
+                            <path d="M15 11L8 6.39 1 11V8.61L8 4l7 4.61z"></path>
+                          </svg>
+                        </span>
+                      )}
                     </button>
-                  </li>
-                  <li className="tool">
-                    <button className="">
-                      <span className="btnIcon video">
-                        <Video />
-                      </span>
-                      <span className="btnText">Video</span>
-                    </button>
-                  </li>
-                  <li className="tool">
-                    <button className="">
-                      <span className="btnIcon event">
-                        <Event />
-                      </span>
-                      <span className="btnText">Event</span>
-                    </button>
-                  </li>
-                  <li className="tool">
-                    <button className="">
-                      <span className="btnIcon article">
-                        <Article />
-                      </span>
-                      <span className="btnText">Write Article</span>
-                    </button>
-                  </li>
-                </ul>
-              </div>
+                  </div>
+                </div>
+                <div className="promotionsCard">
+                  <div className="promotionsCardHeader">
+                    <h1 className="headerTitle">Promoted</h1>
+                    <span className="headerIcon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        data-supported-dps="24x24"
+                        fill="currentColor"
+                        className="mercado-match"
+                        width="24"
+                        height="24"
+                        focusable="false"
+                      >
+                        <path d="M14 12a2 2 0 11-2-2 2 2 0 012 2zM4 10a2 2 0 102 2 2 2 0 00-2-2zm16 0a2 2 0 102 2 2 2 0 00-2-2z"></path>
+                      </svg>
+                    </span>
+                  </div>
+                  <ul className="promotionLists">
+                    <PromotionListItem profileImg={ProfileImg} />
+                    <PromotionListItem profileImg={ProfileImg} />
+                  </ul>
+                </div>
+                <Footer />
+              </Sidebar>
             </div>
           </div>
-          <FeedCard />
-          <FeedCard />
-          <FeedCard />
-          <FeedCard />
-        </div>
-        <div className="mainFeedRightCol">
-          <Sidebar className={"rightBar"}>
-            <div className="newsCard">
-              <div className="newsCardHeader">
-                <h1 className="headerTitle">LinkedIn news</h1>
-                <span className="headerIcon">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 16 16"
-                    data-supported-dps="16x16"
-                    fill="currentColor"
-                    className="mercado-match"
-                    width="16"
-                    height="16"
-                    focusable="false"
-                  >
-                    <path d="M12 2H4a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2V4a2 2 0 00-2-2zm-3 8v2H7.5A1.5 1.5 0 016 10.5a1.56 1.56 0 01.1-.5l1.08-3h2.13l-1.09 3zm0-3.75A1.25 1.25 0 1110.25 5 1.25 1.25 0 019 6.25z"></path>
-                  </svg>
-                </span>
-              </div>
-              <div className="newsCardBody" ref={containerRef}>
-                <ul className="newsList" ref={newsRef}>
-                  <NewsListItem />
-                  <NewsListItem />
-                  <NewsListItem />
-                  <NewsListItem />
-                  <NewsListItem />
-                  <NewsListItem />
-                </ul>
-              </div>
-              <div className="newsCardFooter">
-                <button
-                  className="shoreMoreBtn"
-                  onClick={() => setClicked(!clicked)}
-                >
-                  {clicked ? "Less" : "More"}
-                  {clicked ? (
-                    <span>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 16 16"
-                        data-supported-dps="16x16"
-                        fill="currentColor"
-                        className="mercado-match"
-                        width="16"
-                        height="16"
-                        focusable="false"
-                      >
-                        <path d="M1 5l7 4.61L15 5v2.39L8 12 1 7.39z"></path>
-                      </svg>
-                    </span>
-                  ) : (
-                    <span>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 16 16"
-                        data-supported-dps="16x16"
-                        fill="currentColor"
-                        className="mercado-match"
-                        width="16"
-                        height="16"
-                        focusable="false"
-                      >
-                        <path d="M15 11L8 6.39 1 11V8.61L8 4l7 4.61z"></path>
-                      </svg>
-                    </span>
-                  )}
-                </button>
-              </div>
-            </div>
-            <div className="promotionsCard">
-              <div className="promotionsCardHeader">
-                <h1 className="headerTitle">Promoted</h1>
-                <span className="headerIcon">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    data-supported-dps="24x24"
-                    fill="currentColor"
-                    className="mercado-match"
-                    width="24"
-                    height="24"
-                    focusable="false"
-                  >
-                    <path d="M14 12a2 2 0 11-2-2 2 2 0 012 2zM4 10a2 2 0 102 2 2 2 0 00-2-2zm16 0a2 2 0 102 2 2 2 0 00-2-2z"></path>
-                  </svg>
-                </span>
-              </div>
-              <ul className="promotionLists">
-                <PromotionListItem profileImg={ProfileImg} />
-                <PromotionListItem profileImg={ProfileImg} />
-              </ul>
-            </div>
-            <Footer />
-          </Sidebar>
         </div>
       </div>
 

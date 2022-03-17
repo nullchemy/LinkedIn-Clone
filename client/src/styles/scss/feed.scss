@@ -2,10 +2,12 @@
   padding: 0 0 30px;
   .mainFeedRow {
     display: grid;
-    grid-template-columns: 1fr 2.5fr 1.5fr;
-    gap: 2rem;
+    grid-template-columns: 1fr 4fr;
+    gap: 1rem;
     .mainFeedLeftCol {
       .leftBar {
+        position: sticky;
+        top: 80px;
         .card {
           display: flex;
           flex-direction: column;
@@ -139,82 +141,204 @@
       }
     }
     .mainFeedCenter {
-      .toolsBar {
-        background: #ffffff;
-        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
-        border-radius: 10px;
-        padding: 10px 20px;
-        .toolsBarWrapper {
-          .topBar {
+      display: grid;
+      grid-template-columns: 2.8fr 1.2fr;
+      gap: 1rem;
+      .mainFeedCenterLeft {
+        .toolsBar {
+          background: #ffffff;
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+          border-radius: 10px;
+          padding: 10px 20px;
+          .toolsBarWrapper {
+            .topBar {
+              display: flex;
+              gap: 10px;
+              .userAvatar {
+                width: 45px;
+                height: 45px;
+                border-radius: 50%;
+                overflow: hidden;
+                .userImg {
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  object-position: center;
+                }
+              }
+              .feedInput {
+                flex-grow: 1;
+                flex-shrink: 0;
+                .feedInputBtn {
+                  background: none;
+                  width: 100%;
+                  height: 50px;
+                  border-radius: 30px;
+                  padding: 0 20px;
+                  border: 1px solid #a09e9e;
+                  outline: 0;
+                  display: flex;
+                  justify-content: flex-start;
+                  align-items: center;
+                  color: #a09e9e;
+                  cursor: pointer;
+                  transition: 0.2s;
+                  &:hover {
+                    background: #dddddd;
+                  }
+                }
+              }
+            }
+            .bottomBar {
+              padding-top: 10px;
+              .toolsWrapper {
+                display: flex;
+                justify-content: space-around;
+                .tool {
+                  button {
+                    border: none;
+                    outline: none;
+                    padding: 8px 15px;
+                    background: none;
+                    border-radius: 5px;
+                    display: flex;
+                    align-items: center;
+                    &:hover {
+                      background: #dddddd;
+                      cursor: pointer;
+                    }
+                    .btnIcon {
+                      &.image {
+                        color: #208af3;
+                      }
+                      &.video {
+                        color: #3ff867;
+                      }
+                      &.event {
+                        color: #f5b351;
+                      }
+                      &.article {
+                        color: #f86377;
+                      }
+                    }
+                    .btnText {
+                      color: #a09e9e;
+                      margin-left: 10px;
+                      white-space: nowrap;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .feedCard {
+          background: #ffffff;
+          box-shadow: 0 3px 8px rgba(78, 78, 78, 0.1);
+          border-radius: 10px;
+          padding: 10px 0;
+          margin-top: 20px;
+          border: 1px solid #dadada;
+          .feedCardHeader {
             display: flex;
-            gap: 10px;
-            .userAvatar {
-              width: 45px;
-              height: 45px;
+            padding: 0 10px;
+            .imageContainer {
+              width: 60px;
+              height: 60px;
               border-radius: 50%;
               overflow: hidden;
-              .userImg {
+              margin-right: 10px;
+              .userAvatar {
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
                 object-position: center;
               }
             }
-            .feedInput {
+            .feedInfo {
+              flex-basis: 200px;
               flex-grow: 1;
               flex-shrink: 0;
-              .feedInputBtn {
-                background: none;
+              .feedCreator {
+                color: #292929;
+                font-weight: 600;
+                font-size: 15px;
+                .followStatus {
+                  font-weight: normal;
+                  font-size: 13px;
+                  color: #505050;
+                  list-style-type: disc;
+                }
+              }
+              .userBio {
+                color: #505050;
+                font-size: 11px;
+                overflow: hidden;
+
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                text-overflow: ellipsis;
+              }
+            }
+            .feedHeaderAction {
+              color: #505050;
+              cursor: pointer;
+            }
+          }
+          .feedCardBody {
+            padding: 10px 0;
+            .feedBody {
+              margin-bottom: 13px;
+              padding: 0 10px;
+              .feedDescription {
+                font-size: 14px;
+                color: #424242;
+                overflow: hidden;
+                display: -webkit-box;
+                line-height: 3;
+                -webkit-line-clamp: 5;
+                -webkit-box-orient: vertical;
+                text-overflow: ellipsis;
+              }
+            }
+            .feedImageContainer {
+              width: 100%;
+              max-height: max-content;
+              .feedImg {
                 width: 100%;
-                height: 50px;
-                border-radius: 30px;
-                padding: 0 20px;
-                border: 1px solid #a09e9e;
-                outline: 0;
-                display: flex;
-                justify-content: flex-start;
-                align-items: center;
-                color: #a09e9e;
-                cursor: pointer;
+                max-height: 100%;
+                object-fit: cover;
+                object-position: center;
               }
             }
           }
-          .bottomBar {
-            padding-top: 10px;
-            .toolsWrapper {
-              display: flex;
-              justify-content: space-around;
-              .tool {
-                button {
-                  border: none;
-                  outline: none;
-                  padding: 8px 15px;
-                  background: none;
-                  border-radius: 5px;
-                  display: flex;
-                  align-items: center;
-                  &:hover {
-                    background: #e6e6e6;
-                    cursor: pointer;
-                  }
-                  .btnIcon {
-                    &.image {
-                      color: #208af3;
+          .feedCardFooter {
+            padding: 0 10px;
+            .feedToolsBar {
+              .toolsWrapper {
+                border-top: 1px solid #b9b8b8;
+                padding: 5px 0;
+                display: flex;
+                justify-content: space-around;
+                .tool {
+                  button {
+                    border: none;
+                    outline: none;
+                    padding: 8px 15px;
+                    background: none;
+                    border-radius: 5px;
+                    display: flex;
+                    align-items: center;
+                    font-size: 12px;
+                    &:hover {
+                      background: #e6e6e6;
+                      cursor: pointer;
                     }
-                    &.video {
-                      color: #3ff867;
+                    .btnIcon {
+                      color: #505050;
                     }
-                    &.event {
-                      color: #f5b351;
-                    }
-                    &.article {
-                      color: #f86377;
-                    }
-                  }
-                  .btnText {
-                    color: #a09e9e;
-                    margin-left: 10px;
-                    white-space: nowrap;
                   }
                 }
               }
@@ -222,111 +346,113 @@
           }
         }
       }
-
-      .feedCard {
-        background: #ffffff;
-        box-shadow: 0 3px 8px rgba(78, 78, 78, 0.1);
-        border-radius: 10px;
-        padding: 10px 0;
-        margin-top: 20px;
-        border: 1px solid #dadada;
-        .feedCardHeader {
-          display: flex;
-          padding: 0 10px;
-          .imageContainer {
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            overflow: hidden;
-            margin-right: 10px;
-            .userAvatar {
-              width: 100%;
-              height: 100%;
-              object-fit: cover;
-              object-position: center;
-            }
-          }
-          .feedInfo {
-            flex-basis: 200px;
-            flex-grow: 1;
-            flex-shrink: 0;
-            .feedCreator {
-              color: #292929;
-              font-weight: 600;
-              font-size: 15px;
-              .followStatus {
-                font-weight: normal;
-                font-size: 13px;
-                color: #505050;
-                list-style-type: disc;
+      .mainFeedCenterRight {
+        .mainFeedRightCol {
+          position: sticky;
+          top: 80px;
+          .rightBar {
+            .newsCard {
+              background: #ffffff;
+              box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+              border-radius: 10px;
+              padding: 10px 10px;
+              .newsCardHeader {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .headerTitle {
+                  font-size: 14px;
+                  color: #505050;
+                  font-weight: 600;
+                }
+              }
+              .newsCardBody {
+                height: 231px;
+                transition: 0.3s;
+                overflow: hidden;
+                .newsList {
+                  .newsListItem {
+                    .newsHeader {
+                      a {
+                        font-size: 14px;
+                        font-weight: 600;
+                        color: #505050;
+                      }
+                    }
+                    .newsInfo {
+                      font-size: 12px;
+                      color: #a09e9e;
+                    }
+                  }
+                }
+              }
+              .newsCardFooter {
+                margin-top: 10px;
+                .shoreMoreBtn {
+                  border: none;
+                  background: none;
+                  outline: none;
+                  color: #505050;
+                  cursor: pointer;
+                  font-size: 15px;
+                  i {
+                    margin-left: 5px;
+                    line-height: 5px;
+                  }
+                }
               }
             }
-            .userBio {
-              color: #505050;
-              font-size: 11px;
-              overflow: hidden;
-
-              display: -webkit-box;
-              -webkit-line-clamp: 2;
-              -webkit-box-orient: vertical;
-              text-overflow: ellipsis;
-            }
-          }
-          .feedHeaderAction {
-            color: #505050;
-            cursor: pointer;
-          }
-        }
-        .feedCardBody {
-          padding: 10px 0;
-          .feedBody {
-            margin-bottom: 13px;
-            padding: 0 10px;
-            .feedDescription {
-              font-size: 14px;
-              color: #424242;
-              overflow: hidden;
-              display: -webkit-box;
-              line-height: 3;
-              -webkit-line-clamp: 5;
-              -webkit-box-orient: vertical;
-              text-overflow: ellipsis;
-            }
-          }
-          .feedImageContainer {
-            width: 100%;
-            max-height: max-content;
-            .feedImg {
-              width: 100%;
-              max-height: 100%;
-              object-fit: cover;
-              object-position: center;
-            }
-          }
-        }
-        .feedCardFooter {
-          padding: 0 10px;
-          .feedToolsBar {
-            .toolsWrapper {
-              border-top: 1px solid #b9b8b8;
-              padding: 5px 0;
-              display: flex;
-              justify-content: space-around;
-              .tool {
-                button {
-                  border: none;
-                  outline: none;
-                  padding: 8px 15px;
-                  background: none;
-                  border-radius: 5px;
+            .promotionsCard {
+              background: #ffffff;
+              box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+              border-radius: 10px;
+              padding: 10px 10px;
+              margin: 20px 0;
+              .promotionsCardHeader {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .headerTitle {
+                  font-size: 14px;
+                  color: #505050;
+                  font-weight: 600;
+                }
+              }
+              .promotionLists {
+                .promotionListItem {
                   display: flex;
                   align-items: center;
-                  &:hover {
-                    background: #e6e6e6;
-                    cursor: pointer;
+                  padding: 10px 10px;
+                  gap: 5px;
+                  justify-content: space-between;
+                  .promotionImgContainer {
+                    width: 100px;
+                    height: 60px;
+                    border-radius: 5px;
+                    overflow: hidden;
+                    .promotionImg {
+                      width: 100%;
+                      height: 100%;
+                      object-fit: cover;
+                    }
                   }
-                  .btnIcon {
-                    color: #505050;
+                  .promotionInfo {
+                    .promotionTitle {
+                      font-size: 14px;
+                      font-weight: 600;
+                      color: #505050;
+                      margin-bottom: 2px;
+                    }
+                    .promotionText {
+                      font-size: 12px;
+                      color: #a09e9e;
+                    }
+                  }
+                  .externalLink {
+                    .fa-chevron-right {
+                      color: #292929;
+                      font-weight: 700;
+                    }
                   }
                 }
               }
@@ -335,113 +461,57 @@
         }
       }
     }
-    .mainFeedRightCol {
-      .rightBar {
-        .newsCard {
-          background: #ffffff;
-          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
-          border-radius: 10px;
-          padding: 10px 10px;
-          .newsCardHeader {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            .headerTitle {
-              font-size: 14px;
-              color: #505050;
-              font-weight: 600;
-            }
+  }
+}
+
+@media (max-width: 990px) {
+  .mainFeed {
+    .mainFeedRow {
+      .mainFeedCenter {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .mainFeed {
+    padding: 0 10px 10px;
+    .mainFeedRow {
+      justify-content: center;
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .mainFeed {
+    .mainFeedRow {
+      .mainFeedLeftCol {
+        display: none;
+      }
+      .mainFeedCenter {
+        .mainFeedCenterLeft {
+          .toolsBar {
+            display: none;
           }
-          .newsCardBody {
-            height: 231px;
-            transition: 0.3s;
-            overflow: hidden;
-            .newsList {
-              .newsListItem {
-                .newsHeader {
-                  a {
-                    font-size: 14px;
-                    font-weight: 600;
-                    color: #505050;
+          .feedCard {
+            .feedCardFooter {
+              .feedToolsBar {
+                .toolsWrapper {
+                  .tool {
+                  }
+                  .tool:nth-child(4) {
+                    display: none;
                   }
                 }
-                .newsInfo {
-                  font-size: 12px;
-                  color: #a09e9e;
-                }
-              }
-            }
-          }
-          .newsCardFooter {
-            margin-top: 10px;
-            .shoreMoreBtn {
-              border: none;
-              background: none;
-              outline: none;
-              color: #505050;
-              cursor: pointer;
-              font-size: 15px;
-              i {
-                margin-left: 5px;
-                line-height: 5px;
               }
             }
           }
         }
-        .promotionsCard {
-          background: #ffffff;
-          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
-          border-radius: 10px;
-          padding: 10px 10px;
-          margin: 20px 0;
-          .promotionsCardHeader {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            .headerTitle {
-              font-size: 14px;
-              color: #505050;
-              font-weight: 600;
-            }
-          }
-          .promotionLists {
-            .promotionListItem {
-              display: flex;
-              align-items: center;
-              padding: 10px 10px;
-              gap: 5px;
-              justify-content: space-between;
-              .promotionImgContainer {
-                width: 100px;
-                height: 60px;
-                border-radius: 5px;
-                overflow: hidden;
-                .promotionImg {
-                  width: 100%;
-                  height: 100%;
-                  object-fit: cover;
-                }
-              }
-              .promotionInfo {
-                .promotionTitle {
-                  font-size: 14px;
-                  font-weight: 600;
-                  color: #505050;
-                  margin-bottom: 2px;
-                }
-                .promotionText {
-                  font-size: 12px;
-                  color: #a09e9e;
-                }
-              }
-              .externalLink {
-                .fa-chevron-right {
-                  color: #292929;
-                  font-weight: 700;
-                }
-              }
-            }
-          }
+
+        .mainFeedCenterRight {
+          display: none;
         }
       }
     }

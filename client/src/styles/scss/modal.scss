@@ -163,6 +163,10 @@
           &.backBtn {
             margin-right: 14px;
           }
+          &.saveBtn {
+            background: #0a66c2;
+            color: white;
+          }
           &.saveBtn:disabled {
             color: #505050;
             border: none !important;
@@ -209,14 +213,18 @@
             cursor: pointer;
           }
           .createPostBtn {
-            color: #0a66c2;
+            background: #0a66c2;
+            color: #fff;
             border: 0;
             outline: 0;
             cursor: pointer;
             font-weight: 500;
-            background: none;
+
             cursor: pointer;
+            padding: 10px 20px;
+            border-radius: 20px;
             &:disabled {
+              background: #ececec;
               color: #808080;
               cursor: not-allowed;
             }

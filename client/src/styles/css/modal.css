@@ -239,6 +239,11 @@
   margin-right: 14px;
 }
 
+.createPostModalContainer .createPostCard .modalFooter .editingRow .btn.saveBtn {
+  background: #0a66c2;
+  color: white;
+}
+
 .createPostModalContainer .createPostCard .modalFooter .editingRow .btn.saveBtn:disabled {
   color: #505050;
   border: none !important;
@@ -313,16 +318,19 @@
 }
 
 .createPostModalContainer .createPostCard .modalFooter .row .colRight .createPostBtn {
-  color: #0a66c2;
+  background: #0a66c2;
+  color: #fff;
   border: 0;
   outline: 0;
   cursor: pointer;
   font-weight: 500;
-  background: none;
   cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 20px;
 }
 
 .createPostModalContainer .createPostCard .modalFooter .row .colRight .createPostBtn:disabled {
+  background: #ececec;
   color: #808080;
   cursor: not-allowed;
 }
