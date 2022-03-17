@@ -1,6 +1,5 @@
-import React, { useEffect, useReducer, useState } from "react";
+import React, { useState } from "react";
 import "../styles/css/modal.css";
-import { ReactComponent as Jobs } from "../assets/svg/nav-jobs.svg";
 import { ReactComponent as Video } from "../assets/svg/share-video.svg";
 import { ReactComponent as Image } from "../assets/svg/share-image.svg";
 import { ReactComponent as Close } from "../assets/svg/close-icon.svg";

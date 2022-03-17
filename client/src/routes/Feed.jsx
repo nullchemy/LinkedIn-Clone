@@ -1,12 +1,10 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import Sidebar from "../components/Sidebar";
 import "../styles/css/feed.css";
 import { Link } from "react-router-dom";
 import { ReactComponent as Widget } from "../assets/svg/widget-icon.svg";
 import { ReactComponent as Image } from "../assets/svg/photo-icon.svg";
 import { ReactComponent as Video } from "../assets/svg/video-icon.svg";
-import { ReactComponent as Share } from "../assets/svg/share-icon.svg";
-import { ReactComponent as Comment } from "../assets/svg/share-comment.svg";
 import { ReactComponent as Plus } from "../assets/svg/plus-icon.svg";
 import { ReactComponent as Event } from "../assets/svg/event-icon.svg";
 import { ReactComponent as Article } from "../assets/svg/article-icon.svg";
