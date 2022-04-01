@@ -1,0 +1,59 @@
+.signup-section .signup-nav .signUpBrand .brandLogo {
+  fill: var(--color-brand);
+  font-size: 25px;
+}
+
+.signup-section .signup-wrapper {
+  margin: 0 auto;
+}
+
+.signup-section .signup-wrapper .form-title {
+  font-weight: 400;
+  color: #000;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.signup-section .signup-wrapper .signup-form {
+  width: 400px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.signup-section .signup-wrapper .signup-form .form-groupa {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.signup-section .signup-wrapper .signup-form .form-groupa .form-label {
+  display: block;
+  font-size: 14px;
+  color: #8b8b8b;
+  margin-bottom: 10px;
+}
+
+.signup-section .signup-wrapper .signup-form .form-groupa .form-control {
+  display: block;
+  height: 35px;
+  padding: 0 10px;
+  outline: none;
+  border: 1px solid #292929;
+  border-radius: 5px;
+  background: #fff;
+}
+
+.signup-section .signup-wrapper .signup-form .form-groupa .form-control:focus {
+  border-color: #292929;
+}
+/*# sourceMappingURL=auth.css.map */

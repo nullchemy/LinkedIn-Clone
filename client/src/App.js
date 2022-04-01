@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Preloader from "./components/Preloader";
 import Navbar from "./components/Navbar";
-import { Routes, Route, Navigate } from "react-router-dom";
+import { Routes, Route, Navigate, useLocation } from "react-router-dom";
 import Feed from "./routes/Feed";
 import Home from "./routes/Home";
 import Jobs from "./routes/Jobs";
@@ -48,6 +48,7 @@ function App() {
         {curPath && <Navbar />}
         <div className="container">
           <Routes>
+            <Route path="/register" element={<Register />} />
             <Route path="/feed" element={<Feed />}></Route>
             <Route path="/" element={<Navigate to="/feed" />}></Route>
             <Route path="/jobs" element={<Jobs />}></Route>
