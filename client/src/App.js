@@ -35,13 +35,13 @@ function App() {
     const loc = useLocation();
     useEffect(()=>{
       const rendernav = () => {
-        if(loc.pathname!=='home' || loc.pathname!=='login' || loc.pathname!=='register'){
+        if(loc.pathname!=='/home' || loc.pathname!=='/login' || loc.pathname!=='/register'){
           setCurPath(false)
         }
       }
       rendernav()
     }, [loc]);
-    console.log(curPath);
+    console.log(loc.pathname);
   return (
     <div className="App">
       <div className="ppreloader">
