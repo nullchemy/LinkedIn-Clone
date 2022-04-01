@@ -5,7 +5,7 @@ import Footer from '../components/HomeFooter'
 const Home = () => {
   return (
     <div>
-        
+        <Footer />
     </div>
   )
 }
