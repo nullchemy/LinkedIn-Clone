@@ -24,11 +24,9 @@ function App() {
           document.querySelector(".Pagecontents").style.visibility = "hidden";
           document.querySelector(".ppreloader").style.display = "unset";
       } else {
-          setTimeout(() => {
-              document.querySelector(".ppreloader").style.display = "none";
-              document.querySelector(".Pagecontents").style.visibility = "visible";
-              document.querySelector(".Pagecontents").style.display = "unset";
-          }, 1000);
+          document.querySelector(".ppreloader").style.display = "none";
+          document.querySelector(".Pagecontents").style.visibility = "visible";
+          document.querySelector(".Pagecontents").style.display = "unset";
       }
     };
     //home remove navbar
