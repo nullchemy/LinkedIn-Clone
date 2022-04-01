@@ -35,7 +35,7 @@ function App() {
     const loc = useLocation();
     useEffect(()=>{
       const rendernav = () => {
-        if(loc.pathname!=='/home'){
+        if(loc.pathname!=='home'){
           setCurPath(false)
         }
       }
