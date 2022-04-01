@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import Preloader from './components/Preloader'
 import Navbar from "./components/Navbar";
 import {
-  BrowserRouter as Router,
   Routes,
   Route,
   Navigate,
@@ -37,7 +36,7 @@ function App() {
     console.log(loc);
     useEffect(()=>{
       const rendernav = () => {
-        if(loc!=='home'){
+        if(loc.pathname!=='/home'){
           setCurPath(false)
         }
       }
@@ -49,7 +48,6 @@ function App() {
         <Preloader />
       </div>
       <div className="Pagecontents">
-      <Router>
         {curPath && <Navbar />}
         <div className="container">
           <Routes>
@@ -64,7 +62,6 @@ function App() {
             <Route path="*" element={<NotFound />}></Route>
           </Routes>
         </div>
-      </Router>
       </div>
     </div>
   );
