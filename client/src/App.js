@@ -6,6 +6,7 @@ import {
   Routes,
   Route,
   Navigate,
+  useLocation,
 } from "react-router-dom";
 import Feed from "./routes/Feed";
 import Home from "./routes/Home";
@@ -30,6 +31,8 @@ function App() {
           }, 4000);
       }
     };
+    //home remove navbar
+    const loc = useLocation();
   return (
     <div className="App">
       <div className="ppreloader">
