@@ -33,7 +33,6 @@ function App() {
     };
     //home remove navbar
     const loc = useLocation();
-    console.log(loc);
     useEffect(()=>{
       const rendernav = () => {
         if(loc.pathname!=='/home'){
@@ -42,6 +41,7 @@ function App() {
       }
       rendernav()
     }, [loc]);
+    console.log(curPath);
   return (
     <div className="App">
       <div className="ppreloader">
