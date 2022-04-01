@@ -18,6 +18,7 @@ import Profile from "./routes/Profile";
 import NotFound from "./routes/Notfound";
 
 function App() {
+  const [curPath, setCurPath] = useState(true);
     //page pre loader
     document.onreadystatechange = function() {
       if (document.readyState !== "complete") {
@@ -35,7 +36,7 @@ function App() {
     const loc = useLocation();
     useEffect(()=>{
       const rendernav = () => {
-
+        
       }
       rendernav()
     }, [loc]);
