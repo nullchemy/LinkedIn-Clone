@@ -1,4 +1,13 @@
-.landingPage .landingHeader .landingContainer {
+.landingPage {
+  background-color: #fff;
+}
+
+.landingPage .landingContainer {
+  margin: 0 5%;
+  padding-top: 10px;
+}
+
+.landingPage .landingContainer .landingHeader .landingContainer {
   margin: 0 5%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8,18 +17,18 @@
           justify-content: space-between;
 }
 
-.landingPage .landingHeader .landingContainer .landingLogo .LandingLogoIcon {
+.landingPage .landingContainer .landingHeader .landingContainer .landingLogo .LandingLogoIcon {
   fill: #0a66c2;
   color: #0a66c2;
 }
 
-.landingPage .landingHeader .landingContainer .landingNavigation .lannavFlex {
+.landingPage .landingContainer .landingHeader .landingContainer .landingNavigation .lannavFlex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.landingPage .landingHeader .landingContainer .landingNavigation .lannavFlex .lannavLink {
+.landingPage .landingContainer .landingHeader .landingContainer .landingNavigation .lannavFlex .lannavLink {
   margin: 0 10px;
   color: #3d3d3d;
   font-size: 1rem;
@@ -33,27 +42,66 @@
   outline: none;
 }
 
-.landingPage .landingHeader .landingContainer .landingNavigation .lannavFlex .lannavLink:nth-child(1) {
+.landingPage .landingContainer .landingHeader .landingContainer .landingNavigation .lannavFlex .lannavLink:nth-child(1) {
   padding: 0 10px;
   border-radius: 5px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-.landingPage .landingHeader .landingContainer .landingNavigation .lannavFlex .lannavLink:nth-child(1):hover {
+.landingPage .landingContainer .landingHeader .landingContainer .landingNavigation .lannavFlex .lannavLink:nth-child(1):hover {
   background-color: #dadada;
 }
 
-.landingPage .landingHeader .landingContainer .landingNavigation .lannavFlex .lannavLink:nth-child(2) {
+.landingPage .landingContainer .landingHeader .landingContainer .landingNavigation .lannavFlex .lannavLink:nth-child(2) {
   color: #0a66c2;
-  padding: 7px 15px;
+  padding: 5px 20px;
   border-radius: 20px;
   border: 1px solid #0a66c2;
 }
 
-.landingPage .landingHeader .landingContainer .landingNavigation .lannavFlex .lannavLink:nth-child(2):hover {
-  padding: 6px 14px;
+.landingPage .landingContainer .landingHeader .landingContainer .landingNavigation .lannavFlex .lannavLink:nth-child(2):hover {
+  padding: 4px 19px;
   border: 2px solid #0a66c2;
   background-color: #0fb0c21d;
+}
+
+.landingPage .landingContainer .lanJumbo .lanJcontainer {
+  margin: 0 3%;
+}
+
+.landingPage .landingContainer .lanJumbo .lanJcontainer .lanJFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 5%;
+}
+
+.landingPage .landingContainer .lanJumbo .lanJcontainer .lanJFlex .lanJtexts {
+  width: 50%;
+}
+
+.landingPage .landingContainer .lanJumbo .lanJcontainer .lanJFlex .lanJtexts .lanJTitle {
+  font-size: 56px;
+  font-weight: 200;
+  color: #8f5849;
+}
+
+.landingPage .landingContainer .lanJumbo .lanJcontainer .lanJFlex .lanJImage {
+  width: 50%;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+}
+
+.landingPage .landingContainer .lanJumbo .lanJcontainer .lanJFlex .lanJImage .lanJumboImage {
+  width: 700px;
+  height: 700px;
+  margin-right: -100px;
+  margin-top: -50px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 /*# sourceMappingURL=home.css.map */
