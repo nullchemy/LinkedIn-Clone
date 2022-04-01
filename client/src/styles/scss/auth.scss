@@ -8,7 +8,8 @@
     }
   }
   .signup-wrapper {
-    // max-width: 700px;
+    max-width: 700px;
+    padding: 10px 0;
     margin: 0 auto;
     .form-title {
       font-weight: 400;
@@ -18,7 +19,7 @@
     }
     .signup-form {
       width: 400px;
-      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
       margin: 0 auto;
       padding: 20px;
       border-radius: 10px;
@@ -44,6 +45,117 @@
           background: #fff;
           &:focus {
             border-color: #292929;
+            border-width: 2px;
+          }
+        }
+      }
+      .form-footer {
+        .sitePolicyText {
+          font-size: 13px;
+          max-width: 80%;
+          margin: 0 auto;
+          text-align: center;
+          a {
+            color: var(--color-brand);
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+        .formSubmitBtn {
+          display: block;
+          width: 100%;
+          padding: 15px 20px;
+          font-weight: 600;
+          color: #fff;
+          background: var(--color-brand);
+          border: none;
+          outline: none;
+          border-radius: 25px;
+          cursor: pointer;
+          margin-top: 20px;
+          &:hover,
+          &:focus {
+            background: #042749;
+          }
+        }
+        .divider {
+          text-align: center;
+          position: relative;
+          margin: 20px 0;
+          color: #292929;
+          &::before,
+          &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            width: 45%;
+            height: 1px;
+            right: 0;
+            background: #bcbcbc;
+          }
+          &::after {
+            left: 0;
+          }
+        }
+        .googleAuthBtn {
+          display: block;
+          width: 100%;
+          padding: 15px 20px;
+          font-weight: 600;
+          color: #fff;
+          background: #ececec;
+          border: none;
+          outline: none;
+          border-radius: 25px;
+          cursor: pointer;
+          margin-top: 20px;
+          color: #424242;
+        }
+        .signInRedirect {
+          margin-top: 20px;
+          color: #292929;
+          text-align: center;
+          a {
+            color: var(--color-brand);
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+  .authFooter {
+    padding: 10px 0;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    .brandLogo {
+      fill: #292929;
+    }
+    .info {
+      text-align: center;
+      .infoText {
+        color: #292929;
+        font-size: 15px;
+        a {
+          color: var(--color-brand);
+        }
+      }
+    }
+    .footerLinks {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      .footerLinkItem {
+        a {
+          font-size: 13px;
+          color: #424242;
+          &:hover {
+            color: var(--color-brand);
+            text-decoration: underline;
           }
         }
       }

@@ -36,12 +36,15 @@ const Register = () => {
             />
           </div>
           <div className="form-footer">
-            By clicking Agree & Join, you agree to the LinkedIn
-            <Link to="/agreement">User Agreement, Privacy Policy</Link> , and
-            <Link to="/cookie-policy">Cookie Policy.</Link>
+            <p className="sitePolicyText">
+              By clicking Agree & Join, you agree to the LinkedIn
+              <Link to="/agreement">User Agreement, Privacy Policy</Link> , and
+              <Link to="/cookie-policy">Cookie Policy.</Link>
+            </p>
+
             <button className="formSubmitBtn">Agree & Join</button>
             <p className="divider">or</p>
-            <button>Continue with google</button>
+            <button className="googleAuthBtn">Continue with google</button>
             <p className="signInRedirect">
               Already on LinkedIn? <Link to="/login">Sign in</Link>
             </p>
@@ -49,9 +52,22 @@ const Register = () => {
         </form>
       </div>
       <footer className="authFooter">
+        <div className="info">
+          <p className="infoText">
+            Looking to create a page for a business?
+            <Link to="/support">Get help</Link>
+          </p>
+        </div>
         <ul className="footerLinks">
           <li className="footerLinkItem">
-            <p className="siteCredit">{`${NavBrand} &copy; ${new Date().getFullYear()}`}</p>
+            <p className="siteCredit">
+              {
+                <>
+                  <NavBrand className="brandLogo" /> &copy;{" "}
+                  {new Date().getFullYear()}
+                </>
+              }
+            </p>
           </li>
           <li className="footerLinkItem">
             <Link to="/about">About</Link>

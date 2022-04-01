@@ -4,6 +4,8 @@
 }
 
 .signup-section .signup-wrapper {
+  max-width: 700px;
+  padding: 10px 0;
   margin: 0 auto;
 }
 
@@ -16,8 +18,8 @@
 
 .signup-section .signup-wrapper .signup-form {
   width: 400px;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   margin: 0 auto;
   padding: 20px;
   border-radius: 10px;
@@ -55,5 +57,140 @@
 
 .signup-section .signup-wrapper .signup-form .form-groupa .form-control:focus {
   border-color: #292929;
+  border-width: 2px;
+}
+
+.signup-section .signup-wrapper .signup-form .form-footer .sitePolicyText {
+  font-size: 13px;
+  max-width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.signup-section .signup-wrapper .signup-form .form-footer .sitePolicyText a {
+  color: var(--color-brand);
+}
+
+.signup-section .signup-wrapper .signup-form .form-footer .sitePolicyText a:hover {
+  text-decoration: underline;
+}
+
+.signup-section .signup-wrapper .signup-form .form-footer .formSubmitBtn {
+  display: block;
+  width: 100%;
+  padding: 15px 20px;
+  font-weight: 600;
+  color: #fff;
+  background: var(--color-brand);
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.signup-section .signup-wrapper .signup-form .form-footer .formSubmitBtn:hover, .signup-section .signup-wrapper .signup-form .form-footer .formSubmitBtn:focus {
+  background: #042749;
+}
+
+.signup-section .signup-wrapper .signup-form .form-footer .divider {
+  text-align: center;
+  position: relative;
+  margin: 20px 0;
+  color: #292929;
+}
+
+.signup-section .signup-wrapper .signup-form .form-footer .divider::before, .signup-section .signup-wrapper .signup-form .form-footer .divider::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 45%;
+  height: 1px;
+  right: 0;
+  background: #bcbcbc;
+}
+
+.signup-section .signup-wrapper .signup-form .form-footer .divider::after {
+  left: 0;
+}
+
+.signup-section .signup-wrapper .signup-form .form-footer .googleAuthBtn {
+  display: block;
+  width: 100%;
+  padding: 15px 20px;
+  font-weight: 600;
+  color: #fff;
+  background: #ececec;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-top: 20px;
+  color: #424242;
+}
+
+.signup-section .signup-wrapper .signup-form .form-footer .signInRedirect {
+  margin-top: 20px;
+  color: #292929;
+  text-align: center;
+}
+
+.signup-section .signup-wrapper .signup-form .form-footer .signInRedirect a {
+  color: var(--color-brand);
+}
+
+.signup-section .signup-wrapper .signup-form .form-footer .signInRedirect a:hover {
+  text-decoration: underline;
+}
+
+.signup-section .authFooter {
+  padding: 10px 0;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+
+.signup-section .authFooter .brandLogo {
+  fill: #292929;
+}
+
+.signup-section .authFooter .info {
+  text-align: center;
+}
+
+.signup-section .authFooter .info .infoText {
+  color: #292929;
+  font-size: 15px;
+}
+
+.signup-section .authFooter .info .infoText a {
+  color: var(--color-brand);
+}
+
+.signup-section .authFooter .footerLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.signup-section .authFooter .footerLinks .footerLinkItem a {
+  font-size: 13px;
+  color: #424242;
+}
+
+.signup-section .authFooter .footerLinks .footerLinkItem a:hover {
+  color: var(--color-brand);
+  text-decoration: underline;
 }
 /*# sourceMappingURL=auth.css.map */
