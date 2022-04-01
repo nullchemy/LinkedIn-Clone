@@ -46,7 +46,7 @@ function App() {
       </div>
       <div className="Pagecontents">
         {curPath && <Navbar />}
-        <div className="container">
+        <div>
           <Routes>
             <Route path="/register" element={<Register />} />
             <Route path="/feed" element={<Feed />}></Route>

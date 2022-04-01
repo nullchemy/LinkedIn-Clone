@@ -8,10 +8,12 @@ import {ReactComponent as People} from '../assets/svg/people.svg'
 import {ReactComponent as Learning} from '../assets/svg/Learning.svg'
 import {ReactComponent as Jobs} from '../assets/svg/jobs.svg'
 import {ReactComponent as LanJumboImage} from '../assets/svg/lan-jumbo.svg'
+import {ReactComponent as ArrowRight} from '../assets/svg/arrow-right.svg'
 
 const Home = () => {
   return (
     <div className="landingPage">
+      <div className="landingContainer">
         <header className="landingHeader">
           <div className="landingContainer">
             <div className="landingLogo">
@@ -32,13 +34,19 @@ const Home = () => {
         <div className="lanJumbo">
           <div className="lanJcontainer">
             <div className="lanJFlex">
-              <div className="lanJtexts"></div>
+              <div className="lanJtexts">
+                <h2 className="lanJTitle">Millions of jobs and people hiring</h2>
+                <Link className="lanJuLinks" to="">Search for a job <ArrowRight /></Link><br />
+                <Link className="lanJuLinks" to="">Find a person you know <ArrowRight /></Link><br />
+                <Link className="lanJuLinks" to="">Learn a new skill <ArrowRight /></Link><br />
+              </div>
               <div className="lanJImage">
-                <LanJumboImage />
+                <LanJumboImage className="lanJumboImage"/>
               </div>
             </div>
           </div>
         </div>
+      </div>
         <Footer />
     </div>
   )
