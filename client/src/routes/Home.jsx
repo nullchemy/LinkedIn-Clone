@@ -35,7 +35,7 @@ const Home = () => {
           <div className="lanJcontainer">
             <div className="lanJFlex">
               <div className="lanJtexts">
-                <h2 className="lanJTitle">Millions of jobs and people hiring</h2>
+                <h2 className="lanJTitle">Welcome to your professional community</h2>
                 <Link className="lanJuLinks" to="">Search for a job <ArrowRight /></Link><br />
                 <Link className="lanJuLinks" to="">Find a person you know <ArrowRight /></Link><br />
                 <Link className="lanJuLinks" to="">Learn a new skill <ArrowRight /></Link><br />
