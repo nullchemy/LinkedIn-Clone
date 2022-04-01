@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Preloader from './components/Preloader'
 import Navbar from "./components/Navbar";
 import {
@@ -33,6 +33,12 @@ function App() {
     };
     //home remove navbar
     const loc = useLocation();
+    useEffect(()=>{
+      const rendernav = () => {
+
+      }
+      rendernav()
+    }, [loc]);
   return (
     <div className="App">
       <div className="ppreloader">
@@ -40,7 +46,7 @@ function App() {
       </div>
       <div className="Pagecontents">
       <Router>
-        <Navbar />
+        {curPath && <Navbar />}
         <div className="container">
           <Routes>
             <Route path="/feed" element={<Feed />}></Route>
