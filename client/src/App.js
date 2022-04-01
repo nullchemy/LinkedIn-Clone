@@ -41,7 +41,7 @@ function App() {
       }
       rendernav()
     }, [loc]);
-    console.log(loc.pathname);
+    console.log(loc.pathname+ "    "+curPath);
   return (
     <div className="App">
       <div className="ppreloader">
