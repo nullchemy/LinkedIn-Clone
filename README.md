@@ -1,5 +1,5 @@
 # LinkedIn-Clone
-This is a LinkedIn-Clone Site built with React &amp; Material UI
+This is a LinkedIn-Clone Site built with React
 
 ```javascript
 import { useNavigate } from "react-router-dom";
