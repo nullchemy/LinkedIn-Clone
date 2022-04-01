@@ -1,1 +1,59 @@
-/* No CSS *//*# sourceMappingURL=home.css.map */
+.landingPage .landingHeader .landingContainer {
+  margin: 0 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.landingPage .landingHeader .landingContainer .landingLogo .LandingLogoIcon {
+  fill: #0a66c2;
+  color: #0a66c2;
+}
+
+.landingPage .landingHeader .landingContainer .landingNavigation .lannavFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.landingPage .landingHeader .landingContainer .landingNavigation .lannavFlex .lannavLink {
+  margin: 0 10px;
+  color: #3d3d3d;
+  font-size: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  vertical-align: middle;
+  outline: none;
+}
+
+.landingPage .landingHeader .landingContainer .landingNavigation .lannavFlex .lannavLink:nth-child(1) {
+  padding: 0 10px;
+  border-radius: 5px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.landingPage .landingHeader .landingContainer .landingNavigation .lannavFlex .lannavLink:nth-child(1):hover {
+  background-color: #dadada;
+}
+
+.landingPage .landingHeader .landingContainer .landingNavigation .lannavFlex .lannavLink:nth-child(2) {
+  color: #0a66c2;
+  padding: 7px 15px;
+  border-radius: 20px;
+  border: 1px solid #0a66c2;
+}
+
+.landingPage .landingHeader .landingContainer .landingNavigation .lannavFlex .lannavLink:nth-child(2):hover {
+  padding: 6px 14px;
+  border: 2px solid #0a66c2;
+  background-color: #0fb0c21d;
+}
+/*# sourceMappingURL=home.css.map */
