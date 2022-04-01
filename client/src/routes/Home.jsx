@@ -7,6 +7,7 @@ import {ReactComponent as Discover} from '../assets/svg/discover.svg'
 import {ReactComponent as People} from '../assets/svg/people.svg'
 import {ReactComponent as Learning} from '../assets/svg/Learning.svg'
 import {ReactComponent as Jobs} from '../assets/svg/jobs.svg'
+import {ReactComponent as LanJumboImage} from '../assets/svg/lan-jumbo.svg'
 
 const Home = () => {
   return (
@@ -19,30 +20,6 @@ const Home = () => {
             <div className="landingNavigation">
               <div className="lannavFlex">
                 <Link to="" className="lannavLink">
-                  <div className="lannavItem">
-                    <Discover className="lannavIcon"/>
-                    <span>Discover</span>
-                  </div>
-                </Link>
-                <Link to="" className="lannavLink">
-                  <div className="lannavItem">
-                    <People className="lannavIcon"/>
-                    <span>People</span>
-                  </div>
-                </Link>
-                <Link to="" className="lannavLink">
-                  <div className="lannavItem">
-                    <Learning className="lannavIcon"/>
-                    <span>Learning</span>
-                  </div>
-                </Link>
-                <Link to="" className="lannavLink">
-                  <div className="lannavItem">
-                    <Jobs className="lannavIcon"/>
-                    <span>Jobs</span>
-                  </div>
-                </Link>
-                <Link to="" className="lannavLink">
                   Join now
                 </Link>
                 <Link to="" className="lannavLink">
@@ -52,6 +29,16 @@ const Home = () => {
             </div>
           </div>
         </header>
+        <div className="lanJumbo">
+          <div className="lanJcontainer">
+            <div className="lanJFlex">
+              <div className="lanJtexts"></div>
+              <div className="lanJImage">
+                <LanJumboImage />
+              </div>
+            </div>
+          </div>
+        </div>
         <Footer />
     </div>
   )
