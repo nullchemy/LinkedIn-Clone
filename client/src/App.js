@@ -28,7 +28,7 @@ function App() {
               document.querySelector(".ppreloader").style.display = "none";
               document.querySelector(".Pagecontents").style.visibility = "visible";
               document.querySelector(".Pagecontents").style.display = "unset";
-          }, 4000);
+          }, 1000);
       }
     };
     //home remove navbar
@@ -41,7 +41,6 @@ function App() {
       }
       rendernav()
     }, [loc]);
-    console.log(loc.pathname+ "    "+curPath);
   return (
     <div className="App">
       <div className="ppreloader">
