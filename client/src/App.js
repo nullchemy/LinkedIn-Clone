@@ -34,9 +34,12 @@ function App() {
     };
     //home remove navbar
     const loc = useLocation();
+    console.log(loc);
     useEffect(()=>{
       const rendernav = () => {
-        
+        if(loc!=='home'){
+          setCurPath(false)
+        }
       }
       rendernav()
     }, [loc]);
