@@ -128,7 +128,19 @@
   width: 50%;
 }
 
-.landingPage .landingContainer .expTopics .expwrapper .expContainer .expFlex .expContTopics .expTopLinkCont {
+.landingPage .landingContainer .expTopics .expwrapper .expContainer .expFlex .expContTopics .expLinksCont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.landingPage .landingContainer .expTopics .expwrapper .expContainer .expFlex .expContTopics .expLinksCont .expTopLinkCont {
   padding: 10px 20px;
   border: 2px solid gray;
   border-radius: 23px;

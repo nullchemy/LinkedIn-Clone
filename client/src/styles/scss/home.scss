@@ -92,12 +92,17 @@
                         }
                         .expContTopics{
                             width: 50%;
-                            .expTopLinkCont{
-                                padding: 10px 20px;
-                                border: 2px solid gray;
-                                border-radius: 23px;
-                                margin: 10px;
-                                margin-left: 0px;
+                            .expLinksCont{
+                                display: flex;
+                                flex-direction: row;
+                                flex-wrap: wrap;
+                                .expTopLinkCont{
+                                    padding: 10px 20px;
+                                    border: 2px solid gray;
+                                    border-radius: 23px;
+                                    margin: 10px;
+                                    margin-left: 0px;
+                                }
                             }
                         }
                     }

@@ -55,20 +55,22 @@ const Home = () => {
                 </div>
                 <div className="expContTopics">
                   <h3>Content Topics</h3><br/>
-                  <Link className="expTopLinkCont" to="">See All topics</Link>
-                  <Link className="expTopLinkCont" to="">Science And Environment</Link>
-                  <Link className="expTopLinkCont" to="">Marketing And Advertising</Link>
-                  <Link className="expTopLinkCont" to="">Sales And Retail</Link>
-                  <Link className="expTopLinkCont" to="">Technology</Link>
-                  <Link className="expTopLinkCont" to="">Finance And Economy</Link>
-                  <Link className="expTopLinkCont" to="">Health</Link>
-                  <Link className="expTopLinkCont" to="">Business And Management</Link>
-                  <Link className="expTopLinkCont" to="">Lifestyle And Leisure</Link>
-                  <Link className="expTopLinkCont" to="">Society And Culture</Link>
-                  <Link className="expTopLinkCont" to="">Arts And Entertainment</Link>
-                  <Link className="expTopLinkCont" to="">Education And Learning</Link>
-                  <Link className="expTopLinkCont" to="">Sports And Fitness</Link>
-                  <Link className="expTopLinkCont" to="">Careers And Employment</Link>
+                  <div className="expLinksCont">
+                    <Link className="expTopLinkCont" to="">See All topics</Link>
+                    <Link className="expTopLinkCont" to="">Science And Environment</Link>
+                    <Link className="expTopLinkCont" to="">Marketing And Advertising</Link>
+                    <Link className="expTopLinkCont" to="">Sales And Retail</Link>
+                    <Link className="expTopLinkCont" to="">Technology</Link>
+                    <Link className="expTopLinkCont" to="">Finance And Economy</Link>
+                    <Link className="expTopLinkCont" to="">Health</Link>
+                    <Link className="expTopLinkCont" to="">Business And Management</Link>
+                    <Link className="expTopLinkCont" to="">Lifestyle And Leisure</Link>
+                    <Link className="expTopLinkCont" to="">Society And Culture</Link>
+                    <Link className="expTopLinkCont" to="">Arts And Entertainment</Link>
+                    <Link className="expTopLinkCont" to="">Education And Learning</Link>
+                    <Link className="expTopLinkCont" to="">Sports And Fitness</Link>
+                    <Link className="expTopLinkCont" to="">Careers And Employment</Link>
+                  </div>
                 </div>
               </div>
             </div>
