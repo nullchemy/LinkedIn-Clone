@@ -54,7 +54,7 @@ const Home = () => {
                   <h1>Explore topics you are interested in</h1>
                 </div>
                 <div className="expContTopics">
-                  <h3>Content Topics</h3>
+                  <h3>Content Topics</h3><br/>
                   <Link className="expTopLinkCont" to="">See All topics</Link>
                   <Link to="">Science And Environment</Link>
                   <Link to="">Marketing And Advertising</Link>
