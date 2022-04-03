@@ -109,6 +109,9 @@
                                         border: 2px solid gray;
                                         background-color: transparent;
                                     }
+                                    &:nth-child(1):hover{
+                                        background-color: #b6b6b6;
+                                    }
                                 }
                             }
                         }

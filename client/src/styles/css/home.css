@@ -156,4 +156,8 @@
   border: 2px solid gray;
   background-color: transparent;
 }
+
+.landingPage .landingContainer .expTopics .expwrapper .expContainer .expFlex .expContTopics .expLinksCont .expTopLinkCont:nth-child(1):hover {
+  background-color: #b6b6b6;
+}
 /*# sourceMappingURL=home.css.map */
