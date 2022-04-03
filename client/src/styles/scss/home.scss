@@ -89,6 +89,13 @@
                         flex-direction: row;
                         .expTitle{
                             width: 50%;
+                            display: flex;
+                            align-items: center;
+                            h1{
+                                font-size: 48px;
+                                font-weight: 200;
+                                color: rgba(0, 0, 0, 0.9);
+                            }
                         }
                         .expContTopics{
                             width: 50%;
