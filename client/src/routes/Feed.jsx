@@ -31,7 +31,7 @@ const Feed = () => {
   }, [clicked]);
   return (
     <main className="mainFeed">
-      <div className="mainFeedRow">
+      <div className="mainFeedRow container">
         <div className="mainFeedLeftCol">
           <Sidebar className="leftBar">
             <div className="card">
