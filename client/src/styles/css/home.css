@@ -148,6 +148,10 @@
   background-color: #d9d9d9;
 }
 
+.landingPage .landingContainer .expTopics .expwrapper .expContainer .expFlex .expContTopics .expLinksCont .expTopLinkCont:hover {
+  background-color: #b6b6b6;
+}
+
 .landingPage .landingContainer .expTopics .expwrapper .expContainer .expFlex .expContTopics .expLinksCont .expTopLinkCont:nth-child(1) {
   border: 2px solid gray;
   background-color: transparent;
