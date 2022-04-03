@@ -83,8 +83,16 @@
         .expTopics{
             .expwrapper{
                 .expContainer{
+                    margin: 0 5%;
                     .expFlex{
-                        
+                        display: flex;
+                        flex-direction: row;
+                        .expTitle{
+                            width: 50%;
+                        }
+                        .expContTopics{
+                            width: 50%;
+                        }
                     }
                 }
             }

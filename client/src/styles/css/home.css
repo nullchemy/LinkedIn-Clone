@@ -5,6 +5,7 @@
 .landingPage .landingContainer {
   margin: 0 5%;
   padding-top: 10px;
+  /*=====explore more topics=====*/
 }
 
 .landingPage .landingContainer .landingHeader .landingContainer {
@@ -103,5 +104,27 @@
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+}
+
+.landingPage .landingContainer .expTopics .expwrapper .expContainer {
+  margin: 0 5%;
+}
+
+.landingPage .landingContainer .expTopics .expwrapper .expContainer .expFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.landingPage .landingContainer .expTopics .expwrapper .expContainer .expFlex .expTitle {
+  width: 50%;
+}
+
+.landingPage .landingContainer .expTopics .expwrapper .expContainer .expFlex .expContTopics {
+  width: 50%;
 }
 /*# sourceMappingURL=home.css.map */
