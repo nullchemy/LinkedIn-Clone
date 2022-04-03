@@ -1,11 +1,10 @@
 .landingPage{
     background-color: #fff;
     .landingContainer{
-        margin: 0 5%;
         padding-top: 10px;
         .landingHeader{
             .landingContainer{
-                margin: 0 5%;
+                margin: 0 8%;
                 display: flex;
                 justify-content: space-between;
                 .landingLogo{
@@ -51,7 +50,7 @@
         }
         .lanJumbo{
             .lanJcontainer{
-                margin: 0 3%;
+                margin: 0 8%;
                 .lanJFlex{
                     display: flex;
                     padding-top: 5%;
@@ -74,6 +73,62 @@
                             border-radius: 50%;
                             object-fit: cover;
                             object-position: center;
+                        }
+                    }
+                }
+            }
+        }
+        /*=====explore more topics=====*/
+        .expTopics{
+            background-color: #f3f2f0;
+            padding: 40px 20px;
+            .expwrapper{
+                .expContainer{
+                    margin: 0 5%;
+                    .expFlex{
+                        display: flex;
+                        flex-direction: row;
+                        .expTitle{
+                            width: 50%;
+                            h1{
+                                margin-top: 20px;
+                                font-size: 48px;
+                                font-weight: 200;
+                                color: rgba(0, 0, 0, 0.9);
+                            }
+                        }
+                        .expContTopics{
+                            width: 50%;
+                            .expTitleCont{
+                                font-size: 16px;
+                                font-weight: 600;
+                                text-transform: uppercase;
+                                line-height: 1.25;
+                                color: rgba(0, 0, 0, 0.6);
+                                margin-bottom: 20px;
+                            }
+                            .expLinksCont{
+                                display: flex;
+                                flex-direction: row;
+                                flex-wrap: wrap;
+                                .expTopLinkCont{
+                                    padding: 10px 20px;
+                                    border-radius: 23px;
+                                    margin-bottom: 10px;
+                                    margin-right: 5px;
+                                    background-color: #d9d9d9;
+                                    &:hover{
+                                        background-color: #b6b6b6;
+                                    }
+                                    &:nth-child(1){
+                                        border: 1px solid #575757;
+                                        background-color: transparent;
+                                    }
+                                    &:nth-child(1):hover{
+                                        background-color: #b6b6b6;
+                                    }
+                                }
+                            }
                         }
                     }
                 }

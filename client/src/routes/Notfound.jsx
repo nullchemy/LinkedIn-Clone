@@ -2,7 +2,7 @@ import React from 'react'
 
 const Notfound = () => {
   return (
-    <div>Notfound</div>
+    <div className="container">Notfound</div>
   )
 }
 

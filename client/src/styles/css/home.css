@@ -3,12 +3,12 @@
 }
 
 .landingPage .landingContainer {
-  margin: 0 5%;
   padding-top: 10px;
+  /*=====explore more topics=====*/
 }
 
 .landingPage .landingContainer .landingHeader .landingContainer {
-  margin: 0 5%;
+  margin: 0 8%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -67,7 +67,7 @@
 }
 
 .landingPage .landingContainer .lanJumbo .lanJcontainer {
-  margin: 0 3%;
+  margin: 0 8%;
 }
 
 .landingPage .landingContainer .lanJumbo .lanJcontainer .lanJFlex {
@@ -103,5 +103,81 @@
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+}
+
+.landingPage .landingContainer .expTopics {
+  background-color: #f3f2f0;
+  padding: 40px 20px;
+}
+
+.landingPage .landingContainer .expTopics .expwrapper .expContainer {
+  margin: 0 5%;
+}
+
+.landingPage .landingContainer .expTopics .expwrapper .expContainer .expFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.landingPage .landingContainer .expTopics .expwrapper .expContainer .expFlex .expTitle {
+  width: 50%;
+}
+
+.landingPage .landingContainer .expTopics .expwrapper .expContainer .expFlex .expTitle h1 {
+  margin-top: 20px;
+  font-size: 48px;
+  font-weight: 200;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.landingPage .landingContainer .expTopics .expwrapper .expContainer .expFlex .expContTopics {
+  width: 50%;
+}
+
+.landingPage .landingContainer .expTopics .expwrapper .expContainer .expFlex .expContTopics .expTitleCont {
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 1.25;
+  color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 20px;
+}
+
+.landingPage .landingContainer .expTopics .expwrapper .expContainer .expFlex .expContTopics .expLinksCont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.landingPage .landingContainer .expTopics .expwrapper .expContainer .expFlex .expContTopics .expLinksCont .expTopLinkCont {
+  padding: 10px 20px;
+  border-radius: 23px;
+  margin-bottom: 10px;
+  margin-right: 5px;
+  background-color: #d9d9d9;
+}
+
+.landingPage .landingContainer .expTopics .expwrapper .expContainer .expFlex .expContTopics .expLinksCont .expTopLinkCont:hover {
+  background-color: #b6b6b6;
+}
+
+.landingPage .landingContainer .expTopics .expwrapper .expContainer .expFlex .expContTopics .expLinksCont .expTopLinkCont:nth-child(1) {
+  border: 1px solid #575757;
+  background-color: transparent;
+}
+
+.landingPage .landingContainer .expTopics .expwrapper .expContainer .expFlex .expContTopics .expLinksCont .expTopLinkCont:nth-child(1):hover {
+  background-color: #b6b6b6;
 }
 /*# sourceMappingURL=home.css.map */

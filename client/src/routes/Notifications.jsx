@@ -25,7 +25,7 @@ const Notifications = () => {
   return (
     <div className="notificationsPage">
       <div className="notifwrapper">
-        <div className="notifcontainer">
+        <div className="notifcontainer container">
           <div className="notifFlex">
             <div className="notifLeft">
               <div className="notifLeftTop">

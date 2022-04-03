@@ -19,7 +19,7 @@ const Network = () => {
     }
   }, [clicked]);
   return (
-    <div className="row">
+    <div className="row container">
       <Sidebar>
         <header className="asideHeader">
           <h1 className="asideHeaderTitle">Manage my network</h1>
