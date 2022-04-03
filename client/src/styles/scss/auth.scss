@@ -1,50 +1,103 @@
 .signup-section {
+  padding: 15px 0;
+  &.sign-in-section {
+    min-height: 100vh;
+  }
   .signup-wrapper {
-    max-width: 700px;
+    width: 700px;
     padding: 10px 0;
     margin: 0 auto;
+    &.signin-wrapper {
+      width: 90%;
+    }
     .signup-nav {
       display: flex;
       align-items: center;
       justify-content: center;
+      &.sign-in {
+        justify-content: flex-start;
+      }
       .navLogo {
         color: var(--color-brand) !important;
+        margin: 0;
       }
     }
     .form-title {
       font-weight: 400;
       color: #000;
-      margin-bottom: 20px;
+      margin: 20px 0;
       text-align: center;
     }
     .signup-form {
-      width: 400px;
-      //   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      width: 350px;
       margin: 0 auto;
       padding: 20px;
       border-radius: 10px;
       background: #fff;
+      &.signInForm {
+        width: 300px;
+      }
+      .form-header {
+        margin-bottom: 15px;
+        .authTitle {
+          color: #202020;
+          font-weight: 500;
+          margin-bottom: 5px;
+        }
+        .textMuted {
+          color: #292929;
+          font-weight: 400;
+          font-size: 13px;
+        }
+      }
       .form-groupa {
-        display: flex;
-        flex-direction: column;
         width: 100%;
         margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
         .form-label {
           display: block;
-          font-size: 14px;
+          font-size: 20px;
           color: #8b8b8b;
-          margin-bottom: 10px;
+          margin-bottom: 5px;
+          font-weight: 400;
         }
         .form-control {
           display: block;
           height: 32px;
           padding: 0 10px;
-          outline: 1px solid #292929;
-          border: 1px solid transparent;
+          outline: none;
+          border: 1px solid #666464;
           border-radius: 5px;
           background: #fff;
+          font-weight: 400;
+
+          &:hover {
+            border-color: #424242;
+          }
           &:focus {
-            border-color: #292929;
+            border: 2px solid #424242;
+          }
+        }
+        &.form-groupasn {
+          position: relative;
+          .form-label {
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            transform: translateY(-50%);
+            cursor: text;
+            transition: 400ms ease-in;
+            &.active {
+              top: 10px;
+              font-size: 13px;
+            }
+          }
+          .form-control {
+            height: 50px;
+            &:focus {
+              border-color: #0c5196;
+            }
           }
         }
       }
@@ -54,6 +107,7 @@
           max-width: 80%;
           margin: 0 auto;
           text-align: center;
+          color: #666464;
           a {
             color: var(--color-brand);
             &:hover {
@@ -73,6 +127,10 @@
           border-radius: 25px;
           cursor: pointer;
           margin-top: 20px;
+          &.signInBtn {
+            padding: 20px 20px;
+            font-size: 15px;
+          }
           &:hover,
           &:focus {
             background: #0c5196;
@@ -98,10 +156,11 @@
           }
         }
         .googleAuthBtn {
-          display: block;
+          display: flex;
+          align-items: center;
+          justify-content: center;
           width: 100%;
           padding: 10px 20px;
-
           font-weight: 400;
           color: #fff;
           background: #fff;
@@ -111,8 +170,12 @@
           cursor: pointer;
           margin-top: 20px;
           color: #424242;
-
           border: 1px solid #ececec;
+          &.signInBtn {
+            gap: 1rem;
+            border: 1px solid #292929;
+            padding: 15px 20px;
+          }
         }
         .signInRedirect {
           margin-top: 20px;
@@ -120,10 +183,41 @@
           text-align: center;
           a {
             color: var(--color-brand);
+            font-weight: 600;
             &:hover {
               text-decoration: underline;
+              color: #4917ff;
             }
           }
+        }
+        .resetRedirect {
+          color: #0c5196;
+          font-size: 15px;
+          padding: 5px 10px;
+          background: transparent;
+          font-weight: 600;
+          border-radius: 20px;
+          &:hover {
+            background: rgba(41, 78, 245, 0.3);
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    .signUpRedirect {
+      margin-top: 20px;
+      color: #292929;
+      text-align: center;
+      a {
+        color: #0c5196;
+        font-size: 15px;
+        padding: 5px 10px;
+        background: transparent;
+        font-weight: 600;
+        border-radius: 20px;
+        &:hover {
+          background: rgba(41, 78, 245, 0.3);
+          text-decoration: underline;
         }
       }
     }

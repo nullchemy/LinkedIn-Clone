@@ -11,6 +11,7 @@ import Notifications from "./routes/Notifications";
 import Profile from "./routes/Profile";
 import NotFound from "./routes/Notfound";
 import Register from "./routes/Register";
+import Login from "./routes/Login";
 
 function App() {
   const [curPath, setCurPath] = useState(true);
@@ -46,8 +47,10 @@ function App() {
       </div>
       <div className="Pagecontents">
         {curPath && <Navbar />}
+
         <div>
           <Routes>
+            <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
             <Route path="/feed" element={<Feed />}></Route>
             <Route path="/" element={<Navigate to="/feed" />}></Route>

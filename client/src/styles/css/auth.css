@@ -1,7 +1,19 @@
+.signup-section {
+  padding: 15px 0;
+}
+
+.signup-section.sign-in-section {
+  min-height: 100vh;
+}
+
 .signup-section .signup-wrapper {
-  max-width: 700px;
+  width: 700px;
   padding: 10px 0;
   margin: 0 auto;
+}
+
+.signup-section .signup-wrapper.signin-wrapper {
+  width: 90%;
 }
 
 .signup-section .signup-wrapper .signup-nav {
@@ -16,26 +28,55 @@
           justify-content: center;
 }
 
+.signup-section .signup-wrapper .signup-nav.sign-in {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
 .signup-section .signup-wrapper .signup-nav .navLogo {
   color: var(--color-brand) !important;
+  margin: 0;
 }
 
 .signup-section .signup-wrapper .form-title {
   font-weight: 400;
   color: #000;
-  margin-bottom: 20px;
+  margin: 20px 0;
   text-align: center;
 }
 
 .signup-section .signup-wrapper .signup-form {
-  width: 400px;
+  width: 350px;
   margin: 0 auto;
   padding: 20px;
   border-radius: 10px;
   background: #fff;
 }
 
+.signup-section .signup-wrapper .signup-form.signInForm {
+  width: 300px;
+}
+
+.signup-section .signup-wrapper .signup-form .form-header {
+  margin-bottom: 15px;
+}
+
+.signup-section .signup-wrapper .signup-form .form-header .authTitle {
+  color: #202020;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.signup-section .signup-wrapper .signup-form .form-header .textMuted {
+  color: #292929;
+  font-weight: 400;
+  font-size: 13px;
+}
+
 .signup-section .signup-wrapper .signup-form .form-groupa {
+  width: 100%;
+  margin-bottom: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -43,29 +84,61 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 100%;
-  margin-bottom: 20px;
 }
 
 .signup-section .signup-wrapper .signup-form .form-groupa .form-label {
   display: block;
-  font-size: 14px;
+  font-size: 20px;
   color: #8b8b8b;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
+  font-weight: 400;
 }
 
 .signup-section .signup-wrapper .signup-form .form-groupa .form-control {
   display: block;
   height: 32px;
   padding: 0 10px;
-  outline: 1px solid #292929;
-  border: 1px solid transparent;
+  outline: none;
+  border: 1px solid #666464;
   border-radius: 5px;
   background: #fff;
+  font-weight: 400;
+}
+
+.signup-section .signup-wrapper .signup-form .form-groupa .form-control:hover {
+  border-color: #424242;
 }
 
 .signup-section .signup-wrapper .signup-form .form-groupa .form-control:focus {
-  border-color: #292929;
+  border: 2px solid #424242;
+}
+
+.signup-section .signup-wrapper .signup-form .form-groupa.form-groupasn {
+  position: relative;
+}
+
+.signup-section .signup-wrapper .signup-form .form-groupa.form-groupasn .form-label {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  cursor: text;
+  -webkit-transition: 400ms ease-in;
+  transition: 400ms ease-in;
+}
+
+.signup-section .signup-wrapper .signup-form .form-groupa.form-groupasn .form-label.active {
+  top: 10px;
+  font-size: 13px;
+}
+
+.signup-section .signup-wrapper .signup-form .form-groupa.form-groupasn .form-control {
+  height: 50px;
+}
+
+.signup-section .signup-wrapper .signup-form .form-groupa.form-groupasn .form-control:focus {
+  border-color: #0c5196;
 }
 
 .signup-section .signup-wrapper .signup-form .form-footer .sitePolicyText {
@@ -73,6 +146,7 @@
   max-width: 80%;
   margin: 0 auto;
   text-align: center;
+  color: #666464;
 }
 
 .signup-section .signup-wrapper .signup-form .form-footer .sitePolicyText a {
@@ -95,6 +169,11 @@
   border-radius: 25px;
   cursor: pointer;
   margin-top: 20px;
+}
+
+.signup-section .signup-wrapper .signup-form .form-footer .formSubmitBtn.signInBtn {
+  padding: 20px 20px;
+  font-size: 15px;
 }
 
 .signup-section .signup-wrapper .signup-form .form-footer .formSubmitBtn:hover, .signup-section .signup-wrapper .signup-form .form-footer .formSubmitBtn:focus {
@@ -123,7 +202,15 @@
 }
 
 .signup-section .signup-wrapper .signup-form .form-footer .googleAuthBtn {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
   padding: 10px 20px;
   font-weight: 400;
@@ -138,6 +225,12 @@
   border: 1px solid #ececec;
 }
 
+.signup-section .signup-wrapper .signup-form .form-footer .googleAuthBtn.signInBtn {
+  gap: 1rem;
+  border: 1px solid #292929;
+  padding: 15px 20px;
+}
+
 .signup-section .signup-wrapper .signup-form .form-footer .signInRedirect {
   margin-top: 20px;
   color: #292929;
@@ -146,9 +239,45 @@
 
 .signup-section .signup-wrapper .signup-form .form-footer .signInRedirect a {
   color: var(--color-brand);
+  font-weight: 600;
 }
 
 .signup-section .signup-wrapper .signup-form .form-footer .signInRedirect a:hover {
+  text-decoration: underline;
+  color: #4917ff;
+}
+
+.signup-section .signup-wrapper .signup-form .form-footer .resetRedirect {
+  color: #0c5196;
+  font-size: 15px;
+  padding: 5px 10px;
+  background: transparent;
+  font-weight: 600;
+  border-radius: 20px;
+}
+
+.signup-section .signup-wrapper .signup-form .form-footer .resetRedirect:hover {
+  background: rgba(41, 78, 245, 0.3);
+  text-decoration: underline;
+}
+
+.signup-section .signup-wrapper .signUpRedirect {
+  margin-top: 20px;
+  color: #292929;
+  text-align: center;
+}
+
+.signup-section .signup-wrapper .signUpRedirect a {
+  color: #0c5196;
+  font-size: 15px;
+  padding: 5px 10px;
+  background: transparent;
+  font-weight: 600;
+  border-radius: 20px;
+}
+
+.signup-section .signup-wrapper .signUpRedirect a:hover {
+  background: rgba(41, 78, 245, 0.3);
   text-decoration: underline;
 }
 
