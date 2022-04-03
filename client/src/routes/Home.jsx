@@ -46,6 +46,15 @@ const Home = () => {
             </div>
           </div>
         </div>
+        <div className="expTopics">
+          <div className="expwrapper">
+            <div className="expContainer">
+              <div className="expFlex">
+                
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
         <Footer />
     </div>
