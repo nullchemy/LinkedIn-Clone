@@ -6,8 +6,6 @@ import {BrowserRouter as Router } from 'react-router-dom'
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 
 
-const container = document.getElementById('root');
-const root = createRoot(container);
-root.render(<Router><App tab="home" /></Router>);
+createRoot(document.getElementById('root')).render(<Router><App tab="home" /></Router>);
 
 serviceWorkerRegistration.unregister();
