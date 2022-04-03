@@ -129,6 +129,11 @@
 }
 
 .landingPage .landingContainer .expTopics .expwrapper .expContainer .expFlex .expContTopics .expTitleCont {
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 1.25;
+  color: rgba(0, 0, 0, 0.6);
   margin-bottom: 20px;
 }
 
