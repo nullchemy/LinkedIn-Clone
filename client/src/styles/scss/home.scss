@@ -101,8 +101,10 @@
                                     border-radius: 23px;
                                     margin: 10px;
                                     margin-left: 0px;
+                                    background-color: #d9d9d9;
                                     &:nth-child(1){
                                         border: 2px solid gray;
+                                        background-color: transparent;
                                     }
                                 }
                             }
