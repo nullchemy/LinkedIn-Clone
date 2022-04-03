@@ -142,9 +142,12 @@
 
 .landingPage .landingContainer .expTopics .expwrapper .expContainer .expFlex .expContTopics .expLinksCont .expTopLinkCont {
   padding: 10px 20px;
-  border: 2px solid gray;
   border-radius: 23px;
   margin: 10px;
   margin-left: 0px;
+}
+
+.landingPage .landingContainer .expTopics .expwrapper .expContainer .expFlex .expContTopics .expLinksCont .expTopLinkCont:nth-child(1) {
+  border: 2px solid gray;
 }
 /*# sourceMappingURL=home.css.map */
