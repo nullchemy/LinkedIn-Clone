@@ -127,4 +127,9 @@
 .landingPage .landingContainer .expTopics .expwrapper .expContainer .expFlex .expContTopics {
   width: 50%;
 }
+
+.landingPage .landingContainer .expTopics .expwrapper .expContainer .expFlex .expContTopics .expTopLinkCont {
+  padding: 10px 20px;
+  border: 2px solid gray;
+}
 /*# sourceMappingURL=home.css.map */

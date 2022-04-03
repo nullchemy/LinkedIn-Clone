@@ -55,7 +55,7 @@ const Home = () => {
                 </div>
                 <div className="expContTopics">
                   <h3>Content Topics</h3>
-                  <Link to="">See All topics</Link>
+                  <Link className="expTopLinkCont" to="">See All topics</Link>
                   <Link to="">Science And Environment</Link>
                   <Link to="">Marketing And Advertising</Link>
                   <Link to="">Sales And Retail</Link>
