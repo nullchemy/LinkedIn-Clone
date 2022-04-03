@@ -8,6 +8,8 @@ import { ReactComponent as Video } from "../assets/svg/video-icon.svg";
 import { ReactComponent as Plus } from "../assets/svg/plus-icon.svg";
 import { ReactComponent as Event } from "../assets/svg/event-icon.svg";
 import { ReactComponent as Article } from "../assets/svg/article-icon.svg";
+import { ReactComponent as ChevronUp } from "../assets/svg/ChevronUp.svg";
+import { ReactComponent as ChevronDown } from "../assets/svg/ChevronDown.svg";
 
 import NewsListItem from "../components/NewsListItem";
 import Footer from "../components/Footer";
@@ -209,33 +211,11 @@ const Feed = () => {
                       {clicked ? "Less" : "More"}
                       {clicked ? (
                         <span>
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 16 16"
-                            data-supported-dps="16x16"
-                            fill="currentColor"
-                            className="mercado-match"
-                            width="16"
-                            height="16"
-                            focusable="false"
-                          >
-                            <path d="M1 5l7 4.61L15 5v2.39L8 12 1 7.39z"></path>
-                          </svg>
+                          <ChevronDown />
                         </span>
                       ) : (
                         <span>
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 16 16"
-                            data-supported-dps="16x16"
-                            fill="currentColor"
-                            className="mercado-match"
-                            width="16"
-                            height="16"
-                            focusable="false"
-                          >
-                            <path d="M15 11L8 6.39 1 11V8.61L8 4l7 4.61z"></path>
-                          </svg>
+                          <ChevronUp />
                         </span>
                       )}
                     </button>

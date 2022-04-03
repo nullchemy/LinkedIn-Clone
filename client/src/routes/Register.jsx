@@ -1,16 +1,19 @@
 import React from "react";
-import { ReactComponent as NavBrand } from "../assets/svg/footer-logo.svg";
+import { ReactComponent as FooterBrand } from "../assets/svg/footer-logo.svg";
+import { ReactComponent as NavBrand } from "../assets/svg/Landing-Home-Logo.svg";
+import { ReactComponent as ChevronUp } from "../assets/svg/ChevronUp.svg";
+
 import { Link } from "react-router-dom";
 import "../styles/css/auth.css";
 const Register = () => {
   return (
     <div className="signup-section">
-      <nav className="signup-nav">
-        <span className="signUpBrand">
-          <NavBrand className="brandLogo" />
-        </span>
-      </nav>
       <div className="signup-wrapper">
+        <nav className="signup-nav">
+          <span className="navLogo">
+            <NavBrand className="logo" />
+          </span>
+        </nav>
         <h1 className="form-title">Make the most of your professional life</h1>
         <form className="signup-form">
           <div className="form-groupa">
@@ -52,51 +55,61 @@ const Register = () => {
         </form>
       </div>
       <footer className="authFooter">
-        <div className="info">
-          <p className="infoText">
-            Looking to create a page for a business?
-            <Link to="/support">Get help</Link>
-          </p>
-        </div>
-        <ul className="footerLinks">
-          <li className="footerLinkItem">
-            <p className="siteCredit">
-              {
-                <>
-                  <NavBrand className="brandLogo" /> &copy;{" "}
-                  {new Date().getFullYear()}
-                </>
-              }
+        <div className="container">
+          <div className="info">
+            <p className="infoText">
+              Looking to create a page for a business?
+              <Link to="/support">Get help</Link>
             </p>
-          </li>
-          <li className="footerLinkItem">
-            <Link to="/about">About</Link>
-          </li>
-          <li className="footerLinkItem">
-            <Link to="/accessibility">Accessibility</Link>
-          </li>
-          <li className="footerLinkItem">
-            <Link to="/user-agreement">User Agreement</Link>
-          </li>
-          <li className="footerLinkItem">
-            <Link to="/privacy-policy">Privacy Policy</Link>
-          </li>
-          <li className="footerLinkItem">
-            <Link to="/cookie-policy">Cookie Policy</Link>
-          </li>
-          <li className="footerLinkItem">
-            <Link to="/brand-policy">brand policy</Link>
-          </li>
-          <li className="footerLinkItem">
-            <Link to="/guest-control">Guest Controls</Link>
-          </li>
-          <li className="footerLinkItem">
-            <Link to="/guest-control">Community Guidelines</Link>
-          </li>
-          <li className="footerLinkItem">
-            <button className="selectLangBtn">Language</button>
-          </li>
-        </ul>
+          </div>
+          <ul className="footerLinks">
+            <li className="footerLinkItem">
+              <p className="siteCredit">
+                {
+                  <>
+                    <FooterBrand className="brandLogo" />
+                    <span>
+                      &copy;
+                      {new Date().getFullYear()}
+                    </span>
+                  </>
+                }
+              </p>
+            </li>
+            <li className="footerLinkItem">
+              <Link to="/about">About</Link>
+            </li>
+            <li className="footerLinkItem">
+              <Link to="/accessibility">Accessibility</Link>
+            </li>
+            <li className="footerLinkItem">
+              <Link to="/user-agreement">User Agreement</Link>
+            </li>
+            <li className="footerLinkItem">
+              <Link to="/privacy-policy">Privacy Policy</Link>
+            </li>
+            <li className="footerLinkItem">
+              <Link to="/cookie-policy">Cookie Policy</Link>
+            </li>
+            <li className="footerLinkItem">
+              <Link to="/brand-policy">brand policy</Link>
+            </li>
+            <li className="footerLinkItem">
+              <Link to="/guest-control">Guest Controls</Link>
+            </li>
+            <li className="footerLinkItem">
+              <Link to="/guest-control">Community Guidelines</Link>
+            </li>
+            <li className="footerLinkItem">
+              <button className="selectLangBtn">
+                <span className="btnText">Language</span>
+                <span className="btnIcon">
+                  <ChevronUp />
+                </span>
+              </button>
+            </li>
+          </ul>
+        </div>
       </footer>
     </div>
   );
