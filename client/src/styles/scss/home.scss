@@ -92,13 +92,13 @@
                         }
                         .expContTopics{
                             width: 50%;
+                            .expTitleCont{
+                                margin-bottom: 20px;
+                            }
                             .expLinksCont{
                                 display: flex;
                                 flex-direction: row;
                                 flex-wrap: wrap;
-                                h3{
-                                    margin-bottom: 10px;
-                                }
                                 .expTopLinkCont{
                                     padding: 10px 20px;
                                     border-radius: 23px;

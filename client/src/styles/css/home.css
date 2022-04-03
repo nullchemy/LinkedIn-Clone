@@ -128,6 +128,10 @@
   width: 50%;
 }
 
+.landingPage .landingContainer .expTopics .expwrapper .expContainer .expFlex .expContTopics .expTitleCont {
+  margin-bottom: 20px;
+}
+
 .landingPage .landingContainer .expTopics .expwrapper .expContainer .expFlex .expContTopics .expLinksCont {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -138,10 +142,6 @@
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-}
-
-.landingPage .landingContainer .expTopics .expwrapper .expContainer .expFlex .expContTopics .expLinksCont h3 {
-  margin-bottom: 10px;
 }
 
 .landingPage .landingContainer .expTopics .expwrapper .expContainer .expFlex .expContTopics .expLinksCont .expTopLinkCont {
