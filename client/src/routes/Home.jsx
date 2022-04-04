@@ -3,10 +3,10 @@ import '../styles/css/home.css'
 import { Link } from 'react-router-dom'
 import Footer from '../components/HomeFooter'
 import {ReactComponent as LandingLogo} from '../assets/svg/Landing-Home-Logo.svg'
-// import {ReactComponent as Discover} from '../assets/svg/discover.svg'
-// import {ReactComponent as People} from '../assets/svg/people.svg'
-// import {ReactComponent as Learning} from '../assets/svg/Learning.svg'
-// import {ReactComponent as Jobs} from '../assets/svg/jobs.svg'
+import {ReactComponent as Discover} from '../assets/svg/discover.svg'
+import {ReactComponent as People} from '../assets/svg/people.svg'
+import {ReactComponent as Learning} from '../assets/svg/Learning.svg'
+import {ReactComponent as Jobs} from '../assets/svg/jobs.svg'
 import {ReactComponent as LanJumboImage} from '../assets/svg/lan-jumbo.svg'
 import {ReactComponent as ArrowRight} from '../assets/svg/arrow-right.svg'
 
@@ -22,9 +22,25 @@ const Home = () => {
             <div className="landingNavigation">
               <div className="lannavFlex">
                 <Link to="" className="lannavLink">
-                  Join now
+                  <Discover className="lannavLinkIcon"/>
+                  <span>Discover</span>
                 </Link>
                 <Link to="" className="lannavLink">
+                  <People className="lannavLinkIcon"/>
+                  <span>People</span>
+                </Link>
+                <Link to="" className="lannavLink">
+                  <Learning  className="lannavLinkIcon"/>
+                  <span>Learning</span>
+                </Link>
+                <Link to="" className="lannavLink">
+                  <Jobs  className="lannavLinkIcon"/>
+                  <span>Jobs</span>
+                </Link>
+                <Link to="/register" className="lannavLinkCall1">
+                  Join now
+                </Link>
+                <Link to="/login" className="lannavLinkCall2">
                   Sign in
                 </Link>
               </div>
@@ -36,7 +52,7 @@ const Home = () => {
             <div className="lanJFlex">
               <div className="lanJtexts">
                 <h2 className="lanJTitle">Welcome to your professional community</h2>
-                <Link className="lanJuLinks" to="">Search for a job <ArrowRight /></Link><br />
+                <Link className="lanJuLinks" to="">Search for a job <ArrowRight className="lanJarrowRight"/></Link><br />
                 <Link className="lanJuLinks" to="">Find a person you know <ArrowRight /></Link><br />
                 <Link className="lanJuLinks" to="">Learn a new skill <ArrowRight /></Link><br />
               </div>

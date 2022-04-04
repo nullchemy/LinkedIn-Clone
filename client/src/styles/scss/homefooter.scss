@@ -1,0 +1,40 @@
+.HomeFooter{
+    background-color: #e2e2e2;
+    height: 70vh;
+    padding-top: 30px;
+    .homefooterContainer{
+        margin: 0 8%;
+        .homeFooterFlex{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            .homefooterBrandLogo,
+            .homefooterGeneral,
+            .homefooterBrowse,
+            .homeFooterBiz,
+            .homefooterDirectories{
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                .HomeFooterLogo{
+                    fill: #0a66c2;
+                    color: #0a66c2;
+                    margin-top: 20px;
+                }
+                h2{
+                    line-height: 1.25;
+                    color: rgba(0, 0, 0, 0.9);
+                    font-weight: 600;
+                    font-size: 16px;
+                    margin-bottom: 8px;
+                }
+                .homefooterLinks{
+                    color: rgba(0, 0, 0, 0.6);
+                }
+            }
+        }
+        .homefooterCopyCont{
+            
+        }
+    }
+}
