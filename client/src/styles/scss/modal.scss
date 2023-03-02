@@ -1,0 +1,236 @@
+.createPostModalContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  min-height: 100vh;
+  visibility: hidden;
+
+  z-index: 4000;
+  opacity: 0;
+
+  transition: 0.3s;
+
+  &.modalActive {
+    visibility: visible;
+
+    opacity: 1;
+  }
+  .modalOverlay {
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+  }
+  .createPostCard {
+    position: relative;
+    top: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    max-width: 500px;
+    height: max-content;
+    border-radius: 10px;
+    padding: 13px 0;
+    .modalHeader {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 16px;
+      .title {
+        color: #505050;
+      }
+      .cancelPostBtn {
+        color: #505050;
+        cursor: pointer;
+      }
+    }
+    .modalBody {
+      .photoUploadArea {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border: 2px solid #ececec;
+
+        .customUpload {
+          display: block;
+          color: #0a66c2;
+          background: #ececec;
+          border: none;
+          outline: none;
+          padding: 10px;
+          border-radius: 10px;
+          cursor: pointer;
+          font-weight: 600;
+          font-size: 14px;
+        }
+        .imagePreviewContainer {
+          width: 100%;
+          overflow-y: auto !important;
+          .previewImg {
+            width: 100%;
+            max-height: auto;
+          }
+        }
+      }
+      .flex {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 1rem;
+        padding: 0 16px;
+        .userImageContainer {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          overflow: hidden;
+          .userAvatar {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+        .userPreference {
+          .userName {
+            font-size: 15px;
+            font-weight: 600;
+            color: #292929;
+          }
+          .postPreferenceBtn {
+            background: none;
+            border-radius: 25px;
+            border: 1px solid #292929;
+            padding: 10px 15px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+          }
+        }
+      }
+      .postDetails {
+        width: 100%;
+        padding: 20px 0;
+        display: flex;
+        #postDescription {
+          padding-left: 20px;
+          border: 0;
+          outline: none;
+          width: 100%;
+          min-height: 100px;
+          resize: vertical;
+          font-size: 15px;
+          font-family: system-ui, "Roboto";
+          font-weight: 400;
+          color: #383838;
+          &::placeholder {
+            font-size: 15px;
+            font-family: system-ui, "Roboto";
+            font-weight: 300;
+            color: #808080;
+          }
+        }
+      }
+      .imagePreviewContainer {
+        overflow-y: auto !important;
+        width: 100%;
+        .previewImg {
+          width: 100%;
+          max-height: auto;
+        }
+      }
+    }
+    .modalFooter {
+      padding: 0 16px;
+      .editingRow {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 10px 0;
+        .btn {
+          background: none;
+          color: #0a66c2;
+          border: 1px solid #0a66c2;
+          outline: none;
+          border-radius: 20px;
+          padding: 10px 20px;
+          cursor: pointer;
+          &.backBtn {
+            margin-right: 14px;
+          }
+          &.saveBtn {
+            background: #0a66c2;
+            color: white;
+          }
+          &.saveBtn:disabled {
+            color: #505050;
+            border: none !important;
+            cursor: not-allowed;
+            background: #ececec;
+          }
+        }
+      }
+      .row {
+        display: flex;
+        align-items: center;
+
+        .colLeft {
+          display: flex;
+          align-items: center;
+          flex-basis: 60%;
+          .colLeftToolBars {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            .toolBarItem {
+              button {
+                border: none;
+                outline: none;
+                background: none;
+                color: #808080;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+        .colRight {
+          flex-basis: 40%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .commentPreferenceBtn {
+            background: none;
+            border-radius: 25px;
+            border: 1px solid #292929;
+            padding: 10px 15px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+          }
+          .createPostBtn {
+            background: #0a66c2;
+            color: #fff;
+            border: 0;
+            outline: 0;
+            cursor: pointer;
+            font-weight: 500;
+
+            cursor: pointer;
+            padding: 10px 20px;
+            border-radius: 20px;
+            &:disabled {
+              background: #ececec;
+              color: #808080;
+              cursor: not-allowed;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,189 @@
+.landingPage{
+    background-color: #fff;
+    .landingContainer{
+        padding-top: 10px;
+        .landingHeader{
+            .landingContainer{
+                margin: 0 8%;
+                display: flex;
+                justify-content: space-between;
+                .landingLogo{
+                    .LandingLogoIcon{
+                        fill: #0a66c2;
+                        color: #0a66c2;
+                    }
+                }
+                .landingNavigation{
+                    .lannavFlex{
+                        display: flex;
+                        .lannavLink{
+                            margin: 0 10px;
+                            color: #3d3d3d;
+                            font-size: 1rem;
+                            display: flex;
+                            flex-direction: column;
+                            text-align: center;
+                            vertical-align: middle;
+                            outline: none;
+                            margin: 0px 20px;
+                            &:nth-child(4){
+                                margin-right: 0px;
+                                padding-right: 40px;
+                                border-right: 1px solid rgb(198, 198, 198);
+                            }
+                            .lannavLinkIcon{
+                                display: block;
+                                height: 24px;
+                                width: 24px;
+                                margin: 0 auto;
+                            }
+                            span{
+                                font-size: 14px;
+                            }
+                        }
+                        .lannavLinkCall1{
+                            margin: 0 10px;
+                            color: #3d3d3d;
+                            font-size: 1rem;
+                            display: flex;
+                            align-items: center;
+                            text-align: center;
+                            vertical-align: middle;
+                            outline: none;
+                            padding: 0 10px;
+                            border-radius: 5px;
+                            transition: 0.3s;
+                            &:hover{
+                                background-color: rgb(218, 218, 218);
+                            }
+                        }
+                        .lannavLinkCall2{
+                            margin: 0 10px;
+                            color: #3d3d3d;
+                            font-size: 1rem;
+                            display: flex;
+                            align-items: center;
+                            text-align: center;
+                            vertical-align: middle;
+                            outline: none;
+                            color: #0a66c2;
+                            padding: 5px 20px;
+                            border-radius: 20px;
+                            border: 1px solid #0a66c2;
+                            height: min-content;
+                            margin-top: 5px;
+                            &:hover{
+                                padding: 4px 19px;
+                                border: 2px solid #0a66c2;
+                                background-color: #0fb0c21d;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .lanJumbo{
+            .lanJcontainer{
+                margin: 0 8%;
+                .lanJFlex{
+                    display: flex;
+                    flex-wrap: wrap;
+                    padding-top: 5%;
+                    .lanJtexts{
+                        width: 50%;
+                        .lanJTitle{
+                            font-size: 56px;
+                            font-weight: 200;
+                            color: #8f5849;
+                            margin-bottom: 40px;
+                        }
+                        .lanJuLinks{
+                            display: flex;
+                            justify-content: space-between;
+                            background-color: #fff;
+                            border: 1px solid rgb(165, 165, 165);
+                            border-radius: 5px;
+                            padding: 15px 20px;
+                            width: 50%;
+                            &:hover{
+                                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                            }
+                            // .lanJarrowRight{
+                            //     align-self: flex-end;
+                            // }
+                        }
+                    }
+                    .lanJImage{
+                        width: 50%;
+                        flex-shrink: 1;
+                        .lanJumboImage{
+                            width: 700px;
+                            height: 700px;
+                            margin-right: -100px;
+                            margin-top: -50px;
+                            border-radius: 50%;
+                            object-fit: cover;
+                            object-position: center;
+                        }
+                    }
+                }
+            }
+        }
+        /*=====explore more topics=====*/
+        .expTopics{
+            background-color: #f3f2f0;
+            padding: 40px 20px;
+            .expwrapper{
+                .expContainer{
+                    margin: 0 5%;
+                    .expFlex{
+                        display: flex;
+                        flex-direction: row;
+                        .expTitle{
+                            width: 50%;
+                            h1{
+                                margin-top: 20px;
+                                font-size: 48px;
+                                font-weight: 200;
+                                color: rgba(0, 0, 0, 0.9);
+                            }
+                        }
+                        .expContTopics{
+                            width: 50%;
+                            .expTitleCont{
+                                font-size: 16px;
+                                font-weight: 600;
+                                text-transform: uppercase;
+                                line-height: 1.25;
+                                color: rgba(0, 0, 0, 0.6);
+                                margin-bottom: 20px;
+                            }
+                            .expLinksCont{
+                                display: flex;
+                                flex-direction: row;
+                                flex-wrap: wrap;
+                                .expTopLinkCont{
+                                    padding: 10px 20px;
+                                    border-radius: 23px;
+                                    margin-bottom: 10px;
+                                    margin-right: 5px;
+                                    background-color: #d9d9d9;
+                                    &:hover{
+                                        background-color: #b6b6b6;
+                                    }
+                                    &:nth-child(1){
+                                        border: 1px solid #575757;
+                                        background-color: transparent;
+                                    }
+                                    &:nth-child(1):hover{
+                                        background-color: #b6b6b6;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

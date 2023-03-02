@@ -1,0 +1,523 @@
+.navbar {
+  width: 100%;
+  height: 54px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: #fff;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.navbar .navcontainer {
+  margin: 0px 8%;
+}
+
+.navbar .navcontainer .navflex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar .navcontainer .navflex .navleft {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 7px;
+}
+
+.navbar .navcontainer .navflex .navleft .navlogo .logo {
+  color: var(--color-brand);
+}
+
+.navbar .navcontainer .navflex .navleft .navsearch {
+  margin-left: 10px;
+  position: relative;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  border-radius: 5px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar .navcontainer .navflex .navleft .navsearch .navsearchIcon {
+  position: absolute;
+  z-index: 3;
+  height: 15px;
+  width: 15px;
+  margin-left: 10px;
+  color: #00000099;
+  cursor: pointer;
+}
+
+.navbar .navcontainer .navflex .navleft .navsearch .navsearchInput {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  width: 250px;
+  outline: none;
+  border: none;
+  padding: 10px 5px 10px 5px;
+  padding-left: 35px;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  font-weight: 100;
+  background-color: #dddddd;
+}
+
+.navbar .navcontainer .navflex .navright {
+  padding-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar .navcontainer .navflex .navright .navigation .nav-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+}
+
+.navbar .navcontainer .navflex .navright .navigation .nav-group .nav-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 20px;
+  position: relative;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.navbar .navcontainer .navflex .navright .navigation .nav-group .nav-link .icon-nav-wrapper {
+  position: relative;
+}
+
+.navbar .navcontainer .navflex .navright .navigation .nav-group .nav-link .icon-nav-wrapper .nav-icon {
+  height: 24px;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform .2s ease-in-out;
+  transition: -webkit-transform .2s ease-in-out;
+  transition: transform .2s ease-in-out;
+  transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
+  width: 24px;
+  font-size: 1.2rem;
+  font-weight: 400;
+  cursor: pointer;
+  line-height: 1.5;
+}
+
+.navbar .navcontainer .navflex .navright .navigation .nav-group .nav-link .icon-nav-wrapper .nav-profile-image {
+  border-radius: 50%;
+}
+
+.navbar .navcontainer .navflex .navright .navigation .nav-group .nav-link .icon-nav-wrapper .icon-badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 999;
+  height: 5px;
+  width: 5px;
+  padding: 5px;
+  font-size: 10px;
+  text-align: center;
+  background-color: #cc1016;
+  color: white;
+  border-radius: 50%;
+  margin-top: -5px;
+  margin-right: -5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 900;
+}
+
+.navbar .navcontainer .navflex .navright .navigation .nav-group .nav-link .icon-nav-wrapper .icon-badge-home {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 999;
+  height: 5px;
+  width: 5px;
+  padding: 5px;
+  font-size: 10px;
+  text-align: center;
+  background-color: #cc1016;
+  color: white;
+  border-radius: 50%;
+  margin-top: -5px;
+  margin-right: -5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar .navcontainer .navflex .navright .navigation .nav-group .nav-link .icon-nav-wrapper .icon-badge-home span {
+  background-color: #fff;
+  padding: 3.5px;
+  border-radius: 50%;
+}
+
+.navbar .navcontainer .navflex .navright .navigation .nav-group .nav-link .nav-texts {
+  color: #00000099;
+  cursor: pointer;
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1.5;
+  list-style-type: none;
+  margin-top: -5px;
+}
+
+.navbar .navcontainer .navflex .navright .navigation .nav-group .nav-link .nav-texts span .profile-drop-icon {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform .2s ease-in-out;
+  transition: -webkit-transform .2s ease-in-out;
+  transition: transform .2s ease-in-out;
+  transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
+  font-size: 1.2rem;
+  font-weight: 400;
+  cursor: pointer;
+  line-height: 1.5;
+  margin-bottom: -3px;
+}
+
+.navbar .navcontainer .navflex .navright .navigation .nav-group .activeTab::after {
+  background: none repeat scroll 0 0 transparent;
+  content: "";
+  display: block;
+  height: 2px;
+  margin-top: 2px;
+  background: -webkit-gradient(linear, right top, left top, from(#494949), to(#353535));
+  background: linear-gradient(to left, #494949, #353535 100%);
+  -webkit-transition: width .5s ease 0s, right .5s ease 0s;
+  transition: width .5s ease 0s, right .5s ease 0s;
+  width: 0;
+  -webkit-animation: tabactive 0.2s ease-in-out forwards;
+          animation: tabactive 0.2s ease-in-out forwards;
+}
+
+@-webkit-keyframes tabactive {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 160%;
+  }
+}
+
+@keyframes tabactive {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 160%;
+  }
+}
+
+.navbar .navcontainer .navflex .navright .navigation .nav-group .profileDetDrop {
+  display: none;
+  width: 300px;
+  height: 200px;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  z-index: 999;
+  background-color: white;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.navbar .navcontainer .navflex .navright .navigation .nav-group .profileDetDrop .profdetfl:nth-child(1), .navbar .navcontainer .navflex .navright .navigation .nav-group .profileDetDrop .profdetfl:nth-child(2) {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.navbar .navcontainer .navflex .navright .navigation .nav-group .profileDetDrop .profdetfl {
+  padding: 10px;
+}
+
+.navbar .navcontainer .navflex .navright .navigation .nav-group .profileDetDrop .profdetfl .profileViewDet {
+  display: block;
+  padding: 1px 10px;
+  width: 85%;
+  text-align: center;
+  border-radius: 30px;
+  border: 1px solid blue;
+  color: blue;
+  margin: 10px;
+}
+
+.navbar .navcontainer .navflex .navright .navigation .nav-group .profileDetDrop .profdetfl .profileViewDet:hover {
+  border: 2px solid blue;
+  margin-bottom: 8px;
+  margin-right: 8px;
+}
+
+.navbar .navcontainer .navflex .navright .navigation .nav-group .profileDetDrop .profdetimage {
+  margin-bottom: 10px;
+}
+
+.navbar .navcontainer .navflex .navright .navigation .nav-group .profileDetDrop .profdetimage .topprofdetflex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar .navcontainer .navflex .navright .navigation .nav-group .profileDetDrop .profdetimage .topprofdetflex img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.navbar .navcontainer .navflex .navright .navigation .nav-group .profileDetDrop .profdetimage .topprofdetflex .profdettxtsflex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 10px;
+}
+
+.navbar .navcontainer .navflex .navright .navigation .nav-group .profileDetDrop .profdetimage .topprofdetflex .profdettxtsflex .profNameDet {
+  color: #2c2c2c;
+  font-weight: 600;
+}
+
+.navbar .navcontainer .navflex .navright .navigation .nav-group .profileDetDrop .profdetimage .topprofdetflex .profdettxtsflex .profSchoolDet {
+  color: #2c2c2c;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.navbar .navcontainer .navflex .navright .nav-work {
+  border-left: 2px solid #f0f0f0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: -10px;
+  margin-bottom: -2px;
+  padding-top: 10px;
+  position: relative;
+}
+
+.navbar .navcontainer .navflex .navright .nav-work .nav-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 20px;
+  position: relative;
+}
+
+.navbar .navcontainer .navflex .navright .nav-work .nav-link .nav-icon {
+  position: absolute;
+  top: 0;
+  height: 24px;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform .2s ease-in-out;
+  transition: -webkit-transform .2s ease-in-out;
+  transition: transform .2s ease-in-out;
+  transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
+  width: 24px;
+  font-size: 1.2rem;
+  font-weight: 400;
+  cursor: pointer;
+  line-height: 1.5;
+}
+
+.navbar .navcontainer .navflex .navright .nav-work .nav-link .nav-profile-image {
+  border-radius: 50%;
+}
+
+.navbar .navcontainer .navflex .navright .nav-work .nav-link .nav-texts {
+  color: #00000099;
+  cursor: pointer;
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1.5;
+  list-style-type: none;
+  margin-top: 24px;
+}
+
+.navbar .navcontainer .navflex .navright .nav-work .nav-link .nav-texts span .profile-drop-icon {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform .2s ease-in-out;
+  transition: -webkit-transform .2s ease-in-out;
+  transition: transform .2s ease-in-out;
+  transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
+  font-size: 1.2rem;
+  font-weight: 400;
+  cursor: pointer;
+  line-height: 1.5;
+  margin-bottom: -3px;
+}
+
+.navbar .navcontainer .navflex .navright .nav-work .nav-premium {
+  color: #915907;
+  cursor: pointer;
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1.5;
+  list-style-type: none;
+  text-align: center;
+}
+
+.navbar .navcontainer .navflex .navright .nav-work .nav-more {
+  padding-top: 5px;
+  width: 24px;
+  height: 24px !important;
+  display: none;
+  margin: 0 20px;
+  position: relative;
+}
+
+.navbar .navcontainer .navflex .navright .nav-work .nav-more .nav-icon {
+  height: 24px;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform .2s ease-in-out;
+  transition: -webkit-transform .2s ease-in-out;
+  transition: transform .2s ease-in-out;
+  transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
+  width: 24px;
+  font-size: 1.2rem;
+  font-weight: 400;
+  cursor: pointer;
+  line-height: 1.5;
+}
+
+.navbar .navcontainer .navflex .navright .nav-work .nav-dropdown {
+  display: none;
+  position: absolute;
+  top: 56px;
+  right: 10px;
+  background-color: #ffffff;
+  height: 54px;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.navbar .navcontainer .navflex .navright .nav-work .nav-dropdown .drop-nav-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.show {
+  display: unset !important;
+}
+
+@media (max-width: 1000px) {
+  .navsearch .navsearchInput {
+    display: none;
+  }
+  .nav-link .nav-texts {
+    display: none !important;
+  }
+  .nav-link::after {
+    display: none !important;
+  }
+}
+
+@media (max-width: 920px) {
+  .nav-more {
+    display: unset !important;
+  }
+  .nav-premium {
+    display: none !important;
+  }
+}
+
+@media (max-width: 840px) {
+  .nav-work {
+    border: none !important;
+  }
+  .nav-works {
+    display: none !important;
+  }
+}
+
+@media (max-width: 750px) {
+  .prof-link-nav {
+    display: none !important;
+  }
+}
+
+@media (max-width: 710px) {
+  .notif-link-nav {
+    display: none !important;
+  }
+}
+
+@media (max-width: 608px) {
+  .messaging-link-nav {
+    display: none !important;
+  }
+}
+/*# sourceMappingURL=navbar.css.map */

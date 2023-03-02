@@ -1,0 +1,69 @@
+.HomeFooter {
+  background-color: #e2e2e2;
+  height: 70vh;
+  padding-top: 30px;
+}
+
+.HomeFooter .homefooterContainer {
+  margin: 0 8%;
+}
+
+.HomeFooter .homefooterContainer .homeFooterFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.HomeFooter .homefooterContainer .homeFooterFlex .homefooterBrandLogo,
+.HomeFooter .homefooterContainer .homeFooterFlex .homefooterGeneral,
+.HomeFooter .homefooterContainer .homeFooterFlex .homefooterBrowse,
+.HomeFooter .homefooterContainer .homeFooterFlex .homeFooterBiz,
+.HomeFooter .homefooterContainer .homeFooterFlex .homefooterDirectories {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.HomeFooter .homefooterContainer .homeFooterFlex .homefooterBrandLogo .HomeFooterLogo,
+.HomeFooter .homefooterContainer .homeFooterFlex .homefooterGeneral .HomeFooterLogo,
+.HomeFooter .homefooterContainer .homeFooterFlex .homefooterBrowse .HomeFooterLogo,
+.HomeFooter .homefooterContainer .homeFooterFlex .homeFooterBiz .HomeFooterLogo,
+.HomeFooter .homefooterContainer .homeFooterFlex .homefooterDirectories .HomeFooterLogo {
+  fill: #0a66c2;
+  color: #0a66c2;
+  margin-top: 20px;
+}
+
+.HomeFooter .homefooterContainer .homeFooterFlex .homefooterBrandLogo h2,
+.HomeFooter .homefooterContainer .homeFooterFlex .homefooterGeneral h2,
+.HomeFooter .homefooterContainer .homeFooterFlex .homefooterBrowse h2,
+.HomeFooter .homefooterContainer .homeFooterFlex .homeFooterBiz h2,
+.HomeFooter .homefooterContainer .homeFooterFlex .homefooterDirectories h2 {
+  line-height: 1.25;
+  color: rgba(0, 0, 0, 0.9);
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.HomeFooter .homefooterContainer .homeFooterFlex .homefooterBrandLogo .homefooterLinks,
+.HomeFooter .homefooterContainer .homeFooterFlex .homefooterGeneral .homefooterLinks,
+.HomeFooter .homefooterContainer .homeFooterFlex .homefooterBrowse .homefooterLinks,
+.HomeFooter .homefooterContainer .homeFooterFlex .homeFooterBiz .homefooterLinks,
+.HomeFooter .homefooterContainer .homeFooterFlex .homefooterDirectories .homefooterLinks {
+  color: rgba(0, 0, 0, 0.6);
+}
+/*# sourceMappingURL=homefooter.css.map */

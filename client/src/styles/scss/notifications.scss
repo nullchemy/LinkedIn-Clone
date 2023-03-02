@@ -1,0 +1,287 @@
+.notificationsPage{
+    .notifwrapper{
+        .notifcontainer{
+            .notifFlex{
+                display: grid;
+                grid-area: content;
+                grid-template-areas: "sidebar main aside";
+                grid-template-columns: minmax(0,5fr) minmax(500px,12fr) minmax(0px,7fr);
+                grid-template-rows: auto;
+                gap: 1.7rem;
+                .notifLeft{
+                    background-color: #fff;
+                    height: min-content;
+                    grid-area: aside;
+                    height: min-content;
+                    position: sticky;
+                    top: 80px;
+                    .notifLeftTop{
+                        height: min-content;
+                        img{
+                            position: relative;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            margin: 0 auto;
+                        }
+                    }
+                }
+                .notifMiddle{
+                    background-color: #fff;
+                    height: min-content;
+                    grid-area: main;
+                    border-radius: 7px;
+                    box-shadow: 0px 0px 0px 1px rgba(206, 206, 206, 0.9);
+                    overflow: hidden !important;
+                    .notificationLink{
+                        .notMWrapper{
+                            border-bottom: 1px solid rgb(206, 206, 206);
+                            background-color: #ffffff;
+                            .notmNotification{
+                                display: flex;
+                                padding: 10px;
+                                .notmImage{
+                                    display: flex;
+                                    align-items: center;
+                                    margin-right: 10px;
+                                    .notificationStatus{
+                                        width: 5px;
+                                        height: 5px;
+                                        background-color: rgb(57, 53, 255);
+                                        border-radius: 50%;
+                                        margin-right: 5px;
+                                    }
+                                    .notAuthorImage{
+                                        width: 50px;
+                                        height: 50px;
+                                        border-radius: 50%;
+                                        overflow: hidden !important;
+                                        img{
+                                            width: 100%;
+                                            height: 100%;
+                                            object-fit: cover;
+                                        }
+                                    }
+                                }
+                                .notmtexts{
+                                    .thnotmtexts{
+                                        display: -webkit-box;
+                                        -webkit-box-orient: vertical;
+                                        -webkit-line-clamp: 3;
+                                        line-height: 1.4rem!important;
+                                        font-size: 13px;
+                                        max-height: 6rem;
+                                        overflow: hidden;
+                                        text-overflow: ellipsis;
+                                        word-wrap: break-word;
+                                        word-break: break-word;
+                                        cursor: pointer;
+                                        .thnotmauthor{
+                                            font-weight: 500;
+                                            margin-right: 5px;
+                                        }
+                                    }
+                                }
+                                .notLater{
+                                    display: flex;
+                                    flex-direction: column;
+                                    position: relative;
+                                    .notifTime{
+                                        p{
+                                            font-size: 12px;
+                                            font-weight: 200;
+                                            color: rgb(148, 148, 148);
+                                            text-align: center;
+                                            margin-bottom: 3px;
+                                            margin-top: 10px;
+                                        }
+                                    }
+                                    .notifAction{
+                                        color: rgb(148, 148, 148);
+                                        width: 30px;
+                                        height: 30px;
+                                        border-radius: 50%;
+                                        display: inline-flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        transition: 0.3s;
+                                        &:hover{
+                                            background-color: rgb(197, 197, 197);
+                                        }
+                                    }
+                                    .notif-drop-down{
+                                        display: none;
+                                        position: absolute;
+                                        right: 0;
+                                        width: 200px;
+                                        height: min-content;
+                                        background-color: #fff;
+                                        margin-top: 63px;
+                                        margin-right: -5px;
+                                        z-index: 900;
+                                        border-bottom-left-radius: 10px;
+                                        border-top-left-radius: 10px;
+                                        border-bottom-right-radius: 10px;
+                                        transition: 0.2s;
+                                        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+                                        overflow: hidden;
+                                        .deletenotif{
+                                            display: flex;
+                                            align-items: center;
+                                            padding: 5px 10px;
+                                            &:hover{
+                                                background-color: rgb(204, 204, 204);
+                                            }
+                                            .deletenotificon{
+                                                color: #000000b2;
+                                                margin-right: 10px;
+                                            }
+                                            .deletenotiftxts{
+                                                h2{
+                                                    color: #000000b2;
+                                                    font-size: 0.8rem;
+                                                }
+                                                p{
+                                                    color: #000000b2;
+                                                    font-size: 0.7rem;
+                                                }
+                                            }
+                                        }
+                                        .mutenotif{
+                                            display: flex;
+                                            align-items: center;
+                                            padding: 5px 10px;
+                                            &:hover{
+                                                background-color: rgb(204, 204, 204);
+                                            }
+                                            .mutenotificon{
+                                                color: #000000b2;
+                                                margin-right: 10px;
+                                            }
+                                            .mutenotiftxts{
+                                                h2{
+                                                    color: #000000b2;
+                                                    font-size: 0.8rem;
+                                                }
+                                                p{
+                                                    color: #000000b2;
+                                                    font-size: 0.7rem;
+                                                }
+                                            }
+                                        }
+                                        .turnoffnotif{
+                                            display: flex;
+                                            align-items: center;
+                                            padding: 5px 10px;
+                                            &:hover{
+                                                background-color: rgb(204, 204, 204);
+                                            }
+                                            .turnoffnotificon{
+                                                color: #000000b2;
+                                                margin-right: 10px;
+                                            }
+                                            .turnoffnotiftxts{
+                                                h2{
+                                                    color: #000000b2;
+                                                    font-size: 0.8rem;
+                                                }
+                                                p{
+                                                    color: #000000b2;
+                                                    font-size: 0.7rem;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .showDropDown{
+                                        display: unset !important;
+                                    }
+                                }
+                            }
+                        }
+                        // .notMWrapper:nth-last-child(1){
+                        //     border-bottom: none !important;
+                        // }
+                        .newNotification{
+                            background-color: #70b5f933;
+                        }
+                    }
+                }
+                .notifRight{
+                    background-color: #fff;
+                    height: min-content;
+                    grid-area: sidebar;
+                    border-radius: 7px;
+                    box-shadow: 0px 0px 0px 1px rgba(206, 206, 206, 0.9);
+                    position: sticky;
+                    top: 80px;
+                    .sidebarTitle{
+                        border-bottom: 1px solid #00000014;
+                        padding: 10px;
+                        .sidebarNotifTitle{
+                            font-size: 1rem;
+                            line-height: 1.5;
+                            font-weight: 600;
+                            vertical-align: baseline;
+                            color: rgba(0,0,0,0.9);
+                            text-align: center;
+                            margin-top: 15px;
+                        }
+                        .sidebarNotifCachy{
+                            font-size: 0.9rem;
+                            line-height: 1.5;
+                            font-weight: 400;
+                            vertical-align: baseline;
+                            color: rgba(48, 48, 48, 0.9);
+                            text-align: center;
+                            margin-top: 5px;
+                        }
+                    }
+                    .sidebarBottom{
+                        .sbexplns{
+                            font-size: 1rem;
+                            line-height: 1.5;
+                            font-weight: 200;
+                            vertical-align: baseline;
+                            color: rgba(48, 48, 48, 0.9);
+                            text-align: center;
+                            margin-top: 5px;
+                        }
+                        .sbsttngs{
+                            text-align: center;
+                            color: #004182;
+                            font-weight: 600;
+                            margin-bottom: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//responsive layout
+@media(max-width: 1200px){
+    .notifFlex{
+        grid-template-columns: minmax(0,5fr) minmax(500px,12fr) minmax(0px,1fr) !important;
+        .notifLeft{
+            display: none;
+        }
+    }
+}
+@media(max-width: 960px){
+    .notifFlex{
+        grid-template-columns: minmax(0,0fr) minmax(500px,12fr) minmax(0px,1fr) !important;
+        gap: 0px !important;
+        .notifRight{
+            display: none;
+        }
+    }
+}
+@media(max-width: 600px){
+    .container{
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    .notifFlex{
+        display: unset !important;
+    }
+}

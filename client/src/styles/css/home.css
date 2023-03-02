@@ -1,0 +1,253 @@
+.landingPage {
+  background-color: #fff;
+}
+
+.landingPage .landingContainer {
+  padding-top: 10px;
+  /*=====explore more topics=====*/
+}
+
+.landingPage .landingContainer .landingHeader .landingContainer {
+  margin: 0 8%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.landingPage .landingContainer .landingHeader .landingContainer .landingLogo .LandingLogoIcon {
+  fill: #0a66c2;
+  color: #0a66c2;
+}
+
+.landingPage .landingContainer .landingHeader .landingContainer .landingNavigation .lannavFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.landingPage .landingContainer .landingHeader .landingContainer .landingNavigation .lannavFlex .lannavLink {
+  margin: 0 10px;
+  color: #3d3d3d;
+  font-size: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  vertical-align: middle;
+  outline: none;
+  margin: 0px 20px;
+}
+
+.landingPage .landingContainer .landingHeader .landingContainer .landingNavigation .lannavFlex .lannavLink:nth-child(4) {
+  margin-right: 0px;
+  padding-right: 40px;
+  border-right: 1px solid #c6c6c6;
+}
+
+.landingPage .landingContainer .landingHeader .landingContainer .landingNavigation .lannavFlex .lannavLink .lannavLinkIcon {
+  display: block;
+  height: 24px;
+  width: 24px;
+  margin: 0 auto;
+}
+
+.landingPage .landingContainer .landingHeader .landingContainer .landingNavigation .lannavFlex .lannavLink span {
+  font-size: 14px;
+}
+
+.landingPage .landingContainer .landingHeader .landingContainer .landingNavigation .lannavFlex .lannavLinkCall1 {
+  margin: 0 10px;
+  color: #3d3d3d;
+  font-size: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  vertical-align: middle;
+  outline: none;
+  padding: 0 10px;
+  border-radius: 5px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.landingPage .landingContainer .landingHeader .landingContainer .landingNavigation .lannavFlex .lannavLinkCall1:hover {
+  background-color: #dadada;
+}
+
+.landingPage .landingContainer .landingHeader .landingContainer .landingNavigation .lannavFlex .lannavLinkCall2 {
+  margin: 0 10px;
+  color: #3d3d3d;
+  font-size: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  vertical-align: middle;
+  outline: none;
+  color: #0a66c2;
+  padding: 5px 20px;
+  border-radius: 20px;
+  border: 1px solid #0a66c2;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  margin-top: 5px;
+}
+
+.landingPage .landingContainer .landingHeader .landingContainer .landingNavigation .lannavFlex .lannavLinkCall2:hover {
+  padding: 4px 19px;
+  border: 2px solid #0a66c2;
+  background-color: #0fb0c21d;
+}
+
+.landingPage .landingContainer .lanJumbo .lanJcontainer {
+  margin: 0 8%;
+}
+
+.landingPage .landingContainer .lanJumbo .lanJcontainer .lanJFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 5%;
+}
+
+.landingPage .landingContainer .lanJumbo .lanJcontainer .lanJFlex .lanJtexts {
+  width: 50%;
+}
+
+.landingPage .landingContainer .lanJumbo .lanJcontainer .lanJFlex .lanJtexts .lanJTitle {
+  font-size: 56px;
+  font-weight: 200;
+  color: #8f5849;
+  margin-bottom: 40px;
+}
+
+.landingPage .landingContainer .lanJumbo .lanJcontainer .lanJFlex .lanJtexts .lanJuLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #fff;
+  border: 1px solid #a5a5a5;
+  border-radius: 5px;
+  padding: 15px 20px;
+  width: 50%;
+}
+
+.landingPage .landingContainer .lanJumbo .lanJcontainer .lanJFlex .lanJtexts .lanJuLinks:hover {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.landingPage .landingContainer .lanJumbo .lanJcontainer .lanJFlex .lanJImage {
+  width: 50%;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+}
+
+.landingPage .landingContainer .lanJumbo .lanJcontainer .lanJFlex .lanJImage .lanJumboImage {
+  width: 700px;
+  height: 700px;
+  margin-right: -100px;
+  margin-top: -50px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.landingPage .landingContainer .expTopics {
+  background-color: #f3f2f0;
+  padding: 40px 20px;
+}
+
+.landingPage .landingContainer .expTopics .expwrapper .expContainer {
+  margin: 0 5%;
+}
+
+.landingPage .landingContainer .expTopics .expwrapper .expContainer .expFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.landingPage .landingContainer .expTopics .expwrapper .expContainer .expFlex .expTitle {
+  width: 50%;
+}
+
+.landingPage .landingContainer .expTopics .expwrapper .expContainer .expFlex .expTitle h1 {
+  margin-top: 20px;
+  font-size: 48px;
+  font-weight: 200;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.landingPage .landingContainer .expTopics .expwrapper .expContainer .expFlex .expContTopics {
+  width: 50%;
+}
+
+.landingPage .landingContainer .expTopics .expwrapper .expContainer .expFlex .expContTopics .expTitleCont {
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 1.25;
+  color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 20px;
+}
+
+.landingPage .landingContainer .expTopics .expwrapper .expContainer .expFlex .expContTopics .expLinksCont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.landingPage .landingContainer .expTopics .expwrapper .expContainer .expFlex .expContTopics .expLinksCont .expTopLinkCont {
+  padding: 10px 20px;
+  border-radius: 23px;
+  margin-bottom: 10px;
+  margin-right: 5px;
+  background-color: #d9d9d9;
+}
+
+.landingPage .landingContainer .expTopics .expwrapper .expContainer .expFlex .expContTopics .expLinksCont .expTopLinkCont:hover {
+  background-color: #b6b6b6;
+}
+
+.landingPage .landingContainer .expTopics .expwrapper .expContainer .expFlex .expContTopics .expLinksCont .expTopLinkCont:nth-child(1) {
+  border: 1px solid #575757;
+  background-color: transparent;
+}
+
+.landingPage .landingContainer .expTopics .expwrapper .expContainer .expFlex .expContTopics .expLinksCont .expTopLinkCont:nth-child(1):hover {
+  background-color: #b6b6b6;
+}
+/*# sourceMappingURL=home.css.map */

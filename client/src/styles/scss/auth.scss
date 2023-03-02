@@ -1,0 +1,294 @@
+.signup-section {
+  padding: 15px 0;
+  &.sign-in-section {
+    min-height: 100vh;
+  }
+  .signup-wrapper {
+    width: 700px;
+    padding: 10px 0;
+    margin: 0 auto;
+    &.signin-wrapper {
+      width: 90%;
+    }
+    .signup-nav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &.sign-in {
+        justify-content: flex-start;
+      }
+      .navLogo {
+        color: var(--color-brand) !important;
+        margin: 0;
+      }
+    }
+    .form-title {
+      font-weight: 400;
+      color: #000;
+      margin: 20px 0;
+      text-align: center;
+    }
+    .signup-form {
+      width: 350px;
+      margin: 0 auto;
+      padding: 20px;
+      border-radius: 10px;
+      background: #fff;
+      &.signInForm {
+        width: 300px;
+      }
+      .form-header {
+        margin-bottom: 15px;
+        .authTitle {
+          color: #202020;
+          font-weight: 500;
+          margin-bottom: 5px;
+        }
+        .textMuted {
+          color: #292929;
+          font-weight: 400;
+          font-size: 13px;
+        }
+      }
+      .form-groupa {
+        width: 100%;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        .form-label {
+          display: block;
+          font-size: 20px;
+          color: #8b8b8b;
+          margin-bottom: 5px;
+          font-weight: 400;
+        }
+        .form-control {
+          display: block;
+          height: 32px;
+          padding: 0 10px;
+          outline: none;
+          border: 1px solid #666464;
+          border-radius: 5px;
+          background: #fff;
+          font-weight: 400;
+
+          &:hover {
+            border-color: #424242;
+          }
+          &:focus {
+            border: 2px solid #424242;
+          }
+        }
+        &.form-groupasn {
+          position: relative;
+          .form-label {
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            transform: translateY(-50%);
+            cursor: text;
+            transition: 400ms ease-in;
+            &.active {
+              top: 10px;
+              font-size: 13px;
+            }
+          }
+          .form-control {
+            height: 50px;
+            &:focus {
+              border-color: #0c5196;
+            }
+          }
+        }
+      }
+      .form-footer {
+        .sitePolicyText {
+          font-size: 13px;
+          max-width: 80%;
+          margin: 0 auto;
+          text-align: center;
+          color: #666464;
+          a {
+            color: var(--color-brand);
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+        .formSubmitBtn {
+          display: block;
+          width: 100%;
+          padding: 15px 20px;
+          font-weight: 600;
+          color: #fff;
+          background: var(--color-brand);
+          border: none;
+          outline: none;
+          border-radius: 25px;
+          cursor: pointer;
+          margin-top: 20px;
+          &.signInBtn {
+            padding: 20px 20px;
+            font-size: 15px;
+          }
+          &:hover,
+          &:focus {
+            background: #0c5196;
+          }
+        }
+        .divider {
+          text-align: center;
+          position: relative;
+          margin: 20px 0;
+          color: #292929;
+          &::before,
+          &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            width: 45%;
+            height: 1px;
+            right: 0;
+            background: #bcbcbc;
+          }
+          &::after {
+            left: 0;
+          }
+        }
+        .googleAuthBtn {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          padding: 10px 20px;
+          font-weight: 400;
+          color: #fff;
+          background: #fff;
+          border: none;
+          outline: none;
+          border-radius: 25px;
+          cursor: pointer;
+          margin-top: 20px;
+          color: #424242;
+          border: 1px solid #ececec;
+          &.signInBtn {
+            gap: 1rem;
+            border: 1px solid #292929;
+            padding: 15px 20px;
+          }
+        }
+        .signInRedirect {
+          margin-top: 20px;
+          color: #292929;
+          text-align: center;
+          a {
+            color: var(--color-brand);
+            font-weight: 600;
+            &:hover {
+              text-decoration: underline;
+              color: #4917ff;
+            }
+          }
+        }
+        .resetRedirect {
+          color: #0c5196;
+          font-size: 15px;
+          padding: 5px 10px;
+          background: transparent;
+          font-weight: 600;
+          border-radius: 20px;
+          &:hover {
+            background: rgba(41, 78, 245, 0.3);
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    .signUpRedirect {
+      margin-top: 20px;
+      color: #292929;
+      text-align: center;
+      a {
+        color: #0c5196;
+        font-size: 15px;
+        padding: 5px 10px;
+        background: transparent;
+        font-weight: 600;
+        border-radius: 20px;
+        &:hover {
+          background: rgba(41, 78, 245, 0.3);
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  .authFooter {
+    background: #fff;
+    .container {
+      padding-top: 5px;
+      padding-bottom: 5px;
+      display: flex;
+      flex-direction: column;
+      gap: 2.5rem;
+    }
+    .info {
+      text-align: center;
+
+      .infoText {
+        color: #292929;
+        font-size: 14px;
+        a {
+          color: var(--color-brand);
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    .siteCredit {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      span {
+        font-size: 13px;
+        color: #424242;
+        font-weight: 300;
+      }
+      .brandLogo {
+        fill: #292929;
+      }
+    }
+
+    .footerLinks {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1.3rem;
+      .footerLinkItem {
+        a {
+          font-size: 13px;
+          color: #424242;
+          text-transform: capitalize;
+          &:hover {
+            color: var(--color-brand);
+            text-decoration: underline;
+          }
+        }
+        .selectLangBtn {
+          border: none;
+          outline: none;
+          color: #424242;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 0.5rem;
+          background: none;
+          cursor: pointer;
+          &:hover {
+            color: var(--color-brand);
+          }
+        }
+      }
+    }
+  }
+}
