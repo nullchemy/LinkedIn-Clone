@@ -30,7 +30,10 @@ function App() {
   }, [loc])
   return (
     <div className="App">
-      <div className="Pagecontents">
+      <div
+        className="Pagecontents"
+        style={{ visibility: 'visible', display: 'unset' }}
+      >
         {curPath && <Navbar />}
 
         <div>
