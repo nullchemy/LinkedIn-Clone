@@ -1,50 +1,35 @@
-import React, { useEffect, useState } from "react";
-import Preloader from "./components/Preloader";
-import Navbar from "./components/Navbar";
-import { Routes, Route, Navigate, useLocation } from "react-router-dom";
-import Feed from "./routes/Feed";
-import Home from "./routes/Home";
-import Jobs from "./routes/Jobs";
-import Messaging from "./routes/Messaging";
-import Network from "./routes/Network";
-import Notifications from "./routes/Notifications";
-import Profile from "./routes/Profile";
-import NotFound from "./routes/Notfound";
-import Register from "./routes/Register";
-import Login from "./routes/Login";
+import React, { useEffect, useState } from 'react'
+import Navbar from './components/Navbar'
+import { Routes, Route, Navigate, useLocation } from 'react-router-dom'
+import Feed from './routes/Feed'
+import Home from './routes/Home'
+import Jobs from './routes/Jobs'
+import Messaging from './routes/Messaging'
+import Network from './routes/Network'
+import Notifications from './routes/Notifications'
+import Profile from './routes/Profile'
+import NotFound from './routes/Notfound'
+import Register from './routes/Register'
+import Login from './routes/Login'
 
 function App() {
-  const [curPath, setCurPath] = useState(true);
-  //page pre loader
-  document.onreadystatechange = function () {
-    if (document.readyState !== "complete") {
-      document.querySelector(".Pagecontents").style.visibility = "hidden";
-      document.querySelector(".ppreloader").style.display = "unset";
-    } else {
-      document.querySelector(".ppreloader").style.display = "none";
-      document.querySelector(".Pagecontents").style.visibility = "visible";
-      document.querySelector(".Pagecontents").style.display = "unset";
-    }
-  };
+  const [curPath, setCurPath] = useState(true)
   //home remove navbar
-  const loc = useLocation();
+  const loc = useLocation()
   useEffect(() => {
     const rendernav = () => {
       if (
-        loc.pathname === "/home" ||
-        loc.pathname === "/login" ||
-        loc.pathname === "/register"
+        loc.pathname === '/home' ||
+        loc.pathname === '/login' ||
+        loc.pathname === '/register'
       ) {
-        setCurPath(false);
+        setCurPath(false)
       }
-    };
-    rendernav();
-  }, [loc]);
+    }
+    rendernav()
+  }, [loc])
   return (
     <div className="App">
-      <div className="ppreloader">
-        <Preloader />
-      </div>
       <div className="Pagecontents">
         {curPath && <Navbar />}
 
@@ -65,7 +50,7 @@ function App() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
