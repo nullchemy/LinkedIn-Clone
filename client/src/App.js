@@ -11,9 +11,13 @@ import Profile from './routes/Profile'
 import NotFound from './routes/Notfound'
 import Register from './routes/Register'
 import Login from './routes/Login'
+import Modal from './components/Modal'
+import BreadCrumb from './components/BreadCrumb'
 
 function App() {
   const [curPath, setCurPath] = useState(true)
+  const [showModal, setShowModal] = useState(false)
+  const [showBreadCrumb, setShowBreadCrumb] = useState(false)
   //home remove navbar
   const loc = useLocation()
   useEffect(() => {
@@ -28,6 +32,22 @@ function App() {
     }
     rendernav()
   }, [loc])
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowModal(true)
+      setShowBreadCrumb(true)
+    }, 5000)
+
+    return () => clearTimeout(timer)
+  }, [])
+
+  const closeModal = () => {
+    setShowModal(false)
+  }
+  const closeBreadCrumb = () => {
+    setShowBreadCrumb(false)
+  }
   return (
     <div className="App">
       <div
@@ -35,6 +55,7 @@ function App() {
         style={{ visibility: 'visible', display: 'unset' }}
       >
         {curPath && <Navbar />}
+        <BreadCrumb show={showBreadCrumb} onClose={closeBreadCrumb} />
 
         <div>
           <Routes>
@@ -52,6 +73,7 @@ function App() {
           </Routes>
         </div>
       </div>
+      <Modal show={showModal} onClose={closeModal} />
     </div>
   )
 }

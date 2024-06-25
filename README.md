@@ -1,14 +1,5 @@
 # LinkedIn-Clone
-This is a LinkedIn-Clone Site built with React
 
-```javascript
-import { useNavigate } from "react-router-dom";
-let navigate = useNavigate();
+This is a LinkedIn-Clone Site built with React and should not be confused with the main react App
 
-useEffect(() => {
-   if (LoggedIn){
-      return navigate("/");
-   }
-},[LoggedIn]);
-
-```
+[LinkedIn Clone URL](https://linkedin-clone.nullchemy.com)

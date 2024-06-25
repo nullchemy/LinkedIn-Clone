@@ -1,16 +1,16 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "LinkedIn Clone",
+  "name": "LinkedIn CLone",
   "icons": [
     {
-        "src":"/android-chrome-192x192.png",
-        "sizes":"192x192",
-        "type":"image/png"
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
     },
     {
-        "src":"/android-chrome-512x512.png",
-        "sizes":"512x512",
-        "type":"image/png"
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
     },
     {
       "src": "windows11/SmallTile.scale-100.png",
